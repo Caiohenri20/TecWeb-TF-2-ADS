@@ -1,0 +1,90 @@
+/*<!--------Carlos Rian---------->
+
+<!--------Body----------->*/
+body{
+    background-color: rgba(71, 83, 176, 0.63);
+}
+
+/*<!--------One----------->*/
+div.DivPrincipal{
+	background-color: rgba(71, 83, 176, 0.63);
+	width: 945px;
+	height: 640px;
+	margin-left: 200px;
+    margin-right: 150px;
+}
+div.DivOne{
+	width: 945px;
+	height:150px;
+	background-image: url(_imagens/ad.jpg);
+	font-size: 45px;
+	font-family: verdana;
+	text-align: center;
+	color: white;
+}
+a.CliqueOne{
+	font-size: 16px;
+	font-family: verdana;
+	text-align: center;
+	color: white;
+    font-weight: bolder;
+}
+/*<!--------Two----------->*/
+div.DivTwo{
+	width: 945px;
+	height:150px;
+	margin-top: 10px;
+	background-image: url(_imagens/ti.jpg);
+	font-size: 45px;
+	font-family: verdana;
+	text-align: center;
+	color: white;
+}
+a.CliqueTwo{
+	font-size: 16px;
+	font-family: verdana;
+	text-align: center;
+	color: white;
+	font-weight: bolder;
+}
+/*<!--------Three----------->*/
+div.DivThree{
+	width: 945px;
+	height:150px;
+	margin-top: 10px;
+	background-image: url(_imagens/ci.jpg);
+	font-size: 45px;
+	font-family: verdana;
+	text-align: center;
+	color: white;
+}
+a.CliqueThree{
+	font-size: 16px;
+	font-family: verdana;
+	text-align: center;
+	color: white;
+	font-weight: bolder;
+}
+/*<!--------Four----------->*/
+div.DivFour{
+	width: 945px;
+	height:150px;
+	margin-top: 10px;
+	background-image: url(_imagens/eg.jpg);
+	font-size: 45px;
+	font-family: verdana;
+	text-align: center;
+	color: white;
+}
+a.CliqueFour{
+	font-size: 16px;
+	font-family: verdana;
+	text-align: center;
+	color: white;
+	font-weight: bolder;
+}
+/*<<<<<<<<<<< But Click>>>>>>>>>>>*/
+a:hover{
+    color:#FF0000;
+}
+
