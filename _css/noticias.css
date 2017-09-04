@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <div class="head">
+        <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+            <link rel="stylesheet" type="text/css" href="_css/index.css"/>
+            
+            <title>Home</title>
+
+            <figure class="logo">
+                <img src="_imagens/logo.png"/>
+            </figure>
+
+            <div class="login">
+                <table>
+                    <tr>
+                        <td>Login</td>
+                        <td><input/></td>
+                    </tr>
+                    <tr>
+                        <td>Senha</td>
+                        <td><input/></td>
+                    </tr>
+                </table>
+            </div>
