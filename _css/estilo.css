@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+div.head{
+    background-color: rgba(71, 83, 176, 0.63);
+    padding: 1px 20px 1px 20px;
+}
+
+figure.logo img{
+    right: 1100px;
+    width: 12%;
+}
+
+div.login{
+    top: 50px;
+    position: absolute;
+    left: 1050px;
+}
+
+nav.menu ul{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    top: 90px;
+    left: 650px;
+}
+
+nav.menu li{
+    display: inline-block;
+    margin: 15px;
+} 
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+    
+nav a:hover {
+    color: plum;
+    font-weight: normal;
+    background-color: rgba(71, 83, 176, 0.87);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.center{
+    text-align: center;
+}
+
+.end{
+    text-align: left;
+    margin-left: 60px;
+    margin-bottom:-139px;
+    font-size: 20px;
+}
+
+.end h4{
+    margin-left: 120px;
+    font-size: 30px;
+}
+
+.social{
+    text-align: right;
+    margin-right: 60px;
+    margin-bottom:-160px;
+}
+
+.social h4{
+    margin-right: 120px;
+    font-size: 30px;
+}
+
+.social img{
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+.contato{
+    text-align: center;
+    margin-bottom:10px;
+}
+
+.contato h4{
+    font-size: 30px;
+}
+
+.footer{
+    background-color: rgba(71, 83, 176, 0.63);
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1px 20px 1px 20px;
+}
