@@ -1,0 +1,129 @@
+div#cabecalho{
+	background: #333333;
+	width:960px;
+	height:300px;
+	margin:0 auto;
+}
+
+div#rodape{
+	
+	background: #333333;
+	width:960px;
+	height:300px;
+	margin:0 auto;
+	margin-top: 30px;
+}
+
+div{
+	font-family: verdana;
+	font-size: 28px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.title{
+	background: #000000;
+	width:960px;
+	height:60px;
+	margin:0 auto;
+	margin-top: 20px;
+	font-family: verdana;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+.title ul{
+	height: auto;
+	margin: 0px;
+}
+
+.title li{
+	display: inline;
+	margin: 0px;
+}
+
+.title a{
+	text-decoration: none;
+	color: white;
+	margin-top: 0px;
+}
+
+.title a:hover {
+	color: #000000;
+	background-color: #ffffff;
+    padding: 20px;
+}
+
+
+
+div#semestre1{
+	background: #333333;
+	width:960px;
+	height:400px;
+	margin:0 auto;
+	margin-top: 20px;
+
+}
+div#semestre2{
+	background: #333333;
+	width:960px;
+	height:550px;
+	margin:0 auto;
+	margin-top: 20px;
+
+}
+div#semestre3{
+	background: #333333;
+	width:960px;
+	height:550px;
+	margin:0 auto;
+	margin-top: 20px;
+}
+div#semestre4{
+	background: #333333;
+	width:960px;
+	height:700px;
+	margin:0 auto;
+	margin-top: 20px;
+}
+
+.centro{
+
+	width:120px;
+	height:90px;
+	margin-left: 20px;
+	margin-top: 10px;
+	border: 1px solid black;
+    background-color: #003366;
+	padding: 35px;
+	display: block;
+	float: left;
+	cursor: pointer;
+
+}
+
+.centro a {
+	
+	font-family: arial;
+	font-size: 15px;
+	text-decoration: none;
+	text-align: left;
+	color: #fff;
+	font-weight: bold;
+}
+
+.centro a:hover {
+
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.centro:hover  {
+
+}
+
+
+
+
