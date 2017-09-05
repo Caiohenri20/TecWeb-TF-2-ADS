@@ -1,0 +1,22 @@
+/*Body*/
+body{
+	background-color: rgba(71, 83, 176, 0.63);
+	font-family: verdana;
+}
+
+div.DivPrincipal{
+	font-size: 20px;
+	background: green;
+	margin-right: 150px;
+	margin-left: 150px;
+}
+div.DivAssunto{
+	font-size: 14px;
+	font-family: arial;
+}
+p{
+	font-size: 20px;
+}
+div.DivGrade{
+	font-size: 16px;
+}
