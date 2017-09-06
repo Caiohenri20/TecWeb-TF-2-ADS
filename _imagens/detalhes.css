@@ -1,0 +1,28 @@
+body{
+	background-color: rgba(71, 83, 176, 0.63);
+}
+div.DivPrincipal{
+	font-size: 22px;
+	text-align: center;
+	margin-right: 150px;
+	margin-left: 150px;
+	margin-top: 10px;
+	border: 3px solid white;
+    font-weight: bolder;
+	background-color: rgba(71, 83, 176, 0.63); 
+	color:white;
+}
+div.DivSem{
+	font-size: 26px;
+	text-align: center;
+	border: 2px solid white;
+	color:white;
+}
+div.NomeDisc{
+	font-size: 16px;
+	text-align: left;
+	margin-top: 3px;
+	border: 1px solid black;
+	color:black;
+
+}
