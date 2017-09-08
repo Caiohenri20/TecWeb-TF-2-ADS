@@ -1,26 +1,33 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <div class="head">
-        <head>
-            <meta charset="UTF-8">
-            <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
-            <link rel="stylesheet" type="text/css" href="_css/index.css"/>
-            
-            <title>Home</title>
+.title{
 
-            <figure class="logo">
-                <img src="_imagens/logo.png"/>
-            </figure>
+	width:960px;
+	height:30;
+	margin:0 auto;
+	margin-top: 10px
 
-            <div class="login">
-                <table>
-                    <tr>
-                        <td>Login</td>
-                        <td><input/></td>
-                    </tr>
-                    <tr>
-                        <td>Senha</td>
-                        <td><input/></td>
-                    </tr>
-                </table>
-            </div>
+}
+.title{
+
+	font-family: verdana;
+	font-weight: bold;
+	font-size: 25px;
+	text-align: center;
+}
+
+.text{
+	background-color: #2cb8f1;
+	margin-top: 10px;
+	margin: 0 auto;
+	width: 960px;
+	height:30;
+	font-family: arial;
+	font-size: 11;
+	font-weight: bold;
+	border: 10px;
+	border-radius: 7px;
+}
+
+.title a{
+	color: black;
+	text-decoration: none;
+}
