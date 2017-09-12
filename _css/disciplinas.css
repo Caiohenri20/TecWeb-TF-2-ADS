@@ -1,13 +1,19 @@
-.semestre{
-	width: 960px;
-	height: 40px;	
-	background: #0b7695;
-	margin: 0 auto;
+.container{
+	display:flex;
+	width: 100%;	
+	background:white;
 	margin-top: 10px;
-	margin-bottom: 10px;
+	align-items: center;
+    justify-content: center;
+	flex-direction: column;
 }
 
 .semestre{
+	width: 100%;
+	height: 40px;	
+	background: #0b7695;
+	border: 1px;
+	border-radius: 20px;
 	text-align: center;
 	font-family: arial;
 	font-size: 30px;
@@ -15,30 +21,41 @@
 }
 
 .title{
-	width: 960px;
-	height: 40px;	
-	background: #2cb8f1;
-	margin: 0 auto;
+	width: 70,27818448023426%;
+	height: 2,928257686676428%;	
+	background: #red;
 	margin-top: 10px;
-	margin-bottom: 10px;
-	border: 1px;
-	border-radius: 20px;
-}
-
-.title p{
 	text-align: center;
 	font-family: arial;
 	font-size: 20px;
 	font-weight: bold;
 }
 
+
+
 .text{
 	background: white;
-	width: 960px;
-	height: 70px;
+	width: 70,27818448023426%;
+	height: 6,588579795021962%;
 	margin: 0 auto;
+	font-family: arial;
+	font-size: 16px;
+	margin-top: 30px;
+	margin-bottom: 10px;
 }
 
-.text p{
-	font-family: arial;
+@media only screen and (max-width: 500px) {
+    .container {
+        width:100%;
+    }
+
+    .semestre {
+        width:100%;
+    }
+
+    .title {
+        width:100%;
+    }
 }
+
+
