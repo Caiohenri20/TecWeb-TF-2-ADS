@@ -1,47 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br"> 
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<div class="head">
-        <head>
-            <meta charset="UTF-8">
-            <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
-            <link rel="stylesheet" type="text/css" href="_css/cursos.css"/>            
-            <title>Home</title>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+        <title>Home</title>
+    </head>
+    <body>
 
-            <figure class="logo">
-                <img src="_imagens/logo.png"/>
-            </figure>
+        <section id="estrutura">
+            
+            <header class="EstruturaHeader">
+                <figure class="logo">
+                    <img src="_imagens/logo.png"/>
+                </figure>
+            </header>
 
-            <div class="login">
-                <table>
-                    <tr>
-                        <td>Login</td>
-                        <td><input/></td>
-                    </tr>
-                    <tr>
-                        <td>Senha</td>
-                        <td><input/></td>
-                    </tr>
-                </table>
-            </div>
+            <nav class="EstruturaNav">
+                <ul class="menu">
+                    <li class="item"><a href="index.html">Home</a></li>
+                    <li class="item"><a href="cursos.html">Cursos</a></li>
+                    <li class="item"><a href="noticias.html">Notícias</a></li>
+                </ul>
+            </nav>
 
-            <nav class="menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="cursos.html">Cursos</a></li>
-                        <li><a href="noticias.html">Notícias</a></li>
-                    </ul>
-                </nav>
-                
-        </head>
-    </div>
-
-
-<body>
 <section class="Content">
     
-
     <div class="DivPrincipal";>
         <div class="DivOne"> 
             Análise e Desenvolvimento de Sistema
@@ -75,33 +58,36 @@
 </section>
 
 
-    <div class="footer">
-            <footer>
-
+ <footer class="EstruturaFooter">
                 <div class="end">
                     <h4>Campus</h4>
+                    <br />
                     <p>Rua Frederico Pacheco, 111 - Peri/SP</p>
                 </div>
 
+                <div class="contato">
+                    <h4>Contato</h4>
+                    <br />
+                    <p>(11) 8456-4321</p>
+                </div>
+
+
                 <div class="social">
                     <h4>Social</h4>
+                    <br />
                     <img src="_imagens/facebook_icone.png" alt="facebook"/>
                     <img src="_imagens/whatsapp_icone.png" alt="whatapp"/>
                     <img src="_imagens/twitter_icone.png" alt="twitter"/>
                     <img src="_imagens/youtube_icone.png" alt="youtube"/>
                 </div>
 
-                <div class="contato">
-                    <h4>Contato</h4>
-                    <p>(11) 8456-4321</p>
-                </div>
-
-                    <br />
-
                 <div class="center">
                     <p>© Genius Tecnologia 2017. Todos os direitos reservados.</p>
                 </div>
+
             </footer>
-        </div>
-</body>
+
+        </section>
+
+    </body>    
 </html>
