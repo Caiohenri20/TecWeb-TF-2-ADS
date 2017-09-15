@@ -1,84 +1,143 @@
-/*<!--------Carlos Rian---------->
-
-<!--------Body----------->*/
-body{
-   background-color: rgba(71, 83, 176, 0.63);
-   align-items: center;
-}
+/* Configuração dimensão da pagina */
 *{
-	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.Content{
-	align-items: center;
-	display: flex;	
-	height: 100%;
-    min-height: 100%;
+
+
+/* Criação de estrutura em grade */
+#estrutura{
+    display: 
+    grid;
+    grid-template-areas: "header header" "nav nav" "content content" "footer footer"; /* partes estruturais*/
+    grid-template-rows: 15vh 5vh 60vh 20vh; /* tamanho das estruturas*/
+}
+
+
+
+/* Cabeçalho */
+.EstruturaHeader{
+    grid-area: header;
+    background-color: rgba(71, 83, 176, 0.63);
+    align-items: center;
     justify-content: center;
 }
-div.DivPrincipal{
-	background-color: rgba(71, 83, 176, 0.63);
-	width: auto;
-	height: auto;
-	font-size: 35px;
-	font-family: verdana;
-    border: 3px solid black;
+figure.logo img{
+    margin-top: 5px;
+    margin-left: 15px;
+    width: 100px;
+}
+
+
+/* Menu */
+.EstruturaNav{
+    grid-area: nav;
+    background-color: rgba(71, 83, 176, 0.63);
+}
+.menu{
+    widows: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+.item{
+    width: 20%;
+    height: 50%;
+    font-size: 17px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+.menu a:hover{
+    color: plum;
+    font-weight: normal;
+    background-color: rgba(71, 83, 176, 0.87);
+    padding: 10px 70px;
+}
+
+
+
+.EstruturaContent{
+    grid-area: content;
+    background-color: white;
+
+}
+.DivPrincipal{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+    right: 100%;
+	font-size: 25px;
+    border: 1px solid black;
+    flex-direction: column;
+
 }
 /*<!--------One----------->*/
-div.DivOne{
-	width: auto;
-	height:150px;
+.DivOne{
+	width: 60%;
+	height:113px;
 	background-image: url(_imagens/ad.jpg);
 	text-align: center;
 	color: white;
-	border: 3px solid black;
+	border: 1px solid black;
+
 }
 a.CliqueOne{
-	font-size: 16px;
+	font-size: 12px;
 	text-align: center;
 	color: white;
     font-weight: bolder;
 }
 /*<!--------Two----------->*/
 div.DivTwo{
-	width: auto;
-	height:150px;
+	width: 60%;
+	height:113px;
 	background-image: url(_imagens/ti.jpg);
 	text-align: center;
 	color: white;
-	border: 3px solid black;
+	border: 1px solid black;
 }
 a.CliqueTwo{
-	font-size: 16px;
+	font-size: 12px;
 	text-align: center;
 	color: white;
 	font-weight: bolder;
 }
 /*<!--------Three----------->*/
 div.DivThree{
-	width: auto;
-	height:150px;
+	width: 60%;
+	height:113px;
 	background-image: url(_imagens/ci.jpg);
 	text-align: center;
 	color: white;
-	border: 3px solid black;
+	border: 1px solid black;
 }
 a.CliqueThree{
-	font-size: 16px;
+	font-size: 12px;
 	text-align: center;
 	color: white;
 	font-weight: bolder;
 }
 /*<!--------Four----------->*/
 div.DivFour{
-	width: auto;
-	height:150px;
+	width: 60%;
+	height:113px;
 	background-image: url(_imagens/eg.jpg);
 	text-align: center;
 	color: white;
-	border: 3px solid black;
+	border: 1px solid black;
 }
 a.CliqueFour{
-	font-size: 16px;
+	font-size: 12px;
 	text-align: center;
 	color: white;
 	font-weight: bolder;
@@ -89,16 +148,112 @@ a:hover{
 }
 
 
-@media(max-width: 480px){
+
+/* Rodape */
+.EstruturaFooter{
+    grid-area: footer;
+    background-color: rgba(71, 83, 176, 0.63);
+}
+footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+
+}
+footer h4{
+    font-size: 20px;
+    text-align: center;
+}
+.end{
+    width: 25%;
+    height: 50%;
+    text-align: center;
+}
+.contato{
+    width: 25%;
+    height: 50%;
+    text-align: center;
+}
+.social{
+    width: 25%;
+    height: 50%;
+    text-align: center;
+}
+.center{
+    width: 100%;
+    height: 10%;
+}
+.center p{
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/* responsiva */
+@media only screen and (max-width: 768px){
+	
+    footer{
+        font-size: 12px;
+    }
+    footer h4{
+        font-size: 14px;
+    }
+    .contato{
+        width: 30%;
+        height: 50%;
+    }
+    .social{
+        width: 20%;
+    }
+}
+
+
+/* mobile */
+@media only screen and (max-width: 480px){
+    
+     #estrutura{
+        grid-template-areas: "header" "content" "aside" "article" "footer";
+        grid-template-rows: 25vh 40vh 40vh 40vh 25vh;
+    }
+    .EstruturaNav{
+        grid-area: header;
+        background: rgba(71, 83, 176, 0);
+        width: 100%;
+        height: 80%;
+        margin-top: 17%;
+    }
+    .menu{
+        display: block;
+        font-size: 5px;
+    }
+    .item{
+        width: 100%;
+        height: 15%;
+        padding: 2.5px 55px 5px;
+    }
+    .menu a:hover{
+        padding: 7px 20px;
+    }
+    footer{
+        font-size: 10px;
+    }
+    footer h4{
+        font-size: 12px;
+    }
+    .contato{
+        width: 30%;
+        height: 50%;
+    }
+    .social{
+        width: 20%;
+    }
 	.Content{
 	align-items: center;
-	display: flex;	
-	height: 100%;
-    min-height: 80%;
     justify-content: center;
-}
-*{
-	font-size: 24px;
-	text-align: center;
-}
+	}
 }
