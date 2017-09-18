@@ -2,10 +2,10 @@
 <html lang="pt-BR">
 <head>
 	<meta charset="utf-8">
-	<title>Menu</title>
+	<title>Nova Senha</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="_css/EstiloMenu.css" />
-	<link rel="stylesheet" type="text/css" href="_css/home.css" />
+	<link rel="stylesheet" type="text/css" href="_css/formularios.css" />
 </head>
 <body>
 
@@ -29,29 +29,28 @@
     </header>
 <!--Menu-->    
 
-			<div>
+			<div class="formulario">
                 <form action="novaSenha" method="POST" enctype="application/x-www-form-urlencoded">
 
                     <label for="ra">RA*</label>:<br />
                     <input type="number" name="quantity" min="1" max="7" id="ra" required/>
                     <br />
-
+					<br />
                     <label for="email">Email*</label>:<br />
                     <input type="text" name="email" id="email" required/>
                     <br />
-                    
+					<br />
                     <label for="novasenha">Nova senha</label>:<br />
                     <input type="password" name="novasenha" maxlength="8" id="novasenha"/>
                     <br />
-
+					<br />
                     <label for="confsenha">Confirmação senha</label>:<br />
                     <input type="password" name="confsenha" maxlength="8" id="confsenha"/>
                     <br />
-
+					<br />
                     <input type="submit"/>
 
                 </form>
-				
 			</div>
 			
 			<!--Rodapé-->
