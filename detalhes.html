@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
-        <link rel="stylesheet" type="text/css" href="_css/detalhes.css"/> 
-        <title>Detalhes</title>
-    </head>
-    <body>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Menu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="_css/EstiloMenu.css" />
+</head>
+<body>
 
-        <section id="estrutura">
-            
-            <header class="EstruturaHeader">
-                <figure class="logo">
-                    <img src="_imagens/logo.png"/>
-                </figure>
-            </header>
-
-            <nav class="EstruturaNav">
-                <ul class="menu">
-                    <li class="item"><a href="index.html">Home</a></li>
-                    <li class="item"><a href="cursos.html">Cursos</a></li>
-                    <li class="item"><a href="noticias.html">Notícias</a></li>
-                </ul>
-            </nav>
-
+<!--Menu-->    
+    <header>
+    	<input type="checkbox" id="btnMenu">
+    	<label for="btnMenu"> &#9776;</label>
+    	<nav class="menu">
+    		<ul>
+    			<li><img class="logo" src="_imagens/logo.png"></img></li>
+    			<li><a href="home.html">Home</a></li>
+    			<li><a href="cursos.html">Cursos</a></li>
+    			<li><a href="noticias.html">Noticias</a></li>
+	    		<form method="POST">	
+	    			<input type="text" name="Login" placeholder="Digite Seu Usuário"></input>
+	    			<input type="password" name="Senha" placeholder="Digite Sua Senha"></input>
+	    			<button type="submit">Entrar</button>
+	            </form>
+    		</ul>
+    	</nav><hr>
+    </header>
+<!--Menu-->    
+   
+<!--Código da sua Página Inicio-->
+    <main>
     <!--ADS Inicio-->
         <div class="Divprincipal2">
-    	    Analise e Desenvolvimento de Sistema
+    	    <p style="font-family:Verdana; font-size: 30px;text-align: center";><strong>Analise e Desenvolvimento de Sistema</strong></p><hr>
         </div>
     <!--ADS Fim-->
 
@@ -34,12 +40,12 @@
 
     <!-- Sobre o Curso-->
         <div class="DivPrincipal">
-            Sobre o Curso
-            <div class="DivAssunto">
+             <p style="font-family:Verdana; font-size: 20px"><STRONG>Sobre o Curso</STRONG></p>
+            <div class="DivAssunto"><Strong>
                     O curso forma profissionais conhecidos como Analista de Sistemas ou Desenvolvedor de Sistemas.  São esses profissionais que criam os sistemas com os quais você já teve contato: sistemas de comércio eletrônico, sistemas de redes sociais, web sites, apenas para citar alguns.
                     Que tal fazer parte desse grupo seleto de profissionais? O melhor caminho para isso é aprender de forma gradativa, resolvendo problemas do simples ao complexo, participando ativamente de projetos reais com clientes reais, além de ter como professores os melhores profissionais de mercado.
                     Você também aprenderá a trabalhar em equipe, analisando e desenvolvendo sistemas para internet, tablets, celulares e Internet das Coisas (IoT), utilizando ambientes DevOps, linguagens e tecnologias de alta-produtividade e de melhor custo-benefício.
-            </div>
+            </div></Strong>
         </div>
         
     <!--Horario-->
@@ -58,50 +64,50 @@
 
             <p>Primeiro Semestre:</p>
             <a href="diciplinas.html">
-            Comunicação e Expressão
-            Fundamentos de Banco de Dados
-            Introdução a Internet das Coisas - IoT
-            Linguagem de Programação I
-            Lógica de Programação
-            Matemática Aplicada
+            <br>Comunicação e Expressão
+            <br>Fundamentos de Banco de Dados
+            <br>Introdução a Internet das Coisas - IoT
+            <br>Linguagem de Programação I
+            <br>Lógica de Programação
+            <br>Matemática Aplicada
             </a>
             
             <p>Segundo Semestre:</p>
             <a href="diciplinas.html">
-            Ambiente de Desenvolvimento e Operação - DevOps
-            Engenharia de Software
-            Gestão de Projetos
-            Língua Brasileira de Sinais - LIBRAS (Optativa)
-            Linguagem de Programação II
-            Linguagem SQL
-            Sociedade e Sustentabilidade (Optativa)
-            Tecnologia Web
+            <br>Ambiente de Desenvolvimento e Operação - DevOps
+            <br>Engenharia de Software
+            <br>Gestão de Projetos
+            <br>Língua Brasileira de Sinais - LIBRAS (Optativa)
+            <br>Linguagem de Programação II
+            <br>Linguagem SQL
+            <br>Sociedade e Sustentabilidade (Optativa)
+            <br>Tecnologia Web
             </a>
             
             <p>Terceiro Semestre:</p>
             <a href="diciplinas.html">
-            Análise e Modelagem de Sistemas
-            Desenvolvimento de Aplicações Distribuídas
-            Estrutura de Dados
-            Interface Homem-Computador
-            Modelagem de Processos de Negócio
-            Oficina de Projeto de Empresa 1 - OPE1
+            <br>Análise e Modelagem de Sistemas
+            <br>Desenvolvimento de Aplicações Distribuídas
+            <br>Estrutura de Dados
+            <br>Interface Homem-Computador
+            <br>Modelagem de Processos de Negócio
+            <br>Oficina de Projeto de Empresa 1 - OPE1
             </a>
             
             <p>Quarto Semestre:</p>
 			<a href="diciplinas.html">
-            Arquitetura e Projeto de Sistemas
-            Desenvolvimento para Dispositivos Móveis
-            Desenvolvimento para Internet das Coisas - IoT
-            Legislação e Ética
-            Oficina de Projeto de Empresa 2 - OPE2
+            <br>Arquitetura e Projeto de Sistemas
+            <br>Desenvolvimento para Dispositivos Móveis
+            <br>Desenvolvimento para Internet das Coisas - IoT
+            <br>Legislação e Ética
+            <br>Oficina de Projeto de Empresa 2 - OPE2<hr>
             </a>
         </div>
     <!--ADS FIM-->
             
     <!--TI inicio-->
         <div>
-            <p style="font-family:Verdana; font-size: 30px;text-align: center";><strong>Tecnologia da Informação</strong></p>
+            <p style="font-family:Verdana; font-size: 30px;text-align: center";><strong>Tecnologia da Informação</strong></p><hr>
         </div>
     
         <!-- Sobre o Curso-->
@@ -162,13 +168,13 @@
             <br>Legislação e Ética
             <br>Oficina de Projeto de Empresa 2 - OPE2
             <br>Qualidade de Software
-            </a>
+            </a><hr>
         </div>
     <!--TI FIM-->
             
     <!--CC inicio-->
         <div>
-            <p style="font-family:Verdana; font-size: 30px;text-align: center";><strong>Ciência da Computação</strong></p>
+            <p style="font-family:Verdana; font-size: 30px;text-align: center";><strong>Ciência da Computação</strong></p><hr>
         </div>
 
         <!-- Sobre o Curso-->
@@ -229,13 +235,13 @@
             <br>Gestão Estratégica de TI
             <br>Governança de TI
             <br>Oficina de Projeto de Empresa 2 - OPE2
-            </a>
+            </a><hr>
         </div>
     <!--CC FIM-->
     
     <!--EC inicio-->
         <div>
-            <p style="font-family:Verdana; font-size: 30px;text-align: center";><strong>Engenharia da Computação</strong></p>
+            <p style="font-family:Verdana; font-size: 30px;text-align: center";><strong>Engenharia da Computação</strong></p><hr>
         </div>
         
         <!-- Sobre o Curso-->
@@ -301,38 +307,41 @@
             </a>
         </div>
     <!--EC FIM-->
-
-    <!--Footer-->
- <footer class="EstruturaFooter">
-                <div class="end">
-                    <h4>Campus</h4>
-                    <br />
-                    <p>Rua Frederico Pacheco, 111 - Peri/SP</p>
-                </div>
-
-                <div class="contato">
-                    <h4>Contato</h4>
-                    <br />
-                    <p>(11) 8456-4321</p>
-                </div>
+    </main>
+<!--Código da sua Página Final-->
 
 
-                <div class="social">
-                    <h4>Social</h4>
-                    <br />
-                    <img src="_imagens/facebook_icone.png" alt="facebook"/>
-                    <img src="_imagens/whatsapp_icone.png" alt="whatapp"/>
-                    <img src="_imagens/twitter_icone.png" alt="twitter"/>
-                    <img src="_imagens/youtube_icone.png" alt="youtube"/>
-                </div>
+<!--Rodapé-->
+    <footer class="footer">
+ 
+    	<div class="rodape">
+            Campus
+            <div class="subrodape">
+            	Rua Frederico Pacheco, 111 - Peri/SP Social
+            </div>
+    	</div>
 
-                <div class="center">
-                    <p>© Genius Tecnologia 2017. Todos os direitos reservados.</p>
-                </div>
+ 
+    	<div class="rodape">
+    		Contato
+            <div class="subrodape">
+            	(11) 8456-4321<br>
+                © Genius Tecnologia 2017. Todos os direitos reservados
+            </div>
+    	</div>
+    	
+ 
+    	<div class="rodape">
+    		Social
+            <div class="subrodape">
+            	<img src="_imagens/fb.png">
+            	<img src="_imagens/tw.png">
+            	<img src="_imagens/wt.png">
+            	<img src="_imagens/yt.png">
+            </div>
+    	</div>
 
-            </footer>
-
-        </section>
-
-    </body>    
+    </footer>
+<!--Rodapé-->
+</body>
 </html>
