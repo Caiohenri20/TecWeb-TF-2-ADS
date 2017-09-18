@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="_css/EstiloMenu.css" />
+	<link rel="stylesheet" type="text/css" href="_css/formularios.css" />
+</head>
+<body>
+
+<!--Menu-->    
+    <header>
+    	<input type="checkbox" id="btnMenu">
+    	<label for="btnMenu"> &#9776;</label>
+    	<nav class="menu">
+    		<ul>
+    			<li><a href="home.html"><img class="logo" src="_imagens/logo.png"></img></a></li>
+    			<li><a href="home.html">Home</a></li>
+    			<li><a href="cursos.html">Cursos</a></li>
+    			<li><a href="noticias.html">Noticias</a></li>
+			      <form method="POST">	
+	    			<input type="text" name="Login" placeholder="Digite Seu Usuário"></input>
+	    			<input type="password" name="Senha" placeholder="Digite Sua Senha"></input>
+	    			<button type="submit">Entrar</button>
+	            </form>
+    		</ul>
+    	</nav>
+    </header>
+<!--Menu-->    
+			
+      <div class="formulario">
+
+<form action="Cadastro" method="POST"> enctype="application/x-www-form-urlencoded">
+
+<fieldset>
+<legend>Dados Pessoais</legend>
+<label for="campo-nome" >Nome:</label><input id="campo-nome" name="Nome" /> <br/>
+<label for="campo-data" >Data de Nascimento:</label><input id="campo-data" name="Data de Nascimento" type="date" /> <br/>
+<label for="campo-telefone" >Telefone:</label><input id="campo-telefone" name="Telefone" type="number" /> <br/>
+<label for="campo-celular" >Celular:</label><input id="campo-celular" name="Celular" type="number" /> <br/>
+<label for="campo-email" >E-mail:</label><input id="campo-email" name="email" type="email" /> <br/>
+
+Sexo: <br/>
+<select name="sexo">
+	<option>Feminino</option>
+	<option>Masculino</option>
+</select>
+<br/>
+</fieldset>
+
+<fieldset>
+<legend>Dados Acadêmicos</legend>
+<label for="campo-ra" >RA:</label><input id="campo-ra" name="RA" type="number" /><br/>
+<label for="campo-senha" >Senha:</label><input id="campo-senha" name="senha" type="password" /><br/>
+<br/>
+Curso:<br/>
+<input type="radio" name="curso" value="Análise e Desenvolvimento do Sistemas" /> Análise e Desenvolvimento do Sistemas </br>
+<input type="radio" name="curso" value="Tecnologia da Informação" /> Tecnologia da Informação </br>
+<input type="radio" name="curso" value="Ciência da Computação" /> Ciência da Computação </br>
+<input type="radio" name="curso" value="Engenharia da Computação" /> Engenharia da Computação </br>
+<br/>
+</fieldset>
+<br/>
+<fieldset>
+<legend>Dados de Endereço</legend> </br>
+<label for="campo-endereço" >Endereço:</label><input id="campo-end" name="Endreço" /> <br/>
+<label for="campo-numero" >Número:</label><input id="campo-numero" name="Número" type="number" /> <br/>
+<label for="campo-complemento" >Complemento:</label><input id="campo-complemeto" name="Complemento" /> <br/>
+<label for="campo-cep">CEP:</label><input id="campo-cep" name="CEP" type="number" /> <br/>
+<label for="campo-bairro">Bairro:</label><input id="campo-bairro" name="Bairro" /> <br/>
+<label for="campo-cidade">Cidade:</label><input id="campo-cidade" name="Cidade" /> <br/>
+Estado: <br/>
+<select name="estado" required>
+	<opition> -- Selecione -- </opition> 
+	<option>AC</option>
+	<option>AL</option>
+	<option>AM</option>
+	<option>AP</option>
+	<option>BA</option>
+	<option>CE</option>
+	<option>DF</option>
+	<option>ES</option>
+	<option>GO</option>
+	<option>MA</option>
+	<option>MG</option>
+	<option>MS</option>
+	<option>MT</option>
+	<option>PA</option>
+	<option>PB</option>	
+	<option>PE</option>
+	<option>PI</option>
+	<option>PR</option>
+	<option>RJ</option>
+	<option>RN</option>
+	<option>RO</option>
+	<option>RS</option>
+	<option>RR</option>
+	<option>SC</option>
+	<option>SE</option>
+	<option>SP</option>
+	<option>TO</option>
+</select>
+</fieldset>
+<br/><br/>
+<button type="submit">Enviar</button>
+<button type="reset">Limpar</button>
+
+</form>
+<br/>
+
+</div>
+
+<!--Rodapé-->
+    <footer class="footer">
+ 
+    	<div class="rodape">
+            Campus
+            <div class="subrodape">
+            	CEP:08372-020<br>
+            	Rua Frederico Pacheco, 111 - Peri/SP Social
+            </div>
+    	</div>
+
+ 
+    	<div class="rodape">
+    		Contato
+            <div class="subrodape">
+            	(11) 8456-4321<br>
+                © Genius Tecnologia 2017. Todos os direitos reservados
+            </div>
+    	</div>
+    	
+ 
+    	<div class="rodape">
+    		Social
+            <div class="subrodape">
+            	<img src="_imagens/fb.png">
+            	<img src="_imagens/tw.png">
+            	<img src="_imagens/wt.png">
+            	<img src="_imagens/yt.png">
+            </div>
+    	</div>
+
+    </footer>
+<!--Rodapé-->
+</body>
+</html>
