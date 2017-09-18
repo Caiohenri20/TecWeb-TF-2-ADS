@@ -20,10 +20,10 @@ background-color: #2F4F4F;
 }
 .items{
 	width: 511px;
-	height: 355px;
+	height: 345px;
 	margin:5px 5px;
 	padding: 5px 5px;
-	font-size: 14px;
+	font-size: 13px;
 	font-weight: 200;
 	text-align: justify;
 	background-color: #5F9EA0;	
@@ -37,36 +37,21 @@ background-color: #2F4F4F;
 /*Pagina Home*/
 
 /*Pagina Home mobile*/
-@media(max-width: 780px){
-	.Sobre{
-       flex-direction: column;
-       margin:0;
-       padding: 0;
-       align-items: center;
+@media(max-width: 680px){
+ 	.Sobre{
+ 		display: flex;
+		align-items: flex-start;
+	    justify-content: flex-start;
  	}
- 	.items img{
-       width: 99%;
- 	}
- 	.items1{
-       width: 90%;
-       height: 100%;
-       font-size: 13px;
- 	}
-@media(max-width: 580px){
-	.Sobre{
-       flex-direction: column;
-       margin:0;
-       padding: 0;
-       align-items: center;
- 	}
- 	.items img{
-       width: 80%;
- 	}
- 	.items1{
-       width: 85%;
-       height: 100%;
-       font-size: 13px;
- 	}
-
+ 	.items{
+		width: auto;
+		height: auto;
+	}
+	.items img{
+	width: auto%;
+	border-radius: 10%;
+    }
+ }
+ 	
 
  	/*Pagina Home mobile*/
