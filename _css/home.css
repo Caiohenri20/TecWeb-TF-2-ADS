@@ -1,253 +1,72 @@
-/* Configuração dimensão da pagina */
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+/*Pagina Home*/
+body{
+background-color: #2F4F4F;
 }
-
-
-/* Criação de estrutura em grade */
-#estrutura{
-    display: grid;
-    grid-template-areas: "header header" "nav nav" "section section" "content aside" "article article" "footer footer"; /* partes estruturais*/
-    grid-template-rows: 15vh 5vh 45vh 80vh 80vh 20vh; /* tamanho das estruturas*/
+.PaginaCentro{
+	display: flex;
+	font-family: sans-serif;
+	justify-content: center;
 }
-
-
-/* Configuração do banner */
-.EstruturaBanner{
-    grid-area: section;
-    background-color: rgba(0, 0, 255, 0.51);
-    display: flex;
+.Sobre{
+	display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+	width: 1070px;
+	height: auto;
+	background-color: #5F9EA0;
+	margin:5px 5px;
 }
-.banner img{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.items{
+	width: 511px;
+	height: 355px;
+	margin:5px 5px;
+	padding: 5px 5px;
+	font-size: 14px;
+	font-weight: 200;
+	text-align: justify;
+	background-color: #5F9EA0;	
+	border: 2px solid #4682B4;
+	border-radius: 5%;
 }
+.items img{
+	width: 100%;
+	border-radius: 10%;
+}
+/*Pagina Home*/
+
+/*Pagina Home mobile*/
+@media(max-width: 780px){
+	.Sobre{
+       flex-direction: column;
+       margin:0;
+       padding: 0;
+       align-items: center;
+ 	}
+ 	.items img{
+       width: 99%;
+ 	}
+ 	.items1{
+       width: 90%;
+       height: 100%;
+       font-size: 13px;
+ 	}
+@media(max-width: 580px){
+	.Sobre{
+       flex-direction: column;
+       margin:0;
+       padding: 0;
+       align-items: center;
+ 	}
+ 	.items img{
+       width: 80%;
+ 	}
+ 	.items1{
+       width: 85%;
+       height: 100%;
+       font-size: 13px;
+ 	}
 
 
-/* Configuração do conteudo */
-.EstruturaContent{
-    grid-area: content;
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.sobre{
-    font-size: 14px;
-    text-align: justify;
-    text-indent: 20px;
-    padding: 10px 30px;
-}
-.sobre h2{
-    font-size: 25px;
-    font-weight: bold;
-}
-.sobre h3{
-    font-size: 18px;
-    font-weight: bold;
-	text-align: center;
-}
-
-
-/* Configuração de propaganda */
-.EstruturaAside{
-    grid-area: aside;
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.evento{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.evento img{
-    width: 220px;
-    height: 185px;
-    padding: 18px;
-}
-.palestra{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.palestra img{
-    width: 210px;
-    height: 210px;
-    padding: 2px;
-}
-
-
-/* Configuração do depoimento */
-.EstruturaArticle{
-    grid-area: article;
-    background-color: rgba(212, 201, 199, 0.4);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.EstruturaArticle h2{
-    font-size: 35px;
-    font-weight: bold;
-    text-align: center;
-    padding: 15px;
-}
-.dep1{
-    width: 100%;
-    flex-wrap: wrap;
-    padding: 5px 15px;
-}
-.dep1 img{
-    width: 10%;
-    border-radius: 100px;
-    float: left;
-}
-.dep1 p{
-    text-indent: 20px;
-    font-size: 14px;
-    text-align: justify;
-    padding: 15px 50px;
-}
-.dep2{
-    width: 100%;
-    flex-wrap: wrap;
-    padding: 5px 15px;
-}
-.dep2 img{
-    width: 10%;
-    border-radius: 100px;
-    float: left;
-}
-.dep2 p{
-    text-indent: 20px;
-    font-size: 14px;
-    text-align: justify;
-    padding: 15px 50px;
-}
-
-
-
-/* responsiva */
-@media only screen and (max-width: 1000px){
-
-    #estrutura{
-        grid-template-areas: "header header" "nav nav" "section section" "content aside" "article article" "footer footer"; /* partes estruturais*/
-        grid-template-rows: 15vh 5vh 45vh 100vh 80vh 20vh; /* tamanho das estruturas*/
-    }
-    /* Configuração do conteudo */
-    .sobre{
-        font-size: 12px;
-        padding: 10px 20px;
-    }
-    .sobre h2{
-        font-size: 20px;
-    }
-    .sobre h3{
-        font-size: 15px;
-    }
-    /* Configuração de propaganda */
-    .evento img{
-        width: 230px;
-        height: 200px;
-    }
-    .palestra img{
-        width: 230px;
-        height: 220px;
-    }
-    /* Configuração do depoimento */
-    .EstruturaArticle h2{
-        font-size: 25px;
-        padding: 15px;
-    }
-    .dep1 p{
-        font-size: 12px;
-    }
-    .dep2 p{
-        font-size: 12px;
-    }
-}
-    
-
-
-@media only screen and (max-width: 768px){
-    
-    #estrutura{
-        grid-template-areas: "header header" "nav nav" "section section" "content aside" "article article" "footer footer"; /* partes estruturais*/
-        grid-template-rows: 15vh 5vh 30vh 140vh 80vh 80vh 25vh;
-    }
-    /* Configuração do conteudo */
-    .sobre{
-        font-size: 10px;
-        padding: 10px 30px;
-    }
-    .sobre h2{
-        font-size: 20px;
-    }
-    .sobre h3{
-        font-size: 15px;
-    }
-    /* Configuração de propaganda */
-    .evento img{
-        width: 220px;
-    }
-    .palestra img{
-        width: 200px;
-    }
-    /* Configuração do depoimento */
-    .EstruturaArticle h2{
-        font-size: 20px;
-    }
-    .dep1{
-        padding: 5px 20px;
-    }
-    .dep1 img{
-        width: 20%;
-    }
-    .dep1 p{
-        text-indent: 15px;
-        font-size: 12px;
-    }
-    .dep2 img{
-        width: 20%;
-    }
-    .dep2 p{
-        text-indent: 15px;
-        font-size: 12px;
-    }
-}
-
-
-@media only screen and (max-width: 480px){
-    
-    #estrutura{
-        grid-template-areas: "header" "section" "content" "aside" "article" "footer";
-        grid-template-rows: 25vh 21vh 90vh 75vh 100vh 25vh;
-    }
-    .EstruturaNav{
-        grid-area: header;
-        background: rgba(71, 83, 176, 0);
-        width: 100%;
-        height: 80%;
-    }
-    .banner img{
-        height: 130px;
-    }
-    .sobre{
-        font-size: 7px;
-        padding: 5px 50px;
-    }
-}
+ 	/*Pagina Home mobile*/
