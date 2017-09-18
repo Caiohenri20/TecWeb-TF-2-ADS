@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Contato</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="_css/contato.css" />
+</head>
+<body>
+	<div class="principal">
+		<form method="POST">
+			<fieldset class="contato">
+				<LEGEND>FORMULÁRIO DE CONTATO</LEGEND>
+				
+				<label class="label" for="nome">Nome</label>
+				<input type="text"  id="nome" name="nNome" placeholder="Digite seu Nome">				
+				
+				<label class="label" for="e-mail">E-mail</label>
+				<input type="email"  id="email" name="nEmail" placeholder="Digite seu e-mail">	
+
+				<label class="label" for="assunto">Assunto</label>
+				<select id="assunto" name="nAssunto">
+					<option value="Secretaria">Secretaria</option>
+					<option value="Professor">Professor</option>
+					<option value="Financeiro">Financeiro</option>
+					<option value="Dúvidas">Dúvidas</option>
+				</select> 
+
+				<label class="label" for="mensagem">Mensagem</label>
+				<textarea id="mensagem" name="nMensage" placeholder="Digite sua mensagem"></textarea>
+				<button type="submit" name="btn-enviar"> Enviar</button>
+
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
