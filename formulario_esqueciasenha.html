@@ -5,7 +5,7 @@
 	<title>Nova Senha</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="_css/EstiloMenu.css" />
-	<link rel="stylesheet" type="text/css" href="_css/formularios.css" />
+	<link rel="stylesheet" type="text/css" href="_css/formulario.css" />
 </head>
 <body>
 
@@ -29,27 +29,26 @@
     </header>
 <!--Menu-->    
 
-			<div class="formulario">
+		<div class="principal">
                 <form action="novaSenha" method="POST" enctype="application/x-www-form-urlencoded">
+				<fieldset class="contato">
+				<LEGEND>NOVA SENHA</LEGEND>
 
-                    <label for="ra">RA*</label>:<br />
+                    <label class="label" for="ra">RA*:</label>
                     <input type="number" name="quantity" min="1" max="7" id="ra" required/>
                     <br />
-					<br />
-                    <label for="email">Email*</label>:<br />
+                    <label class="label" for="email">Email*:</label>
                     <input type="text" name="email" id="email" required/>
                     <br />
-					<br />
-                    <label for="novasenha">Nova senha</label>:<br />
+                    <label class="label" for="novasenha">Nova senha:</label>
                     <input type="password" name="novasenha" maxlength="8" id="novasenha"/>
                     <br />
-					<br />
-                    <label for="confsenha">Confirmação senha</label>:<br />
+                    <label class="label" for="confsenha">Confirmação senha:</label>
                     <input type="password" name="confsenha" maxlength="8" id="confsenha"/>
                     <br />
-					<br />
                     <input type="submit"/>
-
+					
+					</fieldset>
                 </form>
 			</div>
 			
