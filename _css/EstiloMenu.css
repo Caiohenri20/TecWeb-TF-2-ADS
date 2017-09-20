@@ -8,6 +8,8 @@ header{
 	font-weight: 800;
 	border: 1px solid white;
 	font-size: 30px;	
+	position: fixed;
+	width: 99%
 }
 header label{
     color: #FFF8DC;	
@@ -87,14 +89,17 @@ footer{
 	header label{
        display: block;
  	}
+ 	.menu{
+ 		border: none;
+ 	}
  	.menu ul{
  		background-color: #5F9EA0;
  		position: absolute;
- 		width: 50%;
+ 		width: 80%;
  		flex-direction: column;
  		align-items: flex-end;	
  		border: none;
- 		margin-left: -70%;
+ 		margin-left: -90%;
  	}
  	#btnMenu:checked ~ .menu ul{
  		margin-left: 0%;
