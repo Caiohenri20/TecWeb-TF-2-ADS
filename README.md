@@ -12,5 +12,3 @@
 +Carlos Eduardo Silva Santos De Lima_1600383
 
 +João Vitor Lima Nogueira Pereira_1700508
-
-+Blenda Bomfim Silva Moreira Leite_1600971
