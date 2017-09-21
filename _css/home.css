@@ -1,56 +1,126 @@
-/*Pagina Home*/
-body{
-background-color: #2F4F4F;
-}
-.PaginaCentro{
+/*Ana Paula Lopes_1700365*/
+PaginaCentro{
 	display: flex;
-	font-family: sans-serif;
-	justify-content: center;
+	flex-wrap: wrap;
 }
-.Sobre{
+figure{
 	display: flex;
     display: -webkit-flex;
     display: -ms-flexbox;
     flex-wrap: wrap;
-    flex-direction: row;
-	width: 1070px;
-	height: auto;
-	background-color: #5F9EA0;
-	margin:5px 5px;
-}
-.items{
-	width: 511px;
-	height: 345px;
-	margin:5px 5px;
-	padding: 5px 5px;
-	font-size: 13px;
-	font-weight: 200;
-	text-align: justify;
-	background-color: #5F9EA0;	
-	border: 2px solid #4682B4;
-	border-radius: 5%;
-}
-.items img{
 	width: 100%;
-	border-radius: 10%;
+	height: auto;
 }
+figure img{
+	width: 100%;
+	height: 50%;
+	margin:5px 5px;
+}
+.PriDiv{
+	display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+	width: 100%;
+	height: auto;
+}
+.content{
+	display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+	flex-wrap: wrap;
+	width: 100%;
+	height: auto;
+	flex-direction: row;
+}
+.sobre{
+	width: 60%;
+	height: auto;
+	margin:5px 5px;
+	padding: 15px 15px;
+	font-size: 14px;
+	text-align: justify;
+	float: left;
+}
+.sobre h4{
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+}
+.Prievento{
+	width: 30%;
+	float: right;
+	align-items: space-around;
+	justify-content: center;
+	padding: 60px 20px;
+}
+.palestra img{
+	width: 45%;
+	height: auto;
+	float: left;
+}
+.evento img{
+	width: 50%;
+	height: auto;
+	float: right;
+}
+.depoimento{
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	background: gray;
+	color: white;
+	margin:5px 5px;
+	padding: 15px 15px;
+}
+.depoimento h2{
+	text-align: center;
+}
+.depoimento h3{
+	font-size: 12px;
+	font-weight: bold;
+}
+.dep1 img{
+	width: 11%;
+	border-radius: 100px;
+	float: left;
+	padding: 5px 10px;
+}
+.dep2 img{
+	width: 11%;
+	border-radius: 100px;
+	float: left;
+	padding: 5px 10px;
+}
+.depoimento p{
+	text-align: center;
+	font-size: 12px;
+	padding: 80px 50px;
+}
+
+
+
+
 /*Pagina Home*/
 
 /*Pagina Home mobile*/
-@media(max-width: 680px){
- 	.Sobre{
- 		display: flex;
-		align-items: flex-start;
-	    justify-content: flex-start;
- 	}
- 	.items{
-		width: auto;
-		height: auto;
+@media(max-width: 480px){
+	
+	.Prievento{
+	padding: 10px;
 	}
-	.items img{
-	width: auto%;
-	border-radius: 10%;
-    }
+	.palestra img{
+	width: 100%;
+	}
+	.evento img{
+	width: 100%;
+	}
+	.dep1 img{
+	width: 16%;
+	}
+	.dep2 img{
+	width: 16%;
+	}
  }
  	
 
