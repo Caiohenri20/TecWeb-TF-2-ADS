@@ -1,0 +1,47 @@
+
+.principal{
+	background: url('_img/fundo_form.jpeg');
+	color: white;
+	justify-content: center;
+}
+
+.formulario h1{
+	text-align: center;
+}
+
+.formulario{
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+	font-size: 18px;
+	padding: 60px;
+}
+
+.formulario legend{
+	color: rgb(10, 146, 219);
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.formulario fieldset{
+	padding: 10px;
+	background-color: black;
+}
+
+.formulario input{
+	font-size: 16px;
+}
+
+.formulario button{
+	font-size: 18px;
+	margin: 10px 0px 0px 230px;
+	width: 40%;
+	font-family: 'Open Sans', sans-serif;
+}
+.formulario a{
+	color: rgb(10, 146, 219);
+	margin: 10px 0px 0px 40px;
+	font-size: 14px;
+	width: 50%;
+}
