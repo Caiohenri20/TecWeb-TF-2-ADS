@@ -1,95 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-	<meta charset="utf-8">
-	<title>Menu</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
 
-	
-    <link rel="stylesheet" type="text/css" href="_css/EstiloMenu.css" />
-    <link rel="stylesheet" type="text/css" href="_css/contato.css" />
-    <!--Acima você precisa refetenciar o seu CSS-->
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Contato</title>
+        <meta name="description" content="Genius Faculdade de Tecnologia">
+        <link rel="shortcut icon" href="_img/favicon.png">
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="_css/formulario_contato.css">
+    </head>
+    <body>
 
-<!--Menu-->    
-    <header>
-    	<input type="checkbox" id="btnMenu">
-    	<label for="btnMenu"> &#9776;</label>
-    	<nav class="menu">
-    		<ul>
-    			<li><a href="home.html"><img class="logo" src="_imagens/logo.png"></img></a></li>
-    			<li><a href="home.html">Home</a></li>
-    			<li><a href="cursos.html">Cursos</a></li>
-    			<li><a href="noticias.html">Noticias</a></li>
-	    		<form method="POST">	
-	    			<input type="text" name="Login" placeholder="Digite Seu Usuário"></input>
-	    			<input type="password" name="Senha" placeholder="Digite Sua Senha"></input>
-	    			<button type="submit">Entrar</button>
-	            </form>
-    		</ul>
-    	</nav>
-    </header>
+        <header class="cabeçalho">
+            <input type="checkbox" id="bt_menu">
+            <label for="bt_menu"><img src="_img/menu.png"/></label>
 
-<main>
-	<div class="principal">
-		<form method="POST">
-			<fieldset class="contato">
-				<LEGEND>FORMULÁRIO DE CONTATO</LEGEND>
-				
-				<label class="label" for="nome">Nome</label>
-				<input type="text"  id="nome" name="nNome" placeholder="Digite seu Nome">				
-				
-				<label class="label" for="e-mail">E-mail</label>
-				<input type="email"  id="email" name="nEmail" placeholder="Digite seu e-mail">	
+            <a class="logo" href="index.html"><img src="_img/logo.png" alt="logo Genius" title="Home Page Genius"/></a>
 
-				<label class="label" for="assunto">Assunto</label>
-				<select id="assunto" name="nAssunto">
-					<option value="Secretaria">Secretaria</option>
-					<option value="Professor">Professor</option>
-					<option value="Financeiro">Financeiro</option>
-					<option value="Dúvidas">Dúvidas</option>
-				</select> 
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="curso.html">Cursos</a>
+                        <ul>
+                            <li><a href="detalhe.html #ADS" target="_blank">Análise e Desenvolvimento de Sistema</a></li>
+                            <li><a href="detalhe.html #TI" target="_blank">Tecnologia da Informação</a></li>
+                            <li><a href="detalhe.html #CC" target="_blank">Ciência da Computação</a></li>
+                            <li><a href="detalhe.html #EC" target="_blank">Engenharia da Computação</a></li>
+                        </ul>
+                    </li>                    
+                    <li><a href="noticia.html">Notícias</a></li>
+                </ul>
+            </nav>
 
-				<label class="label" for="mensagem">Mensagem</label>
-				<textarea id="mensagem" name="nMensage" placeholder="Digite sua mensagem"></textarea>
-				<button type="submit" name="btn-enviar"> Enviar</button>
+            <a class="login" href="formulario_login.html" target="_blank"><img src="_img/user.png" alt="acesso"/></a>
+            
+        </header>
 
-			</fieldset>
-		</form>
-	</div>
-</main>
-	<footer class="footer">
- 
-    	<div class="rodape">
-            Campus
-            <div class="subrodape">
-            	CEP:08372-020<br>
-            	Rua Frederico Pacheco, 111 - Peri/SP Social
+        <section class="principal">
+            <br/>
+                <div class="formulario">
+                    <form action="Login" method="POST" enctype="application/x-www-form-urlencoded">
+                        <h1>FALE CONOSCO</h1>
+                        <br/>
+                        <fieldset>
+                            <legend>Mensagem</legend>
+                            <label for="campo-nome">Nome:</label>
+                            <br/>
+                            <input type="text" name="Nome" id="nome" size="40" required />
+                            <br /><br />
+                            <label for="campo-email" >E-mail: </label>
+						    <br/>
+						    <input type="email" name="Email" id="email" size="40" placeholder="exemplo@gmail.com" required/>
+                            <br/><br/>
+                            <labe>Assunto: </labe><br/>
+							<select name="assunto" id="assunto" required>
+								<option> -- Selecione -- </option> 
+								<option value="Secretaria">Secretaria</option>
+								<option value="Ouvidoria">Ouvidoria</option>
+								<option value="Financeiro">Financeiro</option>
+                                <option value="Comercial">Comercial</option>
+								<option value="Duvidas">Dúvidas</option>
+                                <option value="Reclamações">Reclamações</option>
+							</select>
+                            <br/><br/>
+                            <label class="label" for="mensagem">Mensagem</label>
+                            <br/>
+                            <textarea id="mensagem" name="Mensage" placeholder="Digite sua mensagem" rows="10" cols="50">  </textarea>
+							<br/><br/>
+                        </fieldset>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <br/>
+            </section>
+		<footer>
+            <div class="end">
+                <h4>Campus</h4>
+                <br>
+                <p>Rua Frederico Pacheco, 111 - São Paulo/SP</p>
             </div>
-    	</div>
 
- 
-    	<div class="rodape">
-    		Contato
-            <div class="subrodape">
-            	(11) 8456-4321<br>
-                © Genius Tecnologia 2017. Todos os direitos reservados
+            <div class="contato">
+                <h4>Contato</h4>
+                <p>(11) 8456-4321</p>
+                <a class="contato" href="formulario_contato.html" target="_blank"><img src="_img/email.png" alt="contato" title="Fale Conosco"/></a>
             </div>
-    	</div>
-    	
- 
-    	<div class="rodape">
-    		Social
-            <div class="subrodape">
-            	<img src="_imagens/fb.png">
-            	<img src="_imagens/tw.png">
-            	<img src="_imagens/wt.png">
-            	<img src="_imagens/yt.png">
-            </div>
-    	</div>
+    
+            <figure class="social">
+                <h4>Social</h4>
+                <br>
+                <a href="https://pt-br.facebook.com/nomedousuario" target="_blank"><img src="_img/fb.png" alt="facebook genius" title="facebook Genius"/></a>
+                <a href="https://twitter.com/nomedousuario" target="_blank"><img src="_img/tw.png" alt="twitter genius" title="twitter Genius"/></a>
+                <a href="https://www.youtube.com/user/nomedousuario" target="_blank"><img src="_img/yt.png" alt="youtube genius" title="youtube Genius"/></a>
+            </figure>
+            
+            <div class="direito">
+            <p>© Genius Faculdade de Tecnologia 2017. Todos os direitos reservados.</p>
+            </div>            
+        </footer>
 
-    </footer>
-  <!-- rodapé-->  
- </body>
+    </body>
+
 </html>

@@ -3,11 +3,11 @@
 
     <head>
         <meta charset="UTF-8" />
-        <title>Login</title>
+        <title>Nova Disciplina</title>
         <meta name="description" content="Genius Faculdade de Tecnologia">
         <link rel="shortcut icon" href="_img/favicon.png">
         <link rel="stylesheet" type="text/css" href="_css/estilo.css">
-		<link rel="stylesheet" type="text/css" href="_css/formulario_login.css">
+		<link rel="stylesheet" type="text/css" href="_css/formulario_disciplina.css">
     </head>
     <body>
 
@@ -37,23 +37,31 @@
         </header>
 
         <section class="principal">
-            <br/>
-                <div class="formulario">
-                    <form action="Login" method="POST" enctype="application/x-www-form-urlencoded">
-                        <h1>PORTAL DO ALUNO</h1>
-                        <br/>
-                        <fieldset>
-                            <legend>Login</legend>
-                            <input type="number" name="Login" id="RA" placeholder="Digite Seu Usuário" required />
-                            <input type="password" name="Senha" id="senha" placeholder="Digite Sua Senha" maxlength="8" required />
-                            <br/>
-                        </fieldset>
-                        <a href="formulario_esqueciasenha.html" target="_blank">Esqueceu a senha?</a>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-                <br/>
-            </section>
+			<br/>
+				<div class="formulario">
+					<form action="disciplina" method="POST" enctype="application/x-www-form-urlencoded">
+						<h1>NOVA DISCIPLINA</h1>
+						<br/>
+						<fieldset>
+							<legend>Nova Disciplina</legend>
+							<label for="professor">Professor Responsável:</label><br />
+							<input type="text" name="professor" id="professor" required/>
+							<br /><br />
+							<label for="qtdhoras">Quantidade de Horas Mensais:</label><br />
+							<input type="number" name="qtd" min="1" max="7"  id="qtdhoras" required/>
+							<br /><br />
+							<label for="duracao">Duração da Aula:</label><br />
+							<input type="number" name="qtd" min="1" max="7" id="duracao" required/>
+							<br /><br />
+							<label for="aula">Dia da semana de ser ministrado:</label><br />
+							<input type="date" name="aula" min="1" max="10" id="aula" required/>
+							
+							<br />
+							
+						</fieldset>
+						 <button type="submit">Enviar</button>
+					</form>
+        </section>
 		<footer>
             <div class="end">
                 <h4>Campus</h4>
@@ -65,8 +73,8 @@
                 <h4>Contato</h4>
                 <p>(11) 8456-4321</p>
                 <a class="contato" href="formulario_contato.html" target="_blank"><img src="_img/email.png" alt="contato" title="Fale Conosco"/></a>
-            </div>    
-
+            </div>
+    
             <figure class="social">
                 <h4>Social</h4>
                 <br>

@@ -3,11 +3,11 @@
 
     <head>
         <meta charset="UTF-8" />
-        <title>Login</title>
+        <title>Cursos</title>
         <meta name="description" content="Genius Faculdade de Tecnologia">
         <link rel="shortcut icon" href="_img/favicon.png">
         <link rel="stylesheet" type="text/css" href="_css/estilo.css">
-		<link rel="stylesheet" type="text/css" href="_css/formulario_login.css">
+        <link rel="stylesheet" type="text/css" href="_css/curso.css">
     </head>
     <body>
 
@@ -37,24 +37,45 @@
         </header>
 
         <section class="principal">
-            <br/>
-                <div class="formulario">
-                    <form action="Login" method="POST" enctype="application/x-www-form-urlencoded">
-                        <h1>PORTAL DO ALUNO</h1>
-                        <br/>
-                        <fieldset>
-                            <legend>Login</legend>
-                            <input type="number" name="Login" id="RA" placeholder="Digite Seu Usuário" required />
-                            <input type="password" name="Senha" id="senha" placeholder="Digite Sua Senha" maxlength="8" required />
-                            <br/>
-                        </fieldset>
-                        <a href="formulario_esqueciasenha.html" target="_blank">Esqueceu a senha?</a>
-                        <button type="submit">Enviar</button>
-                    </form>
+            <figure class="bannercursos">
+                <img src="_img/banner_tecnologia.png" alt="tecnologia"/>
+            </figure>
+            
+            <div class="cursos">
+                <div>
+                    <figure>
+                        <a href="detalhe.html #ADS" target="_blank">
+                            <img src="_img/ADS.jpg" alt="curso ADS"/>
+                            <figcaption>Análise e Desenvolvimento de Sistema</figcaption>
+                        </a>
+                    </figure>
+                    <br/>
+                    <figure>
+                        <a href="detalhe.html #CC" target="_blank">
+                            <img src="_img/CC.jpg" alt="curso CC"/>
+                            <figcaption>Ciência da Computação</figcaption>
+                        </a>
+                    </figure>
                 </div>
-                <br/>
-            </section>
-		<footer>
+                <div>
+                    <figure>
+                        <a href="detalhe.html #TI" target="_blank">
+                            <img src="_img/TI.jpeg" alt="curso TI"/>
+                            <figcaption>Tecnologia da Informação</figcaption>
+                        </a>
+                    </figure>
+                    <br/>
+                    <figure>
+                        <a href="detalhe.html #EC" target="_blank">
+                            <img src="_img/EC.jpg" alt="curso EC"/>
+                            <figcaption>Engenharia da Computação</figcaption>
+                        </a>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <br/>
+        <footer>
             <div class="end">
                 <h4>Campus</h4>
                 <br>
@@ -65,15 +86,15 @@
                 <h4>Contato</h4>
                 <p>(11) 8456-4321</p>
                 <a class="contato" href="formulario_contato.html" target="_blank"><img src="_img/email.png" alt="contato" title="Fale Conosco"/></a>
-            </div>    
-
-            <figure class="social">
+            </div>
+    
+            <div class="social">
                 <h4>Social</h4>
                 <br>
                 <a href="https://pt-br.facebook.com/nomedousuario" target="_blank"><img src="_img/fb.png" alt="facebook genius" title="facebook Genius"/></a>
                 <a href="https://twitter.com/nomedousuario" target="_blank"><img src="_img/tw.png" alt="twitter genius" title="twitter Genius"/></a>
                 <a href="https://www.youtube.com/user/nomedousuario" target="_blank"><img src="_img/yt.png" alt="youtube genius" title="youtube Genius"/></a>
-            </figure>
+            </div>
             
             <div class="direito">
             <p>© Genius Faculdade de Tecnologia 2017. Todos os direitos reservados.</p>
