@@ -12,7 +12,7 @@
 .formulario{
 	display: flex;
 	justify-content: space-around;
-	width: 30%;
+	width: 32%;
 	font-size: 18px;
 	padding: 200px;
 }
@@ -35,13 +35,13 @@
 
 .formulario button{
 	font-size: 18px;
-	margin: 10px 0px 0px 60px;
+	margin: 10px 0px 0px 80px;
 	width: 40%;
 	font-family: 'Open Sans', sans-serif;
 }
 .formulario a{
 	color: rgb(10, 146, 219);
-	margin: 10px 0px 0px 40px;
+	margin: 10px 0px 0px 50px;
 	font-size: 14px;
 	width: 50%;
 }
