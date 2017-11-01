@@ -39,28 +39,28 @@
         <section class="principal">
 		<br/>
 			<div class="formulario">
-				<form action="Cadastro" method="POST" enctype="application/x-www-form-urlencoded">
+				<form action="cadastro" method="POST" enctype="application/x-www-form-urlencoded">
 					<h1>CADASTRO</h1>
 					<fieldset>
 						<legend>Dados Pessoais</legend>
-						<label for="campo-nome">Nome:</label>
+						<label for="nome">Nome:</label>
 						<br/>
-						<input type="text" name="Nome" id="nome" size="40" required />
+						<input type="text" name="nome" id="nome" size="40" required />
 						<br/><br/>
-						<label for="campo-nascimento">Dt. de Nascimento:</label>
+						<label for="nascimento">Dt. de Nascimento:</label>
 						<br/>
-						<input type="date" name="Data de Nascimento" id="dt.nascimento" required />
+						<input type="date" name="nascimento" id="dt.nascimento" required />
 						<br/><br/>
-						<label for="campo-telefone" >Contato: </label>
+						<label for="telefone" >Contato: </label>
 						<br/>
-						<input type="tel" name="Residencial" id="residencial" maxlength="10" placeholder="Residencial"/>
-						<input type="tel" name="Celular" id="celular" maxlength="11" placeholder="Celular" />
+						<input type="tel" name="residencial" id="residencial" maxlength="10" placeholder="Residencial"/>
+						<input type="tel" name="celular" id="celular" maxlength="11" placeholder="Celular" />
 						<br/><br/>
-						<label for="campo-email" >E-mail: </label>
+						<label for="email" >E-mail: </label>
 						<br/>
-						<input type="email" name="Email" id="email" size="40" placeholder="exemplo@gmail.com"/>
+						<input type="email" name="email" id="email" size="40" placeholder="exemplo@gmail.com"/>
 						<br/><br/>
-						<label for="campo-sexo" >Sexo: </label><br/>
+						<label for="sexo" >Sexo: </label><br/>
 						<input type="radio" name="sexo" value="masculino" checked>Masculino
 						<br/>
 						<input type="radio" name="sexo" value="feminino">Feminino
@@ -69,22 +69,22 @@
 					<br/>
 					<fieldset>
 						<legend>Dados de Endereço</legend> </br>
-						<label for="campo-endereço" >Endereço: </label>
+						<label for="endereço" >Endereço: </label>
 						<br/>
-						<input type="text" name="Endereço" id="endereço" size="40" required />
+						<input type="text" name="endereço" id="endereço" size="40" required />
 						<br/><br/>
-						<label for="campo-numero" >Número: </label>
-						<input type="text" name="Numero" id="numero" size="8" maxlength="8" required />
-						<label for="campo-cep">CEP: </label>
-						<input type="number" name="CEP" id="cep" size="9" maxlength="9" placeholder="00000-000" required />
+						<label for="numero" >Número: </label>
+						<input type="text" name="numero" id="numero" size="8" maxlength="8" required />
+						<label for="cep">CEP: </label>
+						<input type="number" name="cep" id="cep" size="9" maxlength="9" placeholder="00000-000" required />
 						<br/><br/>
-						<label for="campo-bairro">Bairro: </label>
-						<input type="text" name="Bairro" id="bairro" size="30" required />
+						<label for="bairro">Bairro: </label>
+						<input type="text" name="bairro" id="bairro" size="30" required />
 						<br/><br/>
-						<label for="campo-cidade">Cidade: </label>
-						<input type="text" name="Cidade" id="cidade" size="30" required />
+						<label for="cidade">Cidade: </label>
+						<input type="text" name="cidade" id="cidade" size="30" required />
 						<br/><br/>
-						<label for="campo-estado">Estado: </label>
+						<label for="estado">Estado: </label>
 						<select name="estado" id="estado" required>
 							<option> -- Selecione -- </option> 
 							<option>AC</option>
@@ -120,15 +120,15 @@
 					<br/>
 					<fieldset>
 						<legend>Dados Acadêmicos</legend>
-						<label for="campo-ra" >RA:</label> 
+						<label for="ra" >RA:</label> 
 						<br/>
-						<input type="number" name="Login" id="ra" size="7" maxlength="7" required />
+						<input type="number" name="login" id="ra" size="7" maxlength="7" required />
 						<br/><br/>
-						<label for="campo-senha" >Senha:</label>
+						<label for="senha" >Senha:</label>
 						<br/>
-                        <input type="password" name="Senha" id="senha" maxlength="8" required />
+						<input type="password" name="senha" id="senha" maxlength="8" required />
 						<br/><br/>
-						<labe>Curso: </labe><br/>
+						<labe for:"curso" >Curso: </labe><br/>
 							<select name="curso" id="curso" required>
 								<option> -- Selecione -- </option> 
 								<option value="Analise e Desenvolvimento do Sistemas">Análise e Desenvolvimento do Sistemas</option>
