@@ -45,3 +45,25 @@
 	font-size: 14px;
 	width: 50%;
 }
+
+
+/* responsiva */
+@media(max-width: 800px){
+
+.formulario h1{
+	font-size: 23px;
+}
+
+.formulario button{
+	font-size: 18px;
+	margin: 10px 0px 0px 20px;
+	width: 80%;
+	font-family: 'Open Sans', sans-serif;
+}
+.formulario a{
+	color: rgb(10, 146, 219);
+	margin: 10px 0px 0px 50px;
+	font-size: 14px;
+	width: 50%;
+}
+}
