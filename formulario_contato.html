@@ -39,34 +39,34 @@
         <section class="principal">
             <br/>
                 <div class="formulario">
-                    <form action="Login" method="POST" enctype="application/x-www-form-urlencoded">
+                    <form action="Contato" method="POST" enctype="application/x-www-form-urlencoded">
                         <h1>FALE CONOSCO</h1>
                         <br/>
                         <fieldset>
                             <legend>Mensagem</legend>
-                            <label for="campo-nome">Nome:</label>
+                            <label for="nome">Nome:</label>
                             <br/>
-                            <input type="text" name="Nome" id="nome" size="40" required />
+                            <input type="text" name="nome" id="nome" size="40" required />
                             <br /><br />
                             <label for="campo-email" >E-mail: </label>
-						    <br/>
-						    <input type="email" name="Email" id="email" size="40" placeholder="exemplo@gmail.com" required/>
+			    <br/>
+			    <input type="email" name="email" id="email" size="40" placeholder="exemplo@gmail.com" required/>
                             <br/><br/>
                             <labe>Assunto: </labe><br/>
-							<select name="assunto" id="assunto" required>
-								<option> -- Selecione -- </option> 
-								<option value="Secretaria">Secretaria</option>
-								<option value="Ouvidoria">Ouvidoria</option>
-								<option value="Financeiro">Financeiro</option>
-                                <option value="Comercial">Comercial</option>
-								<option value="Duvidas">Dúvidas</option>
-                                <option value="Reclamações">Reclamações</option>
-							</select>
+				<select name="assunto" id="assunto" required>
+					<option> -- Selecione -- </option> 
+					<option value="secretaria">Secretaria</option>
+					<option value="ouvidoria">Ouvidoria</option>
+					<option value="financeiro">Financeiro</option>
+                                	<option value="comercial">Comercial</option>
+					<option value="duvidas">Dúvidas</option>
+                                	<option value="reclamações">Reclamações</option>
+				</select>
                             <br/><br/>
                             <label class="label" for="mensagem">Mensagem</label>
                             <br/>
-                            <textarea id="mensagem" name="Mensage" placeholder="Digite sua mensagem" rows="10" cols="50">  </textarea>
-							<br/><br/>
+                            <textarea id="mensagem" name="mensage" placeholder="Digite sua mensagem" rows="10" cols="50">  </textarea>
+			    <br/><br/>
                         </fieldset>
                         <button type="submit">Enviar</button>
                     </form>
