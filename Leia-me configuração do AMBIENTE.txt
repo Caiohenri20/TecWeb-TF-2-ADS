@@ -1,0 +1,48 @@
+Antes de qualquer coisa é preciso verificar se o python está instalado, caso não esteja use o comando no CMD: pip install python depois instale o virtualenv com o comando pip install virtualenv
+
+No terminal
+Dentro da pasta Projeto_Empresa
+------------------------
+Caso não tenha o Python/VirtualEnv/Django instalado será necessario fazer isso antes dos comandos a frente.
+
+1.1: python --version
+1.2: python -m django --version
+1.3: python -m django --version
+Para Instalar no projeto, caso já exista o projeto vá para o passo 7.  
+2: virtualenv venv
+3: venv\Sripts\activate
+4: pip install django
+5: pip freeze
+6: pip freeze > requirements.txt
+------------------------------
+7: Caso exista o projeto só execute o comando a frente: install -r requirements.txt
+------------------------------
+Eu já criei esta pasta do projeto!!!
+8: django-admin startproject lmsimpacta .
+------------------------------
+Para testar se está tudo OK rode este comando abaixo para testar o servidor.
+9: python manage.py runserver
+------------------------------
+Eu já criei esta pasta do APP!!!
+10: python manage.py startapp core
+------------------------------
+No VISUAL STUDIO CODE já foi criada
+11. existe a pasta TEMPLATES a qual irá todo HTML
+12. existe a pasta STATICS a qual irá o CSS/JS
+
+
+Dentro da pasta lmsimpacta Pelo VSCode
+
+Settings.py
+
+TIME_ZONE = 'America/Sao_Paulo'
+--------------------------
+Dentro da pasta Projeto
+Criar o app
+1: python manage.py startapp core
+
+
+
+
+
+
