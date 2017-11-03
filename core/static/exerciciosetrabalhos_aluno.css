@@ -1,0 +1,70 @@
+.containner{
+	background: ;	
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.form{
+	background: #dddddd;
+	display: flex;
+	width: 700px;
+	height: 300px;
+	border: 2px solid #aeaeae;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: ;
+	width: 100%;
+	height:40px;
+	font-family: verdana;
+	font-size: 20px;
+}
+
+.superior{
+	background:;
+	width: 600px;
+	height:150px;
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	justify-content: space-around ;
+}
+.disciplina{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background: ;
+	width: 100%;
+	height:40px;
+	font-family: verdana;
+	font-size: 14px;
+}
+
+.superior select{
+	width: 600px;
+	height:40px;
+
+}
+.inferior{
+	display: flex;
+	align-items: center;
+	justify-content: space-around ;
+	width: 180px;
+	height:100px;
+}
+
+.inferior select {
+	display: flex;
+	width: 90px;
+	height:20px;
+}
+
