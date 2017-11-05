@@ -1,0 +1,27 @@
+.formulario{
+	border: solid 1px black;
+	background-color: #ccc;
+	padding: 10px;
+	text-align: center;
+}
+
+.button{
+	padding: 5px;
+	font-size: 20px;
+
+}
+
+p{
+text-align: justify;
+}
+
+input{
+	height: 30px;
+}
+section{
+	border: solid 1px black;
+	background-color: #ccc;
+	text-align: center;
+	padding: 50px;
+
+}
