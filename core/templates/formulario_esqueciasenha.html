@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Redefinição de Senha {% endblock %}
+{% block css %} href="{% static 'formulario_esqueciasenha.css' %}" {% endblock %}
+{% block main %}
+    <section class="principal">
+        <br/>
+        <div class="formulario">
+            <form action="novaSenha" method="POST" enctype="application/x-www-form-urlencoded">
+                <h1>REDEFINIR SENHA</h1>
+                <br/>
+                <fieldset>
+                    <legend>Nova Senha</legend>
+                    <label for="ra">RA: </label>
+                    <br />
+                    <input type="number" name="login" id="ra" size="7" maxlength="7" required />
+                    <br /><br />
+                    <label for="novasenha">Nova senha: </label>
+                    <br />
+                    <input type="password" name="novasenha" id="nova_senha" size="8" maxlength="8" required />
+                    <br /><br />
+                    <label for="confsenha">Confirmação senha: </label>
+                    <br />
+                    <input type="password" name="confsenha" id="conf_senha" size="8" maxlength="8" required />
+                    <br/>
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <br/>
+    </section>
+{% endblock %}

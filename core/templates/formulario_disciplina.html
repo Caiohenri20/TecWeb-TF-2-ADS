@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Cadastro de Disciplina {% endblock %}
+{% block css %} href="{% static 'formulario_disciplina.css' %}" {% endblock %}
+{% block main %}
+        <section class="principal">
+			<br/>
+				<div class="formulario">
+					<form action="novaDisciplina" method="POST" enctype="application/x-www-form-urlencoded">
+						<h1>NOVA DISCIPLINA</h1>
+						<br/>
+						<fieldset>
+							<legend>Nova Disciplina</legend>
+							<label for="professor">Professor Responsável:</label><br />
+							<input type="text" name="professor" id="professor" required/>
+							<br /><br />
+							<label for="qtdhoras">Quantidade de Horas Mensais:</label><br />
+							<input type="number" name="qtdhoras" min="1" max="7"  id="qtdhoras" required/>
+							<br /><br />
+							<label for="duracao">Duração da Aula:</label><br />
+							<input type="number" name="duracao" min="1" max="7" id="duracao" required/>
+							<br /><br />
+							<label for="aula">Dia da semana de ser ministrado:</label><br />
+							<input type="date" name="aula" min="1" max="10" id="aula" required/>
+							
+							<br />
+							
+						</fieldset>
+						 <button type="submit">Enviar</button>
+					</form>
+        </section>
+{% endblock %}

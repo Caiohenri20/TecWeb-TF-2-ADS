@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Notícias {% endblock %}
+{% block css %} href="{% static 'noticia.css' %}" {% endblock %}
+{% block main %}
+    <section class="principal">
+        <figure class="bannernoticias">
+            <img src="{% static '_img/banner_noticias.png' %}" alt="noticias Genius">
+        </figure>
+        
+        <div class="noticias">
+
+            <figure>
+                <img src="{% static '_img/not01.jpeg' %}" alt="noticia monitoria voluntaria">
+                <figcaption>Universidade Genius Tecnologia divulga lista de monitores aprovados no Programa Monitoria Voluntária 2017/2.</figcaption>
+                <p>Criado para estimular o desenvolvimento da vocação para o magistério nos estudantes que apresentam excelência em seu rendimento escolar, o Programa Monitoria Voluntária da Genius Tecnologia divulga os aprovados do 2º semestre de 2017.</p>
+            </figure>
+            
+            <br/>
+    
+            <figure>
+                <img src="{% static '_img/not02.jpeg' %}" alt="noticia evento engenharia">
+                <figcaption>Inovação é tema da XXI Semana da Engenharia Alunos.</figcaption>
+                <p>Durante o evento os alunos foram incentivados a desenvolver projetos de empreendedorismo.</p>
+            </figure>
+            
+            <br/>
+            
+            <figure>
+                <img src="{% static '_img/not03.jpeg' %}" alt="noticia batalha de robos">
+                <figcaption>Batalhas de robôs</figcaption>
+                <p>Os alunos do curso de Análise e Desenvolvimento de Sistemas estão participando de uma batalha de robôs criado por eles, acompanhe essa emocionante batalha!</p>
+            </figure>
+            
+        </div>
+    </section>
+{% endblock %}

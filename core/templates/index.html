@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} HomePage {% endblock %}
+{% block main %}
+    <section class="principal">
+        <figure class="banner">
+            <img src="{% static '_img/banner.png' %}" alt="einstein"/>
+        </figure>
+    
+        <div class="sobre">
+            <h1>Sobre Genius</h1>
+            <br>
+            <p>A Genius é o centro de excelência em tecnologia mais respeitado do país. Uma história que vem sendo construída dia após dia, estimulando mentes a vivenciarem a inovação e o empreendedorismo. Porque a Genius acredita no poder transformador da tecnologia.</p>
+            <p>Um poder que, aliado a criatividade, inventa, muda, inquieta. Faz as pessoas buscarem soluções que nunca foram pensadas. Tudo isso para construir um mundo melhor.</p>
+            <p>A Faculdade Genius Tecnologia nasceu da percepção de um Grupo, que desde 1998 é referência em TI, Gestão e Design, para suprir a falta de mão de obra especializada do mercado de tecnologia e oferecer uma formação completa e multidisciplinar aos alunos.</p>
+            <p>Inovar requer ousadia e coragem, mas acima de tudo sabedoria. É preciso valorizar as experiências adquiridas no passado, perceber todas as nuances da realidade que o presente coloca e, finalmente, estar atento às mudanças e às oportunidades que o futuro reserva.</p>
+            <p>Consecutivamente, a Genius vem obtendo excelentes resultados nas avaliações do Ministério da Educação (MEC). Nos últimos anos, os cursos de Ciência da Computação e de Sistemas de Informação repetiram, consecutivamente, o desempenho no Exame Nacional de Avaliação de Estudantes (Enade) com conceitos máximos.</p>
+            <br>
+            <h2>Genius. ACREDITE E SERÁ!</h2>
+        </div>
+
+    <aside class="propaganda">
+        <img src="{% static '_img/evento.png' %}" alt="oficina empreendedorismo e inovação tecnologica" title="oficina"/>
+        <video src="{% static '_midia/midiasocial.mp4' %}" controls></video>
+    </aside>
+
+    <article class="depoimento">
+        <h1>Depoimentos</h1>
+        <br>
+        <figure class="aluno1">
+            <img src="{% static '_img/dep1.jpg' %}" alt="depoimento de Vanessa Borges" title="Vanessa Borges ex-aluna"/>
+            <figcaption>Vanessa Borges</figcaption>
+        </figure>
+    
+        <br>
+        <div class="dep1">
+            <p>"Na Genius Tecnologia me deparei com ótimos professores e descobri em mim um potencial, é um curso fantástico, que me deu a base técnica sólida em ciência da computação que faz a diferença em meu trabalho. Eu acho que não poderia ter feito um curso melhor em alguma outra faculdade.</p></div>
+        <br>
+        <figure class="aluno2">
+            <img src="{% static '_img/dep2.png' %}" alt="depoimento de Vinicius Franco" title="Vinicius Franco ex-aluno"/>
+            <figcaption>Vinicius Franco</figcaption>					
+        </figure>
+        <br>
+        <div class="dep2">
+            <p>“A meu ver, o grande diferencial do curso de Análise e desenvolvimento da Faculdade Genius Tecnologia, é a combinação de um corpo docente bem estruturado com um método de ensino que não mostra apenas os caminhos para o sucesso, mostra também, como planeja-lo e percorre-lo”.</p></div>
+    </article>
+    </section>
+{% endblock %}
