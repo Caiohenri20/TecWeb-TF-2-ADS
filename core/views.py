@@ -30,3 +30,6 @@ def formulario_disciplina(request):
 
 def formulario_cadastro(request):
     return render(request, "formulario_cadastro.html")
+    
+def pagina_aluno(request):
+    return render(request, "pagina_aluno.html")

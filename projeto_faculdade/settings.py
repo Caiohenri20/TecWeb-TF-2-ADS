@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'lmsimpacta.urls'
+ROOT_URLCONF = 'projeto_faculdade.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'lmsimpacta.wsgi.application'
+WSGI_APPLICATION = 'projeto_faculdade.wsgi.application'
 
 
 # Database
