@@ -1,9 +1,10 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Notas e faltas</title>
-</head>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Notas {% endblock %}
+{% block css %} href="{% static 'notas.css' %}" {% endblock %}
+{% block main %}
+
+
 <body>
 
 <h1>Notas e Faltas</h1>
@@ -71,3 +72,4 @@
 
 </body>
 </html>
+{% endblock %}
