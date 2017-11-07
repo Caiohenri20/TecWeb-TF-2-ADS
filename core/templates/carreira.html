@@ -1,9 +1,8 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Carreiras</title>
-</head>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Carreira {% endblock %}
+{% block css %} href="{% static 'carreira.css' %}" {% endblock %}
+{% block main %}
 
 <body>
 
@@ -32,3 +31,4 @@ Pré-Requisitos: cursando ADS, SI.
 </div>
 </body>
 </html>
+{% endblock %}
