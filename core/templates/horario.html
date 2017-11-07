@@ -1,52 +1,73 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %} Horário {% endblock %}
+{% block title %} Cursos {% endblock %}
 {% block css %} href="{% static 'horario.css' %}" {% endblock %}
+
+
 {% block main %}
-<body>
+		<div class="containner">
+			<nav>
+				<div class="item">
+					<input type="checkbox" id="check1">
+					<label for="check1">Secretaria Online</label>
+					<ul>
+						<li><a href="formulario_cadastro.html">Matrícula Online</a></li>
+						<li><a href="formulario_cancelamento.html">Cancelamento de matrícula</a></li>
+						<li><a href="contatoprofessores.html">Contato dos Professores</a></li>
+					</ul>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="check2">
+					<label for="check2">Àrea do Aluno</label>
+					<ul>
+						<li><a href="exerciciosetrabalhos_aluno.html">Trabalhos e Exercícios</a></li>
+						<li><a href="notas.html">Notas e faltas</a></li>
+						<li><a href="horario.html">Horários das Aulas</a></li>						
+					</ul>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="check3">
+					<label for="check3">Acesse Também</label>
+					<ul>
+						<li><a href="carreira.html">Núcleo de Carreiras</a></li>
+					</ul>
+				</div>					
+			</nav>
+			<div class="painel">
+				<div class="logado">
+					<div class="logadoesquerdo">
+						Olá, Caio</br> 
+						RA: 1701394</br> 
+						Curso: Curso Superior de Tecnologia em</br> 
+						Análise e Desenvolvimento de Sistemas
+					</div>
+				</div>
+				<div class="horariotitle">Horário de aulas</div>
+				<div class="mural-horario">
+					<div class="areasemana">
+						<div class="horariosemanas">
+							<div class="titlesemana">Segunda</div></br></br>
+							Disciplina: DevOps</br>
+							Professor: Luiz Amorim</br>
+							Sala: A306<br/>
+						</div>
+						
+						<div class="horariosemanas">
+						<div class="titlesemana">Terça</div></br></br>
+							Disciplina: Matemática Aplicada</br>
+							Professor: Ana Paula Lopes</br>
+							Sala: A306
+						</div>
+						
+						<div class="horariosemanas">
+						<div class="titlesemana">Quarta</div></br></br>
+							Disciplina: Engenharia de Software</br>
+							Professor: Carlos Pereira</br>
+							Sala: A306
+						</div>
+					</div>				
+					
+				</div>
+		</div>		
 
-<div class="horários"><br/>
-
-<h1>Horário de aulas</h1>
-<br/>
-<br/>
-
-<h3>Segunda<br/>
-Disciplina: DevOps<br/>
-Professor: Luiz Amorim<br/>
-Sala: A306<br/>
-<br/>	
-<br/>
-
-<h3>Terça<br/>
-Disciplina: Engenharia de Software<br/>
-Professor: Carlos Pereira<br/>
-Sala: A306<br/>
-<br/>	
-<br/>
-
-<h3>Quarta<br/>
-Disciplina: Matemática Aplicada<br/>
-Professor: Ana Paula Lopes<br/>
-Sala: A306<br/>
-<br/>	
-<br/>
-
-<h3>Quinta<br/>
-Disciplina: Linguagem SQL<br/>
-Professor: Bruno Rocha<br/>
-Sala: A306<br/>
-<br/>	
-<br/>
-
-<h3>Sexta<br/>
-Disciplina: Linguagem de Programação II<br/>
-Professor: Caio Henrique Souza<br/>
-Sala: A306<br/>
-<br/>	
-<br/>
-
-</div>
-</body>
-</html>
-{% endblock %}
+{% endblock %}       
