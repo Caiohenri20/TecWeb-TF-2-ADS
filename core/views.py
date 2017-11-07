@@ -60,3 +60,6 @@ def notas(request):
 
 def resumo das entregas pendentes(request):
     return render(request, "resumodasentregaspendentes.html")
+
+def carreira(request):
+    return render(request, "carreira.html")   
