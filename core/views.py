@@ -62,4 +62,8 @@ def resumo das entregas pendentes(request):
     return render(request, "resumodasentregaspendentes.html")
 
 def carreira(request):
-    return render(request, "carreira.html")   
+    return render(request, "carreira.html")  
+
+def horario(request):
+    return render(request, "horario.html")  
+
