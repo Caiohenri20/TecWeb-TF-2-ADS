@@ -1,10 +1,8 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Horários</title>
-</head>
-
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Horário {% endblock %}
+{% block css %} href="{% static 'horario.css' %}" {% endblock %}
+{% block main %}
 <body>
 
 <div class="horários"><br/>
@@ -51,3 +49,4 @@ Sala: A306<br/>
 </div>
 </body>
 </html>
+{% endblock %}
