@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8" />
-<title>Cancelamento Matrícula</title>
-</head>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Formulário Cancelamento {% endblock %}
+{% block css %} href="{% static 'formulario_cancelamento.css' %}" {% endblock %}
+{% block main %}
 
 
 <body>
@@ -55,3 +54,5 @@
                 
 </body>
 </html>
+
+{% endblock %}
