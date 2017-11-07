@@ -1,34 +1,69 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %} Carreira {% endblock %}
+{% block title %} Cursos {% endblock %}
 {% block css %} href="{% static 'carreira.css' %}" {% endblock %}
+
+
 {% block main %}
+		<div class="containner">
+			<nav>
+				<div class="item">
+					<input type="checkbox" id="check1">
+					<label for="check1">Secretaria Online</label>
+					<ul>
+						<li><a href="formulario_cadastro.html">Matrícula Online</a></li>
+						<li><a href="formulario_cancelamento.html">Cancelamento de matrícula</a></li>
+						<li><a href="contatoprofessores.html">Contato dos Professores</a></li>
+					</ul>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="check2">
+					<label for="check2">Àrea do Aluno</label>
+					<ul>
+						<li><a href="exerciciosetrabalhos_aluno.html">Trabalhos e Exercícios</a></li>
+						<li><a href="notas.html">Notas e faltas</a></li>
+						<li><a href="horario.html">Horários das Aulas</a></li>						
+					</ul>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="check3">
+					<label for="check3">Acesse Também</label>
+					<ul>
+						<li><a href="carreira.html">Núcleo de Carreiras</a></li>
+					</ul>
+				</div>					
+			</nav>
+			<div class="painel">
+				<div class="logado">
+					<div class="logadoesquerdo">
+						Olá, Caio</br> 
+						RA: 1701394</br> 
+						Curso: Curso Superior de Tecnologia em</br> 
+						Análise e Desenvolvimento de Sistemas
+					</div>
+				</div>
+				<div class="areacarreira">
 
-<body>
+					<div class="areacarreiratitle"><p>Vagas de Estágio</p></div>
+			
+					<div class="areacarreiraconteudo">
+							<p>Programação .NET</br> 
+							Local: Itaim Bibi</br> 
+							Benefícios: Bolsa Auxílio R$1800,00, VT e VR</br> 
+							Contato: bianca@projetocarreiras.com<br/>
+							Pré-Requisitos: cursando ADS, SI.</p></br> </br> 
 
-<div class="carreiras"><br/>
-<h1>Vagas de Estágio</h1>
-<br/>
-<br/>
+							<p>Programação PHP</br> 
+								Local: Vila Olímpia</br> 
+								Benefícios: Bolsa Auxílio R$1600,00, VT e VR</br> 
+								Contato: rh@carreira.com</br> 
+								Pré-Requisitos: cursando ADS, SI</br> 
+					</div>	
+					
+				</div>
+					
+				</div>
+			</div>
+		</div>		
 
-
-<h3>Programação .NET<br/>
-Local: Itaim Bibi<br/>
-Benefícios: Bolsa Auxílio R$1800,00, VT e VR<br/>
-Contato: bianca@projetocarreiras.com<br/>
-Pré-Requisitos: cursando ADS, SI.
-<br/>	
-<br/>
-
-<h3>Programação PHP<br/>
-Local: Vila Olímpia<br/>
-Benefícios: Bolsa Auxílio R$1600,00, VT e VR<br/>
-Contato: rh@carreira.com<br/>
-Pré-Requisitos: cursando ADS, SI.
-<br/>	
-<br/><strong></strong>
-
-</div>
-</body>
-</html>
-{% endblock %}
+{% endblock %}       
