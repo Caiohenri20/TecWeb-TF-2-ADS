@@ -1,9 +1,8 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Resumo das entregas pendentes</title>
-</head>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Resumo Entregas Pendentes {% endblock %}
+{% block css %} href="{% static 'resumodasentregaspendentes.css' %}" {% endblock %}
+{% block main %}
 
 <body>
 
@@ -68,3 +67,4 @@
 
 </body>
 </html>
+{% endblock %} 	
