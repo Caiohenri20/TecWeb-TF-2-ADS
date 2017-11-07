@@ -1,105 +1,60 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-    <head>
-        <meta charset="UTF-8" />
-        <title>Cancelamento de Matricula</title>
-        <meta name="description" content="Genius Faculdade de Tecnologia">
-        <link rel="shortcut icon" href="_img/favicon.png">
-        <link rel="stylesheet" type="text/css" href="../static/estilo.css">
-        <link rel="stylesheet" type="text/css" href="../static/curso.css">  
-		<link rel="stylesheet" type="text/css" href="../static/exerciciosetrabalhos_aluno.css"> 
-    </head>
-    <body>
-
-        <header class="cabeçalho">
-            <input type="checkbox" id="bt_menu">
-            <label for="bt_menu"><img src="_img/menu.png"/></label>
-
-            <a class="logo" href="index.html"><img src="_img/logo.png" alt="logo Genius" title="Home Page Genius"/></a>
-
-            <nav class="menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="curso.html">Cursos</a>
-                        <ul>
-                            <li><a href="detalhe.html #ADS" target="_blank">Análise e Desenvolvimento de Sistema</a></li>
-                            <li><a href="detalhe.html #TI" target="_blank">Tecnologia da Informação</a></li>
-                            <li><a href="detalhe.html #CC" target="_blank">Ciência da Computação</a></li>
-                            <li><a href="detalhe.html #EC" target="_blank">Engenharia da Computação</a></li>
-                        </ul>
-                    </li>                    
-                    <li><a href="noticia.html">Notícias</a></li>
-                </ul>
-            </nav>
-
-            <a class="login" href="formulario_login.html" target="_blank"><img src="_img/user.png" alt="acesso"/></a>
-            
-        </header>
-<body>
-	
-	
-<div class="formulario"><br>	
-	
-	
-
-	<center><br><h4 class="titulos">Digite os dados desejados</h4><br></center>
-	Aluno:
-	<input type="name" class="campo" name="aluno" placeholder="Digite seu nome">
-	</br>
-	</br>
-	RA:
-	<input type="name" class="campo" name="RA" placeholder="Digite seu RA">
-	</br>
-	</br>
-	Curso:
-	<input type="name" class="campo" name="curso" placeholder="Digite o curso">
-	<br/>
-	<br/>
-	Disciplina:
-	<input type="name" class="campo" name="disciplina" placeholder="Digite a disciplina">
-	<br/>
-	<br/>
-	Dia da semana ministrado:
-	<input data="diasemana" type="date" /><br>
-
-		
-	</br>
-	</br>
-	<input class="button" type="submit" value="Enviar"/>
-	<button class="button" type="reset">Limpar</button>
-	
-	</br>
-	</br>
-</div>
-
-	<footer>
-            <div class="end">
-                <h4>Campus</h4><br>
-                <p>Rua Frederico Pacheco, 111 - São Paulo/SP</p>
-            </div>
-
-            <div class="contato">
-                <h4>Contato</h4>
-                <p>(11) 8456-4321</p>
-                <a class="contato" href="formulario_contato.html" target="_blank"><img src="_img/email.png" alt="contato" title="Fale Conosco"/></a>
-            </div>
-    
-            <div class="social">
-                <h4>Social</h4>
-                <br>
-                <a href="https://pt-br.facebook.com/nomedousuario" target="_blank"><img src="_img/fb.png" alt="facebook genius" title="facebook Genius"/></a>
-                <a href="https://twitter.com/nomedousuario" target="_blank"><img src="_img/tw.png" alt="twitter genius" title="twitter Genius"/></a>
-                <a href="https://www.youtube.com/user/nomedousuario" target="_blank"><img src="_img/yt.png" alt="youtube genius" title="youtube Genius"/></a>
-            </div>
-            
-            <div class="direito">
-            <p>© Genius Faculdade de Tecnologia 2017. Todos os direitos reservados.</p>
-            </div>            
-        </footer>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Cursos {% endblock %}
+{% block css %} href="{% static 'cancelamentodematricula.css' %}" {% endblock %}
 
 
+{% block main %}
+		<div class="containner">
+			<nav>
+				<div class="item">
+					<input type="checkbox" id="check1">
+					<label for="check1">Secretaria Online</label>
+					<ul>
+						<li><a href="formulario_cadastro.html">Matrícula Online</a></li>
+						<li><a href="formulario_cancelamento.html">Cancelamento de matrícula</a></li>
+						<li><a href="contatoprofessores.html">Contato dos Professores</a></li>
+					</ul>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="check2">
+					<label for="check2">Àrea do Aluno</label>
+					<ul>
+						<li><a href="exerciciosetrabalhos_aluno.html">Trabalhos e Exercícios</a></li>
+						<li><a href="notas.html">Notas e faltas</a></li>
+						<li><a href="horario.html">Horários das Aulas</a></li>						
+					</ul>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="check3">
+					<label for="check3">Acesse Também</label>
+					<ul>
+						<li><a href="carreira.html">Núcleo de Carreiras</a></li>
+					</ul>
+				</div>					
+			</nav>
+			<div class="painel">
+				<div class="logado">
+					<div class="logadoesquerdo">
+						Olá, Caio</br> 
+						RA: 1701394</br> 
+						Curso: Curso Superior de Tecnologia em</br> 
+						Análise e Desenvolvimento de Sistemas
+					</div>
+				</div>
+				<div class="mural-recados">
+					<div class="titlemural">Mural de Recados</div>
+					<div class="corporecado">
+						<div class="recado"><p>A catraca estará funcionando a partir do dia 23/02/2017. Acesso liberado apenas através da carteirinha. Se não possui a sua carteirinha, entre em contato com a secretaria da faculdade.</p></div>
+						<div class="recado"><p>A partir do mês de março/2017 a negociação de mensalidades em atraso será tratado apenas na secretaria da faculdade. </p></div>
+					</div>
+				<div class="informacoes">
+					<div class="carreira"><a href="carreira.html">Núcleo de Carreiras</a></div>
+					<div class="carreira"><a href="">Informações</a></div>
+				</div>
+					
+				</div>
+			</div>
+		</div>		
 
-	
-</body> 
-</html>
+{% endblock %}       

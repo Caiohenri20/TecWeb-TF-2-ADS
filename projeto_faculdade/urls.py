@@ -27,7 +27,8 @@ from core.views import formulario_disciplina
 from core.views import formulario_cadastro
 from core.views import pagina_aluno
 from core.views import carreira
-from core.views import horario
+from core.views import horario 
+from core.views import cancelamentodematricula
 
 
 urlpatterns = [
@@ -45,5 +46,6 @@ urlpatterns = [
     url(r'^pagina_aluno', pagina_aluno),
     url(r'^carreira', carreira),
     url(r'^horario', horario),
+    url(r'^cancelamentodematricula', cancelamentodematricula),
     
 ]
