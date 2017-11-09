@@ -70,3 +70,6 @@ def horario(request):
 def cancelamentodematricula(request):
     return render(request, "cancelamentodematricula.html")
 
+def notas(request):
+    return render(request, "notas.html")     
+
