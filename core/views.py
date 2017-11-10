@@ -35,7 +35,7 @@ def pagina_aluno(request):
     return render(request, "pagina_aluno.html")
 
 
-def exercíciosetrabalhosaluno(request):
+def exerciciosetrabalhos_aluno(request):
     return render(request, "exerciciosetrabalhos_aluno.html")
 
 
@@ -67,5 +67,5 @@ def contatoprofessores(request):
     return render(request, "contatoprofessores.html")    
 
 def notas(request):
-    return render(request, "notas.html")     
+    return render(request, "notas.html")    
 
