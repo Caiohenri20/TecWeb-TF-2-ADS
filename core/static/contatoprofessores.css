@@ -1,33 +1,128 @@
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
 .containner{
-	
 	display: flex;
 	width:100%;
-	height: 600px;
-	background: ;
-	align-items: flex-start;
-	justify-content: flex-end;	
+
 }
+nav{
+	display: flex;
+	width: 400px;
+	height: auto;
+	font-family: arial;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+
+
+
+.item label{
+	display: block;
+	padding: 10px;
+	background-color: #069;
+	font-size: 16px;
+	cursor: pointer;
+	color: #fff;
+	border-bottom: solid 2px #aaa;
+	border-right: solid 2px #aaa;
+
+}
+
+.item label:hover{
+background-color: #ffffff;
+color: #000000;
+}
+.item ul{
+	width: 100%;
+	list-style: none;
+	overflow: hidden;
+	max-height:0;
+	transition: all .4s linear;
+	
+}
+
+.item input{
+	display: none;
+}
+
+.item ul li a{
+	width: 100%;
+	height: 20px;
+	padding: 10px;
+	display: block;
+	text-decoration: none;
+	background-color: #fafafa;
+	color: #333;
+	border-bottom: solid 2px #aaa;
+}
+.item ul li a:hover{
+	background-color: #9cf;
+}
+
+.item input:checked ~ ul{
+	height: auto;
+	max-height:200px;
+	transform: auto;
+}
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+
+.painel{
+	display: flex;
+	background: #ffffff;
+	width: 100%;
+	height: 600px;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+
+.logado{
+	display: flex;
+	width: 100%;
+	height: 80px;
+	justify-content: flex-end;
+	flex-direction: flex-end;
+	align-items: center;
+}
+.logadoesquerdo{
+	background: #dfdfdf;
+	display: flex;
+	width: 500px;
+	height: 60px;
+	border-radius: 15px;
+	border: solid 2px #aaa;
+	font-family: verdana;
+	font-size: 12px;
+	justify-content: center;
+	align-items: center;
+
+	
+}
+
+
 
 .table{
 	display: flex;
-	background: #dddddd;
-	width:700px;
-	height: 600px;
+	background:#ffffff;
+	width:100%;
 	justify-content: flex-start;
-	align-items: flex-start;	
+	align-items: flex-start;
+	flex-direction: column;	
 }
 
 .table table{
 
-	background:#bdbdbd;
-	width:100px;
+	width:100%;
 	height: 100px;	
-	border: 4px solid #ffffff;
-	font-family: verdana;
+	border: 1px solid #000000;
+	font-family: arial;
 }
 .table table th{
-	border: 4px solid #ffffff;
+	border: 1px solid #000000;
 }
+
+
+
 
 
 
