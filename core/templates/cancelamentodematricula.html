@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %} Cursos {% endblock %}
-{% block css %} href="{% static 'cancelamentodematricula.css' %}" {% endblock %}
+{% block css %} href="{% static 'cancelamento.css' %}" {% endblock %}
 
 
 {% block main %}
@@ -12,7 +12,7 @@
 					<label for="check1">Secretaria Online</label>
 					<ul>
 						<li><a href="formulario_cadastro.html">Matrícula Online</a></li>
-						<li><a href="formulario_cancelamento.html">Cancelamento de matrícula</a></li>
+						<li><a href="cancelamentodematricula.html">Cancelamento de matrícula</a></li>
 						<li><a href="contatoprofessores.html">Contato dos Professores</a></li>
 					</ul>
 				</div>
@@ -42,18 +42,39 @@
 						Análise e Desenvolvimento de Sistemas
 					</div>
 				</div>
-				<div class="mural-recados">
-					<div class="titlemural">Mural de Recados</div>
-					<div class="corporecado">
-						<div class="recado"><p>A catraca estará funcionando a partir do dia 23/02/2017. Acesso liberado apenas através da carteirinha. Se não possui a sua carteirinha, entre em contato com a secretaria da faculdade.</p></div>
-						<div class="recado"><p>A partir do mês de março/2017 a negociação de mensalidades em atraso será tratado apenas na secretaria da faculdade. </p></div>
-					</div>
-				<div class="informacoes">
-					<div class="carreira"><a href="carreira.html">Núcleo de Carreiras</a></div>
-					<div class="carreira"><a href="">Informações</a></div>
+
+				<div class="areamatricula">
+					<div class="cancelamento">
+						<form action="cancelamento" method="POST" enctype="application/x-www-form-urlencoded"></br>
+								
+							<div class="titulo">Digite os dados desejados</div>
+
+								<label for="nome">Aluno:</label></br>
+
+									<input type="name" class="campo" name="aluno" placeholder="Digite seu nome"></br></br>
+
+								<label for="nome">RA:</label></br>
+
+									<input type="name" class="campo" name="RA" placeholder="Digite seu RA"></br></br>
+
+								<label for="nome">Curso:</label></br>
+									<input type="name" class="campo" name="curso" placeholder="Digite o curso"><br/></br>
+
+								<label for="nome">Disciplina:</label></br>
+
+									<input type="name" class="campo" name="disciplina" placeholder="Digite a disciplina"><br/></br>
+
+								<label for="nome">Dia da semana ministrado:</label></br>
+
+									<input data="diasemana" type="date" /></br></br>
+
+								<button class="button" type="submit">Eviar</button>
+
+								<button class="button" type="reset">Limpar</button><br/></br>
+						</form>
+					</div>		
 				</div>
-					
-				</div>
+				
 			</div>
 		</div>		
 
