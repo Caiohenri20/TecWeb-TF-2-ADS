@@ -34,17 +34,10 @@ def formulario_cadastro(request):
 def pagina_aluno(request):
     return render(request, "pagina_aluno.html")
 
-def cancelamentodematrícula(request):
-    return render(request, "cancelamentodematricula.html")
 
 def exercíciosetrabalhosaluno(request):
     return render(request, "exerciciosetrabalhos_aluno.html")
 
-def horário(request):
-    return render(request, "horario.html")
-
-def contatoprofessores(request):
-    return render(request, "contatoprofessores.html")
 
 def formulario_cancelamento(request):
     return render(request, "formulario_cancelamento.html")
@@ -68,7 +61,10 @@ def horario(request):
     return render(request, "horario.html")  
 
 def cancelamentodematricula(request):
-    return render(request, "cancelamentodematricula.html")
+    return render(request, "cancelamentodematricula.html") 
+
+def contatoprofessores(request):
+    return render(request, "contatoprofessores.html")    
 
 def notas(request):
     return render(request, "notas.html")     
