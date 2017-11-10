@@ -1,38 +1,72 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %} Contato Professores {% endblock %}
+{% block title %} Cursos {% endblock %}
 {% block css %} href="{% static 'contatoprofessores.css' %}" {% endblock %}
+
+
 {% block main %}
-
-		
 		<div class="containner">
-			<div class="table">
-				<table>
-					<tr>
-						<th>Professor:</th>
-						<th>Disciplina:</th>
-						<th>Aviso:</th>
-						<th></th>
-					</tr>
-					<tr>
-						<th>Yuri Dirickson</th>
-						<th>TecWeb</th>
-						<th>Alunos, na próxima quarta-feira é a entrega do trabalho</th>
-						<th><label><input class="button" type="submit" value="Enviar Mensagem para Professor"/></label></th>
-					</tr>
-					<tr>
-						<th>Luíz Amorim</th>
-						<th>Banco de Dados</th>
-						<th>Alunos, não esqueçam de enviar para meu e-mail</th>
-						<th><label><input class="button" type="submit" value="Enviar Mensagem para Professor"/></label></th>
-					</tr>					
-					
-				</table>
+			<nav>
+				<div class="item">
+					<input type="checkbox" id="check1">
+					<label for="check1">Secretaria Online</label>
+					<ul>
+						<li><a href="formulario_cadastro.html">Matrícula Online</a></li>
+						<li><a href="formulario_cancelamento.html">Cancelamento de matrícula</a></li>
+						<li><a href="contatoprofessores.html">Contato dos Professores</a></li>
+					</ul>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="check2">
+					<label for="check2">Àrea do Aluno</label>
+					<ul>
+						<li><a href="exerciciosetrabalhos_aluno.html">Trabalhos e Exercícios</a></li>
+						<li><a href="notas.html">Notas e faltas</a></li>
+						<li><a href="horario.html">Horários das Aulas</a></li>						
+					</ul>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="check3">
+					<label for="check3">Acesse Também</label>
+					<ul>
+						<li><a href="carreira.html">Núcleo de Carreiras</a></li>
+					</ul>
+				</div>					
+			</nav>
+			<div class="painel">
+				<div class="logado">
+					<div class="logadoesquerdo">
+						Olá, Caio</br> 
+						RA: 1701394</br> 
+						Curso: Curso Superior de Tecnologia em</br> 
+						Análise e Desenvolvimento de Sistemas
+					</div>
+				</div>
+
+				<div class="table">
+					<table>
+						<tr>
+							<th>Professor:</th>
+							<th>Disciplina:</th>
+							<th>Aviso:</th>
+							<th></th>
+						</tr>
+						<tr>
+							<th>Yuri Dirickson</th>
+							<th>TecWeb</th>
+							<th>Alunos, na próxima quarta-feira é a entrega do trabalho</th>
+							<th><label><input class="button" type="submit" value="Enviar Mensagem"/></label></th>
+						</tr>
+						<tr>
+							<th>Luíz Amorim</th>
+							<th>Banco de Dados</th>
+							<th>Alunos, não esqueçam de enviar para meu e-mail</th>
+							<th><label><input class="button" type="submit" value="Enviar Mensagem"/></label></th>
+						</tr>		
+					</table>		
+				</div>
+				
 			</div>
+		</div>		
 
-		</div>	
-    </body>
-
-</html>
-
-{% endblock %}
+{% endblock %}       
