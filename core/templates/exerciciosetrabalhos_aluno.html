@@ -1,74 +1,184 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block title %} Cursos {% endblock %}
-{% block css %} href="{% static 'exerciciosetrabalhos_aluno.css' %}" {% endblock %}
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+.containner{
+	display: flex;
+	width:100%;
+
+}
+nav{
+	display: flex;
+	width: 400px;
+	height: auto;
+	font-family: arial;
+	justify-content: flex-start;
+	flex-direction: column;
+}
 
 
-{% block main %}
-		<div class="containner">
-			<nav>
-				<div class="item">
-					<input type="checkbox" id="check1">
-					<label for="check1">Secretaria Online</label>
-					<ul>
-						<li><a href="formulario_cadastro.html">Matrícula Online</a></li>
-						<li><a href="cancelamentodematricula.html">Cancelamento de matrícula</a></li>
-						<li><a href="contatoprofessores.html">Contato dos Professores</a></li>
-					</ul>
-				</div>
-				<div class="item">
-					<input type="checkbox" id="check2">
-					<label for="check2">Àrea do Aluno</label>
-					<ul>
-						<li><a href="exerciciosetrabalhos_aluno.html">Trabalhos e Exercícios</a></li>
-						<li><a href="notas.html">Notas e faltas</a></li>
-						<li><a href="horario.html">Horários das Aulas</a></li>						
-					</ul>
-				</div>
-				<div class="item">
-					<input type="checkbox" id="check3">
-					<label for="check3">Acesse Também</label>
-					<ul>
-						<li><a href="carreira.html">Núcleo de Carreiras</a></li>
-					</ul>
-				</div>					
-			</nav>
-			<div class="painel">
-				<div class="logado">
-					<div class="logadoesquerdo">
-						Olá, Caio</br> 
-						RA: 1701394</br> 
-						Curso: Curso Superior de Tecnologia em</br> 
-						Análise e Desenvolvimento de Sistemas
-					</div>
-				</div>
 
-				<div class="areamatricula">
-						<div class="form">
-								<div class="title">Controle de exercícios e trabalhos</div>
-								<div class="superior">
-									<div class="disciplina">Disciplina:</div>
-										<select name="tipo">
-											<option value="DG">Selecione a Disciplina</option>
-											<option value="ac">ADS</option> 
-											<option value="al">BD</option> 
-										</select>
-									<div class="disciplina">De: <input type="date"> Até <input type="date"></div>
-								</div>
-								<div class="inferior">
-									<select name="tipo">
-										<option value="ac">Pendente</option> 
-										<option value="al">Concluído</option></br> 
-									</select>
-									<input class="button" type="submit" value="Enviar"/>
-								</div>
-								
-								
-							</div>
-					</div>		
-				</div>
-				
-			</div>
-		</div>		
+.item label{
+	display: block;
+	padding: 10px;
+	background-color: #069;
+	font-size: 16px;
+	cursor: pointer;
+	color: #fff;
+	border-bottom: solid 2px #aaa;
+	border-right: solid 2px #aaa;
 
-{% endblock %}       
+}
+
+.item label:hover{
+background-color: #ffffff;
+color: #000000;
+}
+.item ul{
+	width: 100%;
+	list-style: none;
+	overflow: hidden;
+	max-height:0;
+	transition: all .4s linear;
+	
+}
+
+.item input{
+	display: none;
+}
+
+.item ul li a{
+	width: 100%;
+	height: 20px;
+	padding: 10px;
+	display: block;
+	text-decoration: none;
+	background-color: #fafafa;
+	color: #333;
+	border-bottom: solid 2px #aaa;
+}
+.item ul li a:hover{
+	background-color: #9cf;
+}
+
+.item input:checked ~ ul{
+	height: auto;
+	max-height:200px;
+	transform: auto;
+}
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+
+.painel{
+	display: flex;
+	background: #ffffff;
+	width: 100%;
+	height: 600px;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+
+.logado{
+	display: flex;
+	width: 100%;
+	height: 80px;
+	justify-content: flex-end;
+	flex-direction: flex-end;
+	align-items: center;
+}
+.logadoesquerdo{
+	background: #dfdfdf;
+	display: flex;
+	width: 500px;
+	height: 60px;
+	border-radius: 15px;
+	border: solid 2px #aaa;
+	font-family: verdana;
+	font-size: 12px;
+	justify-content: center;
+	align-items: center;
+
+	
+}
+
+
+
+.areamatricula{
+	display: flex;
+	width:100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.form{
+	background: #aaaaaa;
+	display: flex;
+	width: 700px;
+	height: 300px;
+	border: 2px solid #030303;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: ;
+	width: 100%;
+	height:40px;
+	font-family: verdana;
+	font-size: 20px;
+}
+
+.superior{
+	background:;
+	width: 600px;
+	height:150px;
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	justify-content: space-around ;
+}
+.disciplina{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	height:40px;
+	font-family: verdana;
+	font-size: 14px;
+}
+.disciplina input{
+	border-color: black;
+	border: solid 1px;	
+
+}
+
+.superior select{
+	width: 600px;
+	height:40px;
+	border-color: black;
+	border: solid 1px;		
+
+}
+.inferior{
+	display: flex;
+	align-items: center;
+	justify-content: space-around ;
+	width: 180px;
+	height:100px;
+
+}
+
+.inferior select {
+	display: flex;
+	width: 90px;
+	height:20px;
+	border-color: black;
+	border: solid 1px;		
+}
+
+input{
+	border-color: black;
+	border: solid 1px;	
+}
+
