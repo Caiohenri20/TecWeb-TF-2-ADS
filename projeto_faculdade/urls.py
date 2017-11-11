@@ -14,10 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from datetime import datetime
-from django.conf.urls import patterns
 from django.conf.urls import url    
 from django.contrib import admin
-from app.forms import BootstrapAuthenticationForm
 
 from core.views import index
 from core.views import curso
