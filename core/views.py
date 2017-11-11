@@ -92,5 +92,6 @@ def contato_professor(request):
             'year':datetime.now().year,
         })
     ) 
-
+def formulario_professor(request):
+    return render(request, "formulario_professor.html")  
 #=============CARLOS RIAN EDITOU AS LINHAS ACIMA===============#

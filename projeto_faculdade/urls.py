@@ -32,8 +32,8 @@ from core.views import carreira
 from core.views import horario 
 from core.views import cancelamentodematricula  
 from core.views import notas  
-from core.views import contato_professor
-from core.views import exerciciosetrabalhos_aluno
+from core.views import contato_professor,pagina_professor
+from core.views import exerciciosetrabalhos_aluno, formulario_professor
 
 
 urlpatterns = [
@@ -53,6 +53,8 @@ urlpatterns = [
     url(r'^horario', horario),
     url(r'^cancelamentodematricula', cancelamentodematricula),  
     url(r'^contato_professor', contato_professor),
+    url(r'^pagina_professor', pagina_professor),
+    url(r'^formulario_professor', formulario_professor),
     url(r'^notas', notas),    
     url(r'^exerciciosetrabalhos_aluno', exerciciosetrabalhos_aluno),    
     
