@@ -69,3 +69,6 @@ def contatoprofessores(request):
 def notas(request):
     return render(request, "notas.html")    
 
+def pagina_professor(request):
+    return render(request, "pagina_professor.html")    
+
