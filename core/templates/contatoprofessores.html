@@ -42,30 +42,25 @@
 						Análise e Desenvolvimento de Sistemas
 					</div>
 				</div>
-
+<!--ALTERAÇÃO FEITA PARA CARREGAR OS DADOS DE CONTATO DO PROFESSOR-CARLOS-->
 				<div class="table">
 					<table>
 						<tr>
 							<th>Professor:</th>
 							<th>Disciplina:</th>
 							<th>Aviso:</th>
-							<th></th>
 						</tr>
-						<tr>
-							<th>Yuri Dirickson</th>
-							<th>TecWeb</th>
-							<th>Alunos, na próxima quarta-feira é a entrega do trabalho</th>
-							<th><label><input class="button" type="submit" value="Enviar Mensagem"/></label></th>
-						</tr>
-						<tr>
-							<th>Luíz Amorim</th>
-							<th>Banco de Dados</th>
-							<th>Alunos, não esqueçam de enviar para meu e-mail</th>
-							<th><label><input class="button" type="submit" value="Enviar Mensagem"/></label></th>
-						</tr>		
+						{% for contato_professores in contato_professor %}
+							<tr>
+								<td>{{ contato_professores.professor }}</td>
+								<td>{{ contato_professores.disciplina }}</td>
+								<td>{{ contato_professores.aviso }}</td>
+								<th><label><input class="button" type="submit" value="Enviar Mensagem"/></label></th>
+							</tr>
+						{% endfor %}	
 					</table>		
 				</div>
-				
+<!--ALTERAÇÃO FEITA PARA CARREGAR OS DADOS DE CONTATO DO PROFESSOR-CARLOS-->				
 			</div>
 		</div>		
 

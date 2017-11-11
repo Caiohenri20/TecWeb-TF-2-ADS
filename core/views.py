@@ -1,5 +1,8 @@
 from django.shortcuts import render
-
+from django.http import HttpRequest
+from django.template import RequestContext
+from datetime import datetime
+from core.models import Contato_professor
 # Create your views here.
 def index(request):
     return render(request,"index.html")
@@ -63,12 +66,32 @@ def horario(request):
 def cancelamentodematricula(request):
     return render(request, "cancelamentodematricula.html") 
 
-def contatoprofessores(request):
-    return render(request, "contatoprofessores.html")    
-
 def notas(request):
     return render(request, "notas.html")    
 
 def pagina_professor(request):
-    return render(request, "pagina_professor.html")    
+    return render(request, "pagina_professor.html")  
+#============CARLOS RIAN COMENTOI AS LINHAS ABAIXO===============#
+#def contatoprofessores(request):
+    #return render(request, "contatoprofessores.html")    
+#=============CARLOS RIAN COMENTOI AS LINHAS ACIMA===============#
+#
+# 
+# 
+# 
+#============CARLOS RIAN EDITOU AS LINHAS ABAIXO===============#
 
+def contato_professor(request):
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'contatoprofessores.html',
+        context_instance = RequestContext(request,
+        {
+            'title':'Contato Professor',
+            'contato_professor': Contato_professor.objects.all(),
+            'year':datetime.now().year,
+        })
+    ) 
+
+#=============CARLOS RIAN EDITOU AS LINHAS ACIMA===============#
