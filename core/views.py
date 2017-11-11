@@ -80,7 +80,6 @@ def pagina_professor(request):
 # 
 # 
 #============CARLOS RIAN EDITOU AS LINHAS ABAIXO===============#
-
 def contato_professor(request):
     assert isinstance(request, HttpRequest)
     return render(
