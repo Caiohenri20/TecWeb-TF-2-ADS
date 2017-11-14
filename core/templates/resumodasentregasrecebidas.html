@@ -1,42 +1,42 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Entregas Recebidas {% endblock %}
+{% block css %} href="{% static 'resumodasentregasrecebidas.css' %}" {% endblock %}
 
-    <head>
-        <meta charset="UTF-8" />
-        <title>Resumo das entregas recebidas</title>
-        <meta name="description" content="Genius Faculdade de Tecnologia">
-        <link rel="shortcut icon" href="_img/favicon.png">
-        <link rel="stylesheet" type="text/css" href="../static/estilo.css">
-        <link rel="stylesheet" type="text/css" href="../static/curso.css">  
-		<link rel="stylesheet" type="text/css" href="../static/exerciciosetrabalhos_aluno.css"> 
-    </head>
-    <body>
 
-        <header class="cabeçalho">
-            <input type="checkbox" id="bt_menu">
-            <label for="bt_menu"><img src="_img/menu.png"/></label>
+{% block main %}
+<div class="containner">
+      <nav>
+        <div class="item">
+          <input type="checkbox" id="check1">
+          <label for="check1">Secretaria Online</label>
+          <ul>
+            <li><a href="formulario_cadastro.html">Matrícula Online</a></li>
+            <li><a href="formulario_cancelamento.html">Cancelamento de matrícula</a></li>
+            <li><a href="contatoprofessores.html">Contato dos Professores</a></li>
+          </ul>
+        </div>
+        
+        <div class="item">
+          <input type="checkbox" id="check3">
+          <label for="check3">Acesse Também</label>
+          <ul>
+          
+        </div>
 
-            <a class="logo" href="index.html"><img src="_img/logo.png" alt="logo Genius" title="Home Page Genius"/></a>
+                <div class="item">
+                    <input type="checkbox" id="check4">
+                    <label for="check4">Àrea do Professor</label>
+                    <ul>
+                        <li><a href="#">Fechamentos de entregas</a></li>
+                        <li><a href="resumodasentregasrecebidas.html">Resumo das entregas recebidas</a></li>
+                        <li><a href="trabalhoeexercicio.html">Trabalhos e Exércicios</a></li>
+                        <li><a href="cancelamentodematricula.html">Cancelamento de matrícula</a></li>
+                            
+                    </ul>
+                </div>
 
-            <nav class="menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="curso.html">Cursos</a>
-                        <ul>
-                            <li><a href="detalhe.html #ADS" target="_blank">Análise e Desenvolvimento de Sistema</a></li>
-                            <li><a href="detalhe.html #TI" target="_blank">Tecnologia da Informação</a></li>
-                            <li><a href="detalhe.html #CC" target="_blank">Ciência da Computação</a></li>
-                            <li><a href="detalhe.html #EC" target="_blank">Engenharia da Computação</a></li>
-                        </ul>
-                    </li>                    
-                    <li><a href="noticia.html">Notícias</a></li>
-                </ul>
-            </nav>
-
-            <a class="login" href="formulario_login.html" target="_blank"><img src="_img/user.png" alt="acesso"/></a>
-            
-        </header>
-<body>
+<div class="conteudo">
 <table border="1">
 	<caption> Trabalho 1  - Segundo bimestre </caption>
 
@@ -47,7 +47,7 @@
 	<th> Data de entrega</th>
 </tr>
 
-<tr valign="top">
+<tr class="cor" valign="top">
    <td>03/09/2017</td>
    <td>29/09/2017</td>
    <td> Ana Paula Lopes </td>
@@ -61,7 +61,7 @@
    <td> 25/09/2017 </td>
 </tr>
 
-<tr valign="top">
+<tr class="cor" valign="top">
    <td>03/09/2017</td>
    <td>29/09/2017</td>
    <td> Carlos Ryan </td>
@@ -75,7 +75,7 @@
    <td> 21/09/2017 </td>
 </tr>
 
-<tr valign="top">
+<tr class="cor" valign="top">
    <td>03/09/2017</td>
    <td>29/09/2017</td>
    <td> Johnny dos Santos </td>
@@ -100,7 +100,7 @@
 </tr>
 
 
-<tr valign="top">
+<tr class="cor" valign="top">
    <td>10/10/2017</td>
    <td>29/11/2017</td>
    <td> Ana Paula Lopes </td>
@@ -112,7 +112,7 @@
    <td> Bruno dos Santos </td>
    <td> 26/11/2017 </td>
 </tr>
-<tr valign="top">
+<tr class="cor" valign="top">
    <td>10/10/2017</td>
    <td>29/11/2017</td>
    <td> Carlos Ryan</td>
@@ -124,7 +124,7 @@
    <td> Caio Henrique </td>
    <td> 29/11/2017 </td>
 </tr>
-<tr valign="top">
+<tr class="cor" valign="top">
    <td>10/12/2017</td>
    <td>29/11/2017</td>
    <td> Diogo Lessa </td>
@@ -136,7 +136,7 @@
    <td> Daniel Souza </td>
    <td> 28/11/2017 </td>
 </tr>
-<tr valign="top">
+<tr class="cor" valign="top">
    <td>10/10/2017</td>
    <td>29/11/2017</td>
    <td> Danilo Pereira </td>
@@ -148,7 +148,7 @@
    <td> Lucas da Silva </td>
    <td> 29/11/2017 </td>
 </tr>
-<tr valign="top">
+<tr class="cor" valign="top">
    <td>10/10/2017</td>
    <td>29/11/2017</td>
    <td> Lucas Andrade </td>
@@ -160,7 +160,7 @@
    <td> Marcelo Junior </td>
    <td> 20/11/2017 </td>
 </tr>
-<tr valign="top">
+<tr class="cor" valign="top">
    <td>10/10/2017</td>
    <td>29/11/2017</td>
    <td> Roberto Carvalho </td>
@@ -168,33 +168,6 @@
 </tr>
 
 </table>
-<	<footer>
-            <div class="end">
-                <h4>Campus</h4><br>
-                <p>Rua Frederico Pacheco, 111 - São Paulo/SP</p>
-            </div>
 
-            <div class="contato">
-                <h4>Contato</h4>
-                <p>(11) 8456-4321</p>
-                <a class="contato" href="formulario_contato.html" target="_blank"><img src="_img/email.png" alt="contato" title="Fale Conosco"/></a>
-            </div>
-    
-            <div class="social">
-                <h4>Social</h4>
-                <br>
-                <a href="https://pt-br.facebook.com/nomedousuario" target="_blank"><img src="_img/fb.png" alt="facebook genius" title="facebook Genius"/></a>
-                <a href="https://twitter.com/nomedousuario" target="_blank"><img src="_img/tw.png" alt="twitter genius" title="twitter Genius"/></a>
-                <a href="https://www.youtube.com/user/nomedousuario" target="_blank"><img src="_img/yt.png" alt="youtube genius" title="youtube Genius"/></a>
-            </div>
-            
-            <div class="direito">
-            <p>© Genius Faculdade de Tecnologia 2017. Todos os direitos reservados.</p>
-            </div>            
-        </footer>
-
-
-
-	
-</body> 
-</html>
+</div>
+{% endblock %}   
