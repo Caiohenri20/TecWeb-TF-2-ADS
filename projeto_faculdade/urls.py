@@ -34,7 +34,8 @@ from core.views import cancelamentodematricula
 from core.views import notas  
 from core.views import contato_professor,pagina_professor
 from core.views import exerciciosetrabalhos_aluno, formulario_professor
-
+from core.views import resumodasentregasrecebidas 
+from core.views import trabalhoeexercicio
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -57,5 +58,7 @@ urlpatterns = [
     url(r'^formulario_professor', formulario_professor),
     url(r'^notas', notas),    
     url(r'^exerciciosetrabalhos_aluno', exerciciosetrabalhos_aluno),    
+    url(r'^resumodasentregasrecebidas', resumodasentregasrecebidas), 
+    url(r'^trabalhoeexercicio', trabalhoeexercicio), 
     
 ]
