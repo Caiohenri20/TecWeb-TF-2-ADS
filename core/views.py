@@ -71,6 +71,13 @@ def notas(request):
 
 def pagina_professor(request):
     return render(request, "pagina_professor.html")  
+
+def resumodasentregasrecebidas(request):
+    return render(request, "resumodasentregasrecebidas.html") 
+
+def trabalhoeexercicio(request):
+    return render(request, "trabalhoeexercicio.html")  
+ 
 #============CARLOS RIAN COMENTOI AS LINHAS ABAIXO===============#
 #def contatoprofessores(request):
     #return render(request, "contatoprofessores.html")    
