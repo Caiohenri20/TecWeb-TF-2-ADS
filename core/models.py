@@ -12,6 +12,22 @@ class Contato_professor(models.Model):
 
 #============CAIO EDITOU AS LINHAS ABAIXO===============#
 
+class UsuarioManager(BaseUserManager):
+    use_in_migrations = True
+    def _create_user(self, ra, password, **extra_fields):
+        if not ra:
+            raise ValueError('RA precisa ser preenchido')
+        user = self.model(ra=ra, **extra_fields)
+        user.set_password(password)
+        user.save(using=self._db)
+        return user
+
+    def create_user(self, ra, password=None, **extra_fields):
+        return self._create_user(ra, password, **extra_fields)
+
+    def create_superuser(self, ra, password, **extra_fields):
+        return self._create_user(ra, password, **extra_fields)
+
 
 class Usuario(AbstractBaseUser):
     nome = models.CharField(max_length=50)
@@ -24,8 +40,13 @@ class Usuario(AbstractBaseUser):
     USERNAME_FIELD = 'ra'
     REQUIRED_FIELDS = ['nome']
 
+    objects = UsuarioManager()
 
-#=============CAIO EDITOU AS LINHAS ACIMA===============# 
+    
+    def is_staff(self):
+        return self.perfil == 'c'
 
+
+#=============CAIO EDITOU AS LINHAS ACIMA===============#
 
 
