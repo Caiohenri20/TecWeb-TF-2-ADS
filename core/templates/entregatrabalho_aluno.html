@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Cursos {% endblock %}
+{% block css %} href="{% static 'exerciciosetrabalhos_aluno.css' %}" {% endblock %}
+
+
+{% block main %}
+
+<div class="form">
+	<div class="title">Entrega de Trabalhos</div>
+	<div class="superior">
+	<div class="disciplina">Disciplina:</div>
+		<select name="tipo">
+			<option value="DG">Selecione a Disciplina</option>
+			<option value="ac">ADS</option> 
+			<option value="al">BD</option> 
+		</select>
+		<br/><br/>
+<div class="disciplina">De: <input type="date"> Até <input type="date"></div>
+</div>
+<div class="inferior">
+	<select name="tipo">
+		<option value="ac">Pendente</option>
+		<br/><br/>
+		<option value="al">Concluído</option></br> 
+	</select>
+	<br/><br/>
+<input class="button" type="submit" value="Anexar Arquivo"/> <br/><br/>
+<input class="button" type="submit" value="Enviar"/>
+</div>
+</div>
+			
+
+{% endblock %}    
