@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Cadastro de Aluno {% endblock %}
+{% block css %} href="{% static 'formulario_cadastro.css' %}" {% endblock %}
+{% block main %}
+	  <section class="principal">
+		<br/>
+			<div class="formulario">
+				<form action="vestibular" method="POST" enctype="application/x-www-form-urlencoded">
+					<h1>Vestibular</h1>
+					<br/>
+					<fieldset>
+						<legend>Dados Pessoais</legend>
+						<label for="nome">Nome:</label>
+						<br/>
+						<input type="text" name="nome" id="nome" size="30" required/>
+						<br/><br/>
+						<label for="nascimento">Dt. de Nascimento:</label>
+						<br/>
+						<input type="date" name="nascimento" id="dt.nascimento" required/>
+						<br/><br/>
+						<label for="telefone" >Contato: </label>
+						<br/>
+						<input type="tel" name="residencial" id="residencial"maxlength="10" placeholder="Residencial"/>
+						<input type="tel" name="celular" id="celular" maxlength="11" placeholder="Celular" />
+						<br/><br/>
+						<label for="email" >E-mail: </label>
+						<br/>
+						<input type="email" name="email" id="email" size="30" 
+
+placeholder="exemplo@gmail.com"/>
+						<br/><br/>
+						<label for="sexo" >Sexo: </label><br/>
+						<input type="radio" name="sexo" value="masculino" 
+
+checked>Masculino
+						<br/>
+						<input type="radio" name="sexo" value="feminino">Feminino
+						<br/><br/>
+					</fieldset>
+					<br/>
+						<br/><br/>
+					</fieldset>
+					<br/>
+					<fieldset>
+						
+						<labe for:"curso" >Curso: </labe><br/>
+							<select name="curso" id="curso" required>
+								<option value=""> -- Selecione -- </option> 
+								<option value="analise e desenvolvimento do sistemas">Análise e Desenvolvimento de Sistemas</option>
+								<option value="tecnologia da informação">Tecnologia da Informação</option>
+								<option value="ciência da computação">Ciência da Computação</option>
+								<option value="engenharia da computação">Engenharia da Computação</option>
+							</select>
+							<br/><br/>
+						<labe for:"trabalho" >Você trabalha? </labe><br/>
+							<select name="trabalho" id="trabalho" required>
+								<option value=""> -- Selecione -- </option> 
+								<option value="Sim">Sim</option>
+								<option value="Não">Não</option>	
+							</select>
+							<br/><br/> 
+
+						<labe for:"necessidades">Portador de necessidades especiais?
+
+</labe><br/>
+							<select name="necessidades" id="necessidades" required>
+								<option value=""> -- Selecione -- </option> 
+								<option value="Sim">Sim</option>
+								<option value="Não">Não</option>	
+							</select>
+							<br/><br/>
+						<labe for:"convenio">Possui convênio empresarial?</labe><br/>
+							<select name="convenio" id="convenio" required>
+								<option value=""> -- Selecione -- </option> 
+								<option value="Sim">Sim</option>
+								<option value="Não">Não</option>	
+							</select>
+							<br/><br/>
+						<labe for:"enem">Inscrição com Enem?</labe><br/>
+							<select name="enem" id="enem" required>
+								<option value=""> -- Selecione -- </option> 
+								<option value="Sim">Sim</option>
+								<option value="Não">Não</option>	
+							</select>
+							<br/><br/>
+
+
+					</fieldset>
+					<button type="submit">Inscreva-se</button>
+				</form>
+			</div>
+			<br/>
+        </section>
+
+</html>
+{% endblock %}
