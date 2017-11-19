@@ -1,3 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Smartclass Professor {% endblock %}
+{% block css %} href="{% static 'formulario_smartclassprof.css' %}" {% endblock %}
+{% block main %}
+
 <div class="formulario">	
 	
     	   <legend>Aplicação de testes</legend>
@@ -29,3 +35,4 @@
     </div>
 </div>
 
+{% endblock %}
