@@ -36,6 +36,10 @@ from core.views import contato_professor,pagina_professor
 from core.views import exerciciosetrabalhos_aluno, formulario_professor
 from core.views import resumodasentregasrecebidas 
 from core.views import trabalhoeexercicio
+from core.views import formulario_vestibular
+from core.views import formulario_smartclassprof
+from core.views import formulario_smartclassaluno
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -60,5 +64,7 @@ urlpatterns = [
     url(r'^exerciciosetrabalhos_aluno', exerciciosetrabalhos_aluno),    
     url(r'^resumodasentregasrecebidas', resumodasentregasrecebidas), 
     url(r'^trabalhoeexercicio', trabalhoeexercicio), 
-    
+    url(r'^formulario_vestibular', formulario_vestibular), 
+    url(r'^formulario_smartclassprof', formulario_smartclassprof),
+    url(r'^formulario_smartclassaluno', formulario_smartclassaluno),
 ]
