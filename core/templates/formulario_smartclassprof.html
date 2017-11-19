@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Smartclass Professor {% endblock %}
+{% block css %} href="{% static 'formulario_smartclassprof.css' %}" {% endblock %}
+{% block main %}
+	<section class="principal">
+		<br/>
+		<div class="formulario">
+			<form action="smartclass" method="POST" enctype="application/x-www-form-urlencoded">
+				<h1>AULAS GRAVADAS</h1>
+				<br/>
+				<fieldset>
+					<label for="disciplina">Selecione a Disciplina: </label>
+					<select name="disciplina" id="disciplina" required>
+						<option value=""> -- Selecione -- </option> 
+						<option value="Gestão de Projetos">Gestão de Projetos</option>
+						<option value="Linguagem de Programação">Linguagem de Programação</option>
+						<option value="Matemática Aplicada">Matemática Aplicada</option>
+						<option value="Lógica de Programação">Lógica de Programação</option>
+						<option value="Engenharia de Software">Engenharia de Software</option>
+					</select>
+					<br/><br/>
+				</fieldset>
+				<br/>
+				
+				<button type="submit">Anexar arquivo</button>
+				<br/><br/>
+				<button type="submit">Enviar</button>
+			</form>
+		</div>
+		<br/>
+	</section>
+{% endblock %}
