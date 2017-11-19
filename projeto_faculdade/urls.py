@@ -40,7 +40,7 @@ from core.views import formulario_vestibular
 from core.views import formulario_smartclassprof
 from core.views import formulario_smartclassaluno
 from core.views import entregatrabalho_aluno
-
+from core.views import testes_prof
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -69,4 +69,5 @@ urlpatterns = [
     url(r'^formulario_smartclassprof', formulario_smartclassprof),
     url(r'^formulario_smartclassaluno', formulario_smartclassaluno),
     url(r'^entregatrabalho_aluno', entregatrabalho_aluno),
+    url(r'^testes_prof', testes_prof),
 ]
