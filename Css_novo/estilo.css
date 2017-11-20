@@ -1,0 +1,2889 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img, video{
+    max-width: 100%;
+}
+
+.login{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.cabeçalho{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo{
+    width: 15%;
+    text-align: center;
+    padding: 5px;
+}
+
+/*menu*/
+.menu{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+}
+.menu ul{
+    font-size: 18px;
+    font-weight: bold;
+    list-style: none;
+    position: relative;
+}
+.menu ul li{
+    width: 130px;
+    float: left;
+}
+.menu a{
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+.menu ul ul{
+    position: absolute;
+    visibility: hidden;
+}
+.menu ul ul li{
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+.menu ul ul li a{
+    background-color: #069;
+    font-size: 11px;
+}
+.menu ul li:hover ul{
+    visibility: visible;
+}
+.menu a:hover{
+    background-color: white;
+    color: black;
+}
+label[for="bt_menu"]{
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+#bt_menu{
+    display: none;
+}
+label[for="bt_menu"]{
+    display: none;
+}
+
+/*conteudo*/
+.principal{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sobre{
+    width: 60%;
+    font-size: 16px;
+    text-indent: 15px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px 10px;
+}
+.sobre h1{
+    font-weight: bold;
+    font-size: 25px;
+}
+.sobre h2{
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+.propaganda{
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    padding: 15px;
+}
+.depoimento{
+    width: 100%;
+	background-color: #069;
+    color: white;
+    padding: 20px;
+}
+.depoimento h1{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+	text-align: center;
+}
+.aluno1 img{
+	width: 40%;
+    border-radius: 100px;
+}
+.aluno1{
+    width: 20%;
+    text-align: center;
+    float:left;
+}
+.aluno2 img{
+    width: 40%;
+    border-radius: 100px;
+}
+.aluno2{
+    width: 20%;
+    text-align: center;
+    float:left;
+}
+.dep1{
+    width: 80%;
+	text-align: center;
+    font-size: 12px;
+    padding: 50px;
+}
+.dep2{
+    width: 80%;
+	text-align: center;
+    font-size: 12px;
+    padding: 50px;
+}
+
+/*rodape*/
+footer{
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+footer h4{
+    font-size: 20px;
+}
+.social{
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
+.social img{
+    align-content: space-around;
+}
+.contato{
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.end{
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
+.direito{
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    padding: 8px;
+}
+
+
+
+
+/* responsiva */
+@media(max-width: 800px){
+
+    .logo{
+        width: 100%;
+        margin-top: -130px;
+        text-align: center;
+    }
+
+    .login{
+        width: 90%;
+        margin-left: -180%;
+        transition: all .2s;
+    }
+
+    /*menu*/
+    label[for="bt_menu"]{
+        display: block;
+    }
+    #bt_menu:checked~.logo{
+        width: 90%;
+        margin-left: 60px;
+        margin-top: -20px;
+    }
+    #bt_menu:checked~.login{
+        width: 90%;
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+    #bt_menu:checked~.menu{
+        width: 90%;
+        margin-left: 60px;
+        margin-top: 30px;
+        font-size: 10px;
+    }
+    .menu{
+        width: 90%;
+        margin-left: -180%;
+        transition: all .2s;
+    }
+    .menu ul li{
+        width: 100%;
+        float: none;
+    }
+    .menu ul ul{
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .2s;
+    }
+    .menu ul li:hover ul{
+        height: auto;
+        max-height: 300px;
+    }
+
+    /*conteudo*/
+    .sobre{
+        width: 100%;
+        font-size: 14px;
+    }
+    .sobre h2{
+        font-size: 15px;
+    }
+    .propaganda{
+        width: 50%;
+    }
+    .depoimento{
+        width: 100%;
+        text-align: center;
+    }
+    .aluno1{
+        width: 90%;
+        float: none;
+    }
+    .aluno2{
+        width: 90%;
+        float: none;
+    }
+    .dep1{
+        width: 100%;
+        padding: 0px;
+    }
+    .dep2{
+        width: 100%;
+        padding: 0px;
+    }
+
+    /*rodape*/
+    footer{
+        width: 100%;
+        text-align: center;
+    }
+    .social{
+        width: 90%;
+    }
+    .contato{
+        width: 90%;
+    }
+    .end{
+        width: 90%;
+    }
+}
+
+==================================== CANCELAMENTO ====================================
+
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+.containner{
+    display: flex;
+    width:100%;
+
+}
+nav{
+    display: flex;
+    width: 400px;
+    height: auto;
+    font-family: arial;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+
+.item label{
+    display: block;
+    padding: 10px;
+    background-color: #069;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    border-bottom: solid 2px #aaa;
+    border-right: solid 2px #aaa;
+
+}
+
+.item label:hover{
+background-color: #ffffff;
+color: #000000;
+}
+.item ul{
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    max-height:0;
+    transition: all .4s linear;
+    
+}
+
+.item input{
+    display: none;
+}
+
+.item ul li a{
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    background-color: #fafafa;
+    color: #333;
+    border-bottom: solid 2px #aaa;
+}
+.item ul li a:hover{
+    background-color: #9cf;
+}
+
+.item input:checked ~ ul{
+    height: auto;
+    max-height:200px;
+    transform: auto;
+}
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+
+.painel{
+    display: flex;
+    background: #ffffff;
+    width: 100%;
+    height: 600px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.logado{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: flex-end;
+    flex-direction: flex-end;
+    align-items: center;
+}
+.logadoesquerdo{
+    background: #dfdfdf;
+    display: flex;
+    width: 500px;
+    height: 60px;
+    border-radius: 15px;
+    border: solid 2px #aaa;
+    font-family: verdana;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+
+
+.areamatricula{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.cancelamento{
+    display: flex;
+    background: #aaa;
+    width:300px;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16;
+
+}
+
+.cancelamento button{
+    width: 50px;
+    height:30px;
+    border-radius: 6px;
+    border-color: black;
+    border: solid 1px;  
+
+
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: ;
+    width: 100%;
+    height:40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.cancelamento input {
+    width: 250px;
+}
+
+==================================== CARREIRA ====================================
+
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+.containner{
+    display: flex;
+    width:100%;
+
+}
+nav{
+    display: flex;
+    width: 400px;
+    height: auto;
+    font-family: arial;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+
+.item label{
+    display: block;
+    padding: 10px;
+    background-color: #069;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    border-bottom: solid 2px #aaa;
+    border-right: solid 2px #aaa;
+
+}
+
+.item label:hover{
+background-color: #ffffff;
+color: #000000;
+}
+.item ul{
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    max-height:0;
+    transition: all .4s linear;
+    
+}
+
+.item input{
+    display: none;
+}
+
+.item ul li a{
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    background-color: #fafafa;
+    color: #333;
+    border-bottom: solid 2px #aaa;
+}
+.item ul li a:hover{
+    background-color: #9cf;
+}
+
+.item input:checked ~ ul{
+    height: auto;
+    max-height:200px;
+    transform: auto;
+}
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+
+.painel{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.logado{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: flex-end;
+    flex-direction: flex-end;
+    align-items: center;
+}
+.logadoesquerdo{
+    background: #dfdfdf;
+    display: flex;
+    width: 500px;
+    height: 60px;
+    border-radius: 15px;
+    border: solid 2px #aaa;
+    font-family: verdana;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.areacarreira{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.areacarreiratitle{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    border-radius: 2px;
+    border-top: solid 2px #aaa;
+    border-left: solid 2px #aaa;
+    border-right: solid 2px #aaa;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.areacarreiraconteudo{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    border-radius: 2px;
+    border-bottom: solid 2px #aaa;
+    border-left: solid 2px #aaa;
+    border-right: solid 2px #aaa;
+}
+
+.areacarreiraconteudo p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+==================================== CONTATOPROFESSORES ====================================
+
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+.containner{
+    display: flex;
+    width:100%;
+
+}
+nav{
+    display: flex;
+    width: 400px;
+    height: auto;
+    font-family: arial;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+
+.item label{
+    display: block;
+    padding: 10px;
+    background-color: #069;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    border-bottom: solid 2px #aaa;
+    border-right: solid 2px #aaa;
+
+}
+
+.item label:hover{
+background-color: #ffffff;
+color: #000000;
+}
+.item ul{
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    max-height:0;
+    transition: all .4s linear;
+    
+}
+
+.item input{
+    display: none;
+}
+
+.item ul li a{
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    background-color: #fafafa;
+    color: #333;
+    border-bottom: solid 2px #aaa;
+}
+.item ul li a:hover{
+    background-color: #9cf;
+}
+
+.item input:checked ~ ul{
+    height: auto;
+    max-height:200px;
+    transform: auto;
+}
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+
+.painel{
+    display: flex;
+    background: #ffffff;
+    width: 100%;
+    height: 600px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.logado{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: flex-end;
+    flex-direction: flex-end;
+    align-items: center;
+}
+.logadoesquerdo{
+    background: #dfdfdf;
+    display: flex;
+    width: 500px;
+    height: 60px;
+    border-radius: 15px;
+    border: solid 2px #aaa;
+    font-family: verdana;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+
+
+.table{
+    display: flex;
+    background:#ffffff;
+    width:100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column; 
+}
+
+.table table{
+
+    width:100%;
+    height: 100px;  
+    border: 1px solid #000000;
+    font-family: arial;
+}
+.table table th{
+    border: 1px solid #000000;
+}
+
+==================================== CURSO ====================================
+
+img{
+    max-width: 100%;
+}
+
+.cursos{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10px;
+}
+.cursos figure{
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    width: 95%;
+}
+.cursos img{
+    display: block;
+}
+.cursos figcaption{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    opacity: 0.8;
+    background-color: #069;
+    color: white;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0%;
+    transition: .5s ease;
+    text-align: center;
+}
+figure:hover figcaption {
+    bottom: 100;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* responsiva */
+@media(max-width: 800px){
+
+    .cursos{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+    .cursos figure{
+        width: 100%;
+    }
+}
+
+==================================== DETALHE ====================================
+
+.principal{
+    justify-content: center;
+    margin: 95px 0px 95px 0px;
+}
+
+.disciplinas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Curso ADS*/
+.ADS{
+    width: 95%;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(20, 59, 80);
+    color: black;
+    margin: 0px 0px 50px 0px;
+}
+.ADS ul{
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+    color: white;
+    width: 40%;
+    padding: 30px;
+    position: absolute;
+    visibility: hidden;
+    text-transform: uppercase;
+}
+.ADS li{
+    font-size: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #069;
+    padding: 10px;
+}
+.ADS a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    text-transform: none;
+}
+.ADS p{
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+    padding: 15px;
+    text-indent: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ADS h1{
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 100px;
+    padding: 10px;
+    background-color: black;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+.ADS h2{
+    font-size: 16px;
+    padding: 10px;
+    color: rgb(10, 146, 219);
+    text-transform: uppercase;
+}
+.ADS h3{
+    font-size: 16px;
+    padding: 10px;
+    color: rgb(10, 146, 219);
+    text-transform: uppercase;
+}
+.ADS a:hover{
+    background-color: white;
+    color: black;
+    transition: 5.s all;
+    padding: 5px;
+}
+label[for="bt_ads"]{
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+#bt_ads{
+    display: none;
+}
+#bt_ads:checked~.disciplinas ul{
+    position: static;
+    visibility: visible;
+}
+
+
+
+
+/*Curso TI*/
+.TI{
+    width: 95%;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(20, 59, 80);
+    color: black;
+    margin: 0px 0px 50px 0px;
+}
+.TI ul{
+    font-size: 18px;
+    font-weight: bold;
+    list-style: none;
+    color: white;
+    width: 40%;
+    padding: 30px;
+    position: absolute;
+    visibility: hidden;
+    text-transform: uppercase;
+}
+.TI li{
+    font-size: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #069;
+    padding: 10px;
+}
+.TI a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    text-transform: none;
+}
+.TI p{
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+    padding: 15px;
+    text-indent: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.TI h1{
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 100px;
+    padding: 10px;
+    background-color: black;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+.TI h2{
+    font-size: 16px;
+    padding: 10px;
+    color: rgb(10, 146, 219);
+    text-transform: uppercase;
+}
+.TI h3{
+    font-size: 16px;
+    padding: 10px;
+    color: rgb(10, 146, 219);
+    text-transform: uppercase;
+}
+.TI a:hover{
+    background-color: white;
+    color: black;
+    transition: 5.s all;
+    padding: 5px;
+}
+label[for="bt_ti"]{
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+#bt_ti{
+    display: none;
+}
+#bt_ti:checked~.disciplinas ul{
+    position: static;
+    visibility: visible;
+}
+
+
+/*Curso CC*/
+.CC{
+    width: 95%;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(20, 59, 80);
+    color: black;
+    margin: 0px 0px 50px 0px;
+}
+.CC ul{
+    font-size: 18px;
+    font-weight: bold;
+    list-style: none;
+    color: white;
+    width: 40%;
+    padding: 30px;
+    position: absolute;
+    visibility: hidden;
+    text-transform: uppercase;
+}
+.CC li{
+    font-size: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #069;
+    padding: 10px;
+}
+.CC a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    text-transform: none;
+}
+.CC p{
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+    padding: 15px;
+    text-indent: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.CC h1{
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 100px;
+    padding: 10px;
+    background-color: black;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+.CC h2{
+    font-size: 16px;
+    padding: 10px;
+    color: rgb(10, 146, 219);
+    text-transform: uppercase;
+}
+.CC h3{
+    font-size: 16px;
+    padding: 10px;
+    color: rgb(10, 146, 219);
+    text-transform: uppercase;
+}
+.CC a:hover{
+    background-color: white;
+    color: black;
+    transition: 5.s all;
+    padding: 5px;
+}
+label[for="bt_cc"]{
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+#bt_cc{
+    display: none;
+}
+#bt_cc:checked~.disciplinas ul{
+    position: static;
+    visibility: visible;
+}
+
+
+/*Curso EC*/
+.EC{
+    width: 95%;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(20, 59, 80);
+    color: black;
+    margin: 0px 0px 50px 0px;
+}
+.EC ul{
+    font-size: 18px;
+    font-weight: bold;
+    list-style: none;
+    color: white;
+    width: 40%;
+    padding: 30px;
+    position: absolute;
+    visibility: hidden;
+    text-transform: uppercase;
+}
+.EC li{
+    font-size: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #069;
+    padding: 10px;
+}
+.EC a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    text-transform: none;
+}
+.EC p{
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+    padding: 15px;
+    text-indent: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.EC h1{
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 100px;
+    padding: 10px;
+    background-color: black;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+.EC h2{
+    font-size: 16px;
+    padding: 10px;
+    color: rgb(10, 146, 219);
+    text-transform: uppercase;
+}
+.EC h3{
+    font-size: 16px;
+    padding: 10px;
+    color: rgb(10, 146, 219);
+    text-transform: uppercase;
+}
+.EC a:hover{
+    background-color: white;
+    color: black;
+    transition: 5.s all;
+    padding: 5px;
+}
+label[for="bt_ec"]{
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+#bt_ec{
+    display: none;
+}
+#bt_ec:checked~.disciplinas ul{
+    position: static;
+    visibility: visible;
+}
+
+
+
+/* responsiva */
+@media(max-width: 1000px){
+    
+    .disciplinas{
+    display: block;
+    flex-wrap: nowrap;
+    }
+
+    .ADS{
+    width: 85%;
+    padding: 10px;
+    margin: 0px 0px 100px 0px;
+    }
+    .ADS ul{
+    color: white;
+    width: 95%;
+    padding: 8px;
+    text-align: center;
+    }
+    .ADS p{
+    font-size: 14px;
+    padding: 10px;
+    text-indent: 10px;
+    }
+    .ADS h1{
+    font-size: 16px;
+    }
+    .ADS h2{
+    font-size: 14px;
+    padding: 5px;
+    }
+    .ADS h3{
+    font-size: 14px;
+    padding: 5px;
+    }
+
+
+    .TI{
+    width: 85%;
+    padding: 10px;
+    margin: 0px 0px 100px 0px;
+    }
+    .TI ul{
+    color: white;
+    width: 95%;
+    padding: 8px;
+    text-align: center;
+    }
+    .TI p{
+    font-size: 14px;
+    padding: 10px;
+    text-indent: 10px;
+    }
+    .TI h1{
+    font-size: 16px;
+    }
+    .TI h2{
+    font-size: 14px;
+    padding: 5px;
+    }
+    .TI h3{
+    font-size: 14px;
+    padding: 5px;
+    }
+
+
+    .CC{
+    width: 85%;
+    padding: 10px;
+    margin: 0px 0px 100px 0px;
+    }
+    .CC ul{
+    color: white;
+    width: 95%;
+    padding: 8px;
+    text-align: center;
+    }
+    .CC p{
+    font-size: 14px;
+    padding: 10px;
+    text-indent: 10px;
+    }
+    .CC h1{
+    font-size: 16px;
+    }
+    .CC h2{
+    font-size: 14px;
+    padding: 5px;
+    }
+    .CC h3{
+    font-size: 14px;
+    padding: 5px;
+    }
+
+
+    .EC{
+    width: 85%;
+    padding: 10px;
+    margin: 0px 0px 100px 0px;
+    }
+    .EC ul{
+    color: white;
+    width: 95%;
+    padding: 8px;
+    text-align: center;
+    }
+    .EC p{
+    font-size: 14px;
+    padding: 10px;
+    text-indent: 10px;
+    }
+    .EC h1{
+    font-size: 16px;
+    }
+    .EC h2{
+    font-size: 14px;
+    padding: 5px;
+    }
+    .EC h3{
+    font-size: 14px;
+    padding: 5px;
+    }
+}
+
+==================================== EXERCICIOSETRABALHOS_ALUNO ====================================
+
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+.containner{
+    display: flex;
+    width:100%;
+
+}
+nav{
+    display: flex;
+    width: 400px;
+    height: auto;
+    font-family: arial;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+
+.item label{
+    display: block;
+    padding: 10px;
+    background-color: #069;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    border-bottom: solid 2px #aaa;
+    border-right: solid 2px #aaa;
+
+}
+
+.item label:hover{
+background-color: #ffffff;
+color: #000000;
+}
+.item ul{
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    max-height:0;
+    transition: all .4s linear;
+    
+}
+
+.item input{
+    display: none;
+}
+
+.item ul li a{
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    background-color: #fafafa;
+    color: #333;
+    border-bottom: solid 2px #aaa;
+}
+.item ul li a:hover{
+    background-color: #9cf;
+}
+
+.item input:checked ~ ul{
+    height: auto;
+    max-height:200px;
+    transform: auto;
+}
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+
+.painel{
+    display: flex;
+    background: #ffffff;
+    width: 100%;
+    height: 600px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.logado{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: flex-end;
+    flex-direction: flex-end;
+    align-items: center;
+}
+.logadoesquerdo{
+    background: #dfdfdf;
+    display: flex;
+    width: 500px;
+    height: 60px;
+    border-radius: 15px;
+    border: solid 2px #aaa;
+    font-family: verdana;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+
+
+.areamatricula{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    background: #aaaaaa;
+    display: flex;
+    width: 700px;
+    height: 300px;
+    border: 2px solid #030303;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: ;
+    width: 100%;
+    height:40px;
+    font-family: verdana;
+    font-size: 20px;
+}
+
+.superior{
+    background:;
+    width: 600px;
+    height:150px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-around ;
+}
+.disciplina{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height:40px;
+    font-family: verdana;
+    font-size: 14px;
+}
+.disciplina input{
+    border-color: black;
+    border: solid 1px;  
+
+}
+
+.superior select{
+    width: 600px;
+    height:40px;
+    border-color: black;
+    border: solid 1px;      
+
+}
+.inferior{
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+    width: 180px;
+    height:100px;
+
+}
+
+.inferior select {
+    display: flex;
+    width: 90px;
+    height:20px;
+    border-color: black;
+    border: solid 1px;      
+}
+input{
+    border-color: black;
+    border: solid 1px;  
+}
+
+==================================== FORMULARIO_CADASTRO ====================================
+
+.principal{
+    background: url('_img/fundo_form.jpeg');
+    color: white;
+    justify-content: center;
+}
+
+.formulario h1{
+    text-align: center;
+}
+
+.formulario{
+    display: flex;
+    justify-content: space-around;
+    width: 33%;
+    font-size: 18px;
+    padding: 40px;
+}
+
+.formulario input{
+    font-size: 16px;
+}
+
+.formulario legend{
+    color: rgb(10, 146, 219);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.formulario fieldset{
+    padding: 10px;
+    background-color: black;
+}
+
+.formulario button{
+    font-size: 18px;
+    margin: 10px 0px 0px 250px;
+    width: 40%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* responsiva */
+@media(max-width: 800px){
+
+    .formulario h1{
+        font-size: 23px;
+    }
+    
+    .formulario{
+        width: 30%;
+    }
+
+    .formulario button{
+        margin: 10px 0px 0px 25px;
+        width: 80%;
+    }
+}
+
+==================================== FORMULARIO_CONTATO ====================================
+.principal{
+    background: url('_img/fundo_form.jpeg');
+    color: white;
+    justify-content: center;
+}
+
+.formulario h1{
+    text-align: center;
+}
+
+.formulario{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-size: 18px;
+    padding: 60px;
+}
+
+.formulario legend{
+    color: rgb(10, 146, 219);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.formulario fieldset{
+    padding: 10px;
+    background-color: black;
+}
+
+.formulario input{
+    font-size: 16px;
+}
+
+.formulario button{
+    font-size: 18px;
+    margin: 10px 0px 0px 170px;
+    width: 40%;
+    font-family: 'Open Sans', sans-serif;
+}
+.formulario a{
+    color: rgb(10, 146, 219);
+    margin: 10px 0px 0px 40px;
+    font-size: 14px;
+    width: 50%;
+}
+
+
+/* responsiva */
+@media(max-width: 800px){
+
+    .formulario h1{
+        font-size: 23px;
+    }
+
+    .formulario button{
+        margin: 10px 0px 0px 30px;
+        width: 80%;
+    }
+}
+
+
+==================================== FORMULARIO_DISCIPLINA ====================================
+
+.principal{
+    background: url('_img/fundo_form.jpeg');
+    color: white;
+    justify-content: center;
+}
+
+.formulario h1{
+    text-align: center;
+}
+
+.formulario{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-size: 18px;
+    padding: 120px;
+}
+
+.formulario legend{
+    color: rgb(10, 146, 219);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.formulario fieldset{
+    padding: 10px;
+    background-color: black;
+}
+
+.formulario input{
+    font-size: 16px;
+}
+
+.formulario button{
+    font-size: 18px;
+    margin: 10px 0px 0px 155px;
+    width: 40%;
+    font-family: 'Open Sans', sans-serif;
+}
+.formulario a{
+    color: rgb(10, 146, 219);
+    margin: 10px 0px 0px 40px;
+    font-size: 14px;
+    width: 50%;
+}
+
+
+/* responsiva */
+@media(max-width: 800px){
+
+    .formulario h1{
+        font-size: 23px;
+    }
+
+    .formulario button{
+        margin: 10px 0px 0px 25px;
+        width: 80%;
+    }
+}
+
+
+==================================== FORMULARIO_ENVIARMSG ====================================
+
+.containner{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.formulario{
+    background: #dddddd;
+    display: flex;
+    width: 500px;
+    height: 360px;
+    border: 2px solid #aeaeae;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: ;
+    width: 100%;
+    height:40px;
+    font-family: verdana;
+    font-size: 20px;
+}
+
+.formulario textarea{
+    
+    width: 250px;
+    height: 100px;
+}
+
+.formulario input {
+    width: 250px;
+}
+
+
+==================================== FORMULARIO_ESQUECIASENHA ====================================
+
+.principal{
+    background: url('_img/fundo_form.jpeg');
+    color: white;
+    justify-content: center;
+}
+
+.formulario h1{
+    text-align: center;
+}
+
+.formulario{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-size: 18px;
+    padding: 120px;
+}
+
+.formulario legend{
+    color: rgb(10, 146, 219);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.formulario fieldset{
+    padding: 10px;
+    background-color: black;
+}
+
+.formulario input{
+    font-size: 16px;
+}
+
+.formulario button{
+    font-size: 18px;
+    margin: 10px 0px 0px 150px;
+    width: 40%;
+    font-family: 'Open Sans', sans-serif;
+}
+.formulario a{
+    color: rgb(10, 146, 219);
+    margin: 10px 0px 0px 40px;
+    font-size: 14px;
+    width: 50%;
+}
+
+
+/* responsiva */
+@media(max-width: 800px){
+
+    .formulario h1{
+        font-size: 23px;
+    }
+
+    .formulario button{
+        margin: 10px 0px 0px 20px;
+        width: 80%;
+    }
+}
+
+
+====================================FORMULARIO_EXERCICIOS ====================================
+
+.formulario{
+    border: solid 1px black;
+    background-color: #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.button{
+    padding: 5px;
+    font-size: 20px;
+
+}
+
+p{
+text-align: justify;
+}
+
+input{
+    height: 30px;
+}
+section{
+    border: solid 1px black;
+    background-color: #ccc;
+    text-align: center;
+    padding: 50px;
+
+}
+
+
+==================================== FORMULARIO_LOGIN ====================================
+
+
+.principal{
+    background: url('_img/fundo_form.jpeg');
+    color: white;
+    justify-content: center;
+}
+
+.formulario h1{
+    text-align: center;
+}
+
+.formulario{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    font-size: 18px;
+    padding: 200px;
+}
+
+.formulario legend{
+    color: rgb(10, 146, 219);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.formulario fieldset{
+    padding: 10px;
+    background-color: black;
+}
+
+.formulario input{
+    font-size: 16px;
+}
+
+.formulario button{
+    font-size: 18px;
+    margin: 10px 0px 0px 50px;
+    width: 40%;
+    font-family: 'Open Sans', sans-serif;
+}
+.formulario a{
+    color: rgb(10, 146, 219);
+    margin: 10px 0px 0px 30px;
+    font-size: 14px;
+    width: 50%;
+}
+
+
+/* responsiva */
+@media(max-width: 800px){
+
+.formulario h1{
+    font-size: 23px;
+}
+
+.formulario button{
+    margin: 10px 0px 0px 20px;
+    width: 80%;
+}
+}
+
+==================================== FORMUALRIO_PROFESSOR ====================================
+
+.principal{
+    background: url('_img/fundo_form.jpeg');
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario h1{
+    text-align: center;
+}
+.formulario{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-size: 18px;
+    padding: 120px;
+}
+
+.formulario legend{
+    color: rgb(10, 146, 219);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.formulario fieldset{
+    padding: 10px;
+    background-color: black;
+}
+
+.formulario input{
+    font-size: 25px;
+}
+
+.formulario button{
+    font-size: 18px;
+    margin: 10px 0px 0px 155px;
+    width: 40%;
+    font-family: 'Open Sans', sans-serif;
+}
+.formulario a{
+    color: rgb(10, 146, 219);
+    margin: 10px 0px 0px 40px;
+    font-size: 14px;
+    width: 50%;
+}   
+
+/* responsiva */
+@media(max-width: 800px){
+
+    .formulario h1{
+        font-size: 23px;
+    }
+
+    .formulario button{
+        margin: 10px 0px 0px 25px;
+        width: 80%;
+    }
+}
+
+==================================== HORARIO ==================================== 
+
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+.containner{
+    display: flex;
+    width:100%;
+
+}
+nav{
+    display: flex;
+    width: 400px;
+    height: auto;
+    font-family: arial;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+
+.item label{
+    display: block;
+    padding: 10px;
+    background-color: #069;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    border-bottom: solid 2px #aaa;
+    border-right: solid 2px #aaa;
+
+}
+
+.item label:hover{
+background-color: #ffffff;
+color: #000000;
+}
+.item ul{
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    max-height:0;
+    transition: all .4s linear;
+    
+}
+
+.item input{
+    display: none;
+}
+
+.item ul li a{
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    background-color: #fafafa;
+    color: #333;
+    border-bottom: solid 2px #aaa;
+}
+.item ul li a:hover{
+    background-color: #9cf;
+}
+
+.item input:checked ~ ul{
+    height: auto;
+    max-height:200px;
+    transform: auto;
+}
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+
+.painel{
+    display: flex;
+    background: #ffffff;
+    width: 100%;
+    height: 600px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.logado{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: flex-end;
+    flex-direction: flex-end;
+    align-items: center;
+}
+.logadoesquerdo{
+    background: #dfdfdf;
+    display: flex;
+    width: 500px;
+    height: 60px;
+    border-radius: 15px;
+    border: solid 2px #aaa;
+    font-family: verdana;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.mural-horario{
+    background: #dbdada;
+    display: flex;
+    width:  900px;
+    border-radius: 5px;
+    border: solid 2px #3f3f3f;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.horariotitle{
+    
+    display: flex;
+    width:  100%;
+    height: 60px;
+    font-family: arial;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.horariosemanas{
+    display: flex;
+    background: #efeeee;
+    border: solid 1px #3f3f3f;
+    border-radius: 8px;
+    width:  250px;
+    height: 300px;
+    font-family: arial;
+    font-size: 16px;    
+    align-items: center;    
+    flex-direction: column;
+
+}
+
+.titlesemana{
+    margin-top: 4px;
+    display: flex;
+    background: #3f3f3f;
+    border-radius: 15px;
+    width:  220px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+==================================== MENU_LATERAL ==================================== 
+
+*{
+            margin: 0;
+            padding: 0;
+        }
+        nav, section{
+            width: 400px;
+            height: auto;
+            font-family: "arial";
+            margin: 100px ;
+            float: left;
+            
+        }
+
+        .item label{
+            display: block;
+            padding: 10px;
+            background-color: #434343; 
+            font-size: 20px;
+            color: #fff;
+            border-bottom: solid 20px #aaa;  
+        }
+        .item label:hover{
+            background-color: #069;
+        }
+        .item ul{
+            width: 100%;
+            list-style: none;
+            overflow: hidden;
+            max-height: 0;
+            transition: all .4s linear;
+
+        }
+
+        .item input{
+            display: none;
+        }
+
+        .item ul li a{
+            width: 100%;
+            height: 20px;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+            background-color: #fafafa;
+            color: #333;
+            border-bottom: solid 2px #aaa;
+        }
+
+        .item ul li a:hover{
+            background-color: #33CCFF;
+        }
+
+        .item input:checked~ ul{
+            height: auto;
+            max-height: 250px;
+            transform: all;
+        }
+
+==================================== NOTAS ==================================== 
+
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+.containner{
+    display: flex;
+    width:100%;
+
+}
+nav{
+    display: flex;
+    width: 400px;
+    height: auto;
+    font-family: arial;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+
+.item label{
+    display: block;
+    padding: 10px;
+    background-color: #069;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    border-bottom: solid 2px #aaa;
+    border-right: solid 2px #aaa;
+
+}
+
+.item label:hover{
+background-color: #ffffff;
+color: #000000;
+}
+.item ul{
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    max-height:0;
+    transition: all .4s linear;
+    
+}
+
+.item input{
+    display: none;
+}
+
+.item ul li a{
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    background-color: #fafafa;
+    color: #333;
+    border-bottom: solid 2px #aaa;
+}
+.item ul li a:hover{
+    background-color: #9cf;
+}
+
+.item input:checked ~ ul{
+    height: auto;
+    max-height:200px;
+    transform: auto;
+}
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+
+.painel{
+    display: flex;
+    background: #ffffff;
+    width: 100%;
+    height: 600px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.logado{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: flex-end;
+    flex-direction: flex-end;
+    align-items: center;
+}
+.logadoesquerdo{
+    background: #dfdfdf;
+    display: flex;
+    width: 500px;
+    height: 60px;
+    border-radius: 15px;
+    border: solid 2px #aaa;
+    font-family: verdana;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+
+
+.table{
+    display: flex;
+    background:#ffffff;
+    width:100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column; 
+}
+
+.table table{
+
+    width:100%;
+    height: 100px;  
+    border: 1px solid #000000;
+    font-family: arial;
+}
+.table table th{
+    border: 1px solid #000000;
+}
+
+==================================== NOTICIA ==================================== 
+
+img{
+    max-width: 100%;
+}
+
+.noticias{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 10px;
+}
+.noticias figure{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    width: 30%;
+}
+.noticias img{
+    height: 50%;
+}
+.noticias figcaption{
+    font-size: 16px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 15px;
+}
+.noticias p{
+    font-size: 12px;
+    text-align: justify;
+    text-indent: 15px;
+    padding: 15px;
+}
+
+
+
+/* responsiva */
+@media(max-width: 800px){
+
+    .noticias{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+    .noticias figure{
+        width: 100%;
+        height: 32%;
+    }
+    .noticias img{
+        height: 40%;
+    }
+    .noticias figcaption{
+        font-size: 14px;
+    }
+}
+
+==================================== PAGINA_ALUNO ==================================== 
+
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+.containner{
+    display: flex;
+    width:100%;
+
+}
+nav{
+    display: flex;
+    width: 400px;
+    height: auto;
+    font-family: arial;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+
+.item label{
+    display: block;
+    padding: 10px;
+    background-color: #069;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    border-bottom: solid 2px #aaa;
+    border-right: solid 2px #aaa;
+
+}
+
+.item label:hover{
+background-color: #ffffff;
+color: #000000;
+}
+.item ul{
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    max-height:0;
+    transition: all .4s linear;
+    
+}
+
+.item input{
+    display: none;
+}
+
+.item ul li a{
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    background-color: #fafafa;
+    color: #333;
+    border-bottom: solid 2px #aaa;
+}
+.item ul li a:hover{
+    background-color: #9cf;
+}
+
+.item input:checked ~ ul{
+    height: auto;
+    max-height:200px;
+    transform: auto;
+}
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+
+.painel{
+    display: flex;
+    background: #ffffff;
+    width: 100%;
+    height: 600px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.logado{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: flex-end;
+    flex-direction: flex-end;
+    align-items: center;
+}
+.logadoesquerdo{
+    background: #dfdfdf;
+    display: flex;
+    width: 500px;
+    height: 60px;
+    border-radius: 15px;
+    border: solid 2px #aaa;
+    font-family: verdana;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.mural-recados{
+    display: flex;
+    width: 100%;
+    height: 520px;
+    flex-direction: column;
+}
+
+.titlemural{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.corporecado{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.recado{
+    background: #dfdfdf;
+    display: flex;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    border: solid 2px #aaa;
+
+}
+
+.recado p{
+    font-family: arial;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.informacoes{
+
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: space-around;  
+}
+
+.carreira{
+    display: flex;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;    
+}
+
+.carreira a{
+    text-decoration: none;
+    color: #0033cc;
+    font-family: arial;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.carreira a:hover{
+    color: #cccccc;
+
+}
+
+==================================== PAGINA_PROFESSOR ==================================== 
+
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+.containner{
+    display: flex;
+    width:100%;
+
+}
+nav{
+    display: flex;
+    width: 400px;
+    height: auto;
+    font-family: arial;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+
+.item label{
+    display: block;
+    padding: 10px;
+    background-color: #069;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    border-bottom: solid 2px #aaa;
+    border-right: solid 2px #aaa;
+
+}
+
+.item label:hover{
+background-color: #ffffff;
+color: #000000;
+}
+.item ul{
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    max-height:0;
+    transition: all .4s linear;
+    
+}
+
+.item input{
+    display: none;
+}
+
+.item ul li a{
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    background-color: #fafafa;
+    color: #333;
+    border-bottom: solid 2px #aaa;
+}
+.item ul li a:hover{
+    background-color: #9cf;
+}
+
+.item input:checked ~ ul{
+    height: auto;
+    max-height:200px;
+    transform: auto;
+}
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+
+.painel{
+    display: flex;
+    background: green;
+    width: 100%;
+    height: 600px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.logado{
+    background: yellow;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: flex-end;
+    flex-direction: flex-end;
+    align-items: center;
+}
+.logadoesquerdo{
+    background: orange;
+    display: flex;
+    width: 500px;
+    height: 60px;
+    border-radius: 15px;
+    border: solid 2px #aaa;
+    font-family: verdana;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.mural-recados{
+    background: red;
+    display: flex;
+    width: 100%;
+    height: 520px;
+    flex-direction: column;
+}
+
+==================================== RESUMODASENTREGASRECEBIDAS ==================================== 
+
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+.containner{
+    display: flex;
+    width:100%;
+
+}
+nav{
+    display: flex;
+    width: 400px;
+    height: auto;
+    font-family: arial;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+
+.item label{
+    display: block;
+    padding: 10px;
+    background-color: #069;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    border-bottom: solid 2px #aaa;
+    border-right: solid 2px #aaa;
+
+}
+
+.item label:hover{
+background-color: #ffffff;
+color: #000000;
+}
+.item ul{
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    max-height:0;
+    transition: all .4s linear;
+    
+}
+
+.item input{
+    display: none;
+}
+
+.item ul li a{
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    background-color: #fafafa;
+    color: #333;
+    border-bottom: solid 2px #aaa;
+}
+.item ul li a:hover{
+    background-color: #9cf;
+}
+
+.item input:checked ~ ul{
+    height: auto;
+    max-height:200px;
+    transform: auto;
+}
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+
+.painel{
+    display: flex;
+    background: #ffffff;
+    width: 100%;
+    height: 600px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.logado{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: flex-end;
+    flex-direction: flex-end;
+    align-items: center;
+}
+.logadoesquerdo{
+    background: #dfdfdf;
+    display: flex;
+    width: 500px;
+    height: 60px;
+    border-radius: 15px;
+    border: solid 2px #aaa;
+    font-family: verdana;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.mural-recados{
+    display: flex;
+    width: 100%;
+    height: 520px;
+    flex-direction: column;
+}
+
+.titlemural{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.corporecado{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.recado{
+    background: #dfdfdf;
+    display: flex;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    border: solid 2px #aaa;
+
+}
+
+.recado p{
+    font-family: arial;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.informacoes{
+
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: space-around;  
+}
+
+.carreira{
+    display: flex;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;    
+}
+
+.carreira a{
+    text-decoration: none;
+    color: #0033cc;
+    font-family: arial;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.carreira a:hover{
+    color: #cccccc;
+
+}
+
+==================================== TRABALHOEEXERCICIO ==================================== 
+
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+.containner{
+    display: flex;
+    width:100%;
+
+}
+nav{
+    display: flex;
+    width: 400px;
+    height: auto;
+    font-family: arial;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+
+.item label{
+    display: block;
+    padding: 10px;
+    background-color: #069;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    border-bottom: solid 2px #aaa;
+    border-right: solid 2px #aaa;
+
+}
+
+.item label:hover{
+background-color: #ffffff;
+color: #000000;
+}
+.item ul{
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    max-height:0;
+    transition: all .4s linear;
+    
+}
+
+.item input{
+    display: none;
+}
+
+.item ul li a{
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    background-color: #fafafa;
+    color: #333;
+    border-bottom: solid 2px #aaa;
+}
+.item ul li a:hover{
+    background-color: #9cf;
+}
+
+.item input:checked ~ ul{
+    height: auto;
+    max-height:200px;
+    transform: auto;
+}
+/* ------------------------------------------------- Menu Lateral --------------------------------------------------------------*/
+
+
+.painel{
+    display: flex;
+    background: #ffffff;
+    width: 100%;
+    height: 600px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.logado{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: flex-end;
+    flex-direction: flex-end;
+    align-items: center;
+}
+.logadoesquerdo{
+    background: #dfdfdf;
+    display: flex;
+    width: 500px;
+    height: 60px;
+    border-radius: 15px;
+    border: solid 2px #aaa;
+    font-family: verdana;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+
+
+.areamatricula{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
