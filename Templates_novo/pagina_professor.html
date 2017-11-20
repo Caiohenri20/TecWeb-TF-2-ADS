@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Cursos {% endblock %}
+{% block css %} href="{% static 'estilo.css' %}" {% endblock %}
+
+
+{% block main %}
+		<div class="containner">
+			<nav>
+				<div class="item">
+					<input type="checkbox" id="check1">
+					<label for="check1">Secretaria Online</label>
+					<ul>
+						<li><a href="formulario_cadastro.html">Matrícula Online</a></li>
+						<li><a href="formulario_cancelamento.html">Cancelamento de matrícula</a></li>
+						<li><a href="contatoprofessores.html">Contato dos Professores</a></li>
+					</ul>
+				</div>
+				
+				<div class="item">
+					<input type="checkbox" id="check3">
+					<label for="check3">Acesse Também</label>
+					<ul>
+					
+				</div>
+
+                <div class="item">
+                    <input type="checkbox" id="check4">
+                    <label for="check4">Àrea do Professor</label>
+                    <ul>
+                        <li><a href="#">Fechamentos de entregas</a></li>
+                        <li><a href="resumodasentregasrecebidas.html">Resumo das entregas recebidas</a></li>
+                        <li><a href="trabalhoeexercicio.html">Trabalhos e Exércicios</a></li>
+                        <li><a href="cancelamentodematricula.html">Cancelamento de matrícula</a></li>
+                            
+                    </ul>
+                </div>
+
+
+
+
+
+			</nav>
+			<div class="painel">
+				<div class="logado">
+					<div class="logadoesquerdo">
+						Olá, Caio</br> 
+						RA: 1701394</br> 
+						Curso: Curso Superior de Tecnologia em</br> 
+						Análise e Desenvolvimento de Sistemas
+					</div>
+				</div>
+		
+		<div class="mural-recados">
+					<div class="titlemural">Mural de Recados</div>
+					<div class="corporecado">
+						<div class="recado"><p>As Aulas começam a partir de 15/02. Fique Atento ao dia de sua aula.</p></div>
+						<div class="recado"><p>Alunos que não estejam na Lista de chamada devem comparecer a Secretaria </p></div>
+					</div>
+				<div class="informacoes">
+					<div class="carreira"><a href="">Informações</a></div>
+				</div>
+					
+				</div>
+			</div>
+		</div>			
+
+{% endblock %}       

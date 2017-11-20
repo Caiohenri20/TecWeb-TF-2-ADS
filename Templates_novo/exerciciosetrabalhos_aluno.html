@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Cursos {% endblock %}
+{% block css %} href="{% static 'estilo.css' %}" {% endblock %}
+
+
+{% block main %}
+		<div class="containner">
+			<nav>
+				<div class="item">
+					<input type="checkbox" id="check1">
+					<label for="check1">Secretaria Online</label>
+					<ul>
+						<li><a href="formulario_cadastro.html">Matrícula Online</a></li>
+						<li><a href="cancelamentodematricula.html">Cancelamento de matrícula</a></li>
+						<li><a href="contatoprofessores.html">Contato dos Professores</a></li>
+					</ul>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="check2">
+					<label for="check2">Àrea do Aluno</label>
+					<ul>
+						<li><a href="exerciciosetrabalhos_aluno.html">Trabalhos e Exercícios</a></li>
+						<li><a href="notas.html">Notas e faltas</a></li>
+						<li><a href="horario.html">Horários das Aulas</a></li>						
+					</ul>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="check3">
+					<label for="check3">Acesse Também</label>
+					<ul>
+						<li><a href="carreira.html">Núcleo de Carreiras</a></li>
+					</ul>
+				</div>					
+			</nav>
+			<div class="painel">
+				<div class="logado">
+					<div class="logadoesquerdo">
+						Olá, Caio</br> 
+						RA: 1701394</br> 
+						Curso: Curso Superior de Tecnologia em</br> 
+						Análise e Desenvolvimento de Sistemas
+					</div>
+				</div>
+
+				<div class="areamatricula">
+						<div class="form">
+								<div class="title">Controle de exercícios e trabalhos</div>
+								<div class="superior">
+									<div class="disciplina">Disciplina:</div>
+										<select name="tipo">
+											<option value="DG">Selecione a Disciplina</option>
+											<option value="ac">ADS</option> 
+											<option value="al">BD</option> 
+										</select>
+									<div class="disciplina">De: <input type="date"> Até <input type="date"></div>
+								</div>
+								<div class="inferior">
+									<select name="tipo">
+										<option value="ac">Pendente</option> 
+										<option value="al">Concluído</option></br> 
+									</select>
+									<input class="button" type="submit" value="Enviar"/>
+								</div>
+								
+								
+							</div>
+					</div>		
+				</div>
+				
+			</div>
+		</div>		
+
+{% endblock %}       

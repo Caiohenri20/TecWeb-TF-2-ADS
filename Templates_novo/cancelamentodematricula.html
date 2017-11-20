@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Cursos {% endblock %}
+{% block css %} href="{% static 'estilo.css' %}" {% endblock %}
+
+
+{% block main %}
+		<div class="containner">
+			<nav>
+				<div class="item">
+					<input type="checkbox" id="check1">
+					<label for="check1">Secretaria Online</label>
+					<ul>
+						<li><a href="formulario_cadastro.html">Matrícula Online</a></li>
+						<li><a href="formulario_cancelamento.html">Cancelamento de matrícula</a></li>
+						<li><a href="contatoprofessores.html">Contato dos Professores</a></li>
+					</ul>
+				</div>
+				
+				<div class="item">
+					<input type="checkbox" id="check3">
+					<label for="check3">Acesse Também</label>
+					<ul>
+					
+				</div>
+
+                <div class="item">
+                    <input type="checkbox" id="check4">
+                    <label for="check4">Àrea do Professor</label>
+                    <ul>
+                        <li><a href="#">Fechamentos de entregas</a></li>
+                        <li><a href="resumodasentregasrecebidas.html">Resumo das entregas recebidas</a></li>
+                        <li><a href="trabalhoeexercicio.html">Trabalhos e Exércicios</a></li>
+                        <li><a href="cancelamentodematricula.html">Cancelamento de matrícula</a></li>
+                            
+                    </ul>
+                </div>
+
+
+
+
+
+			</nav>
+			<div class="painel">
+				<div class="logado">
+					<div class="logadoesquerdo">
+						Olá, Caio</br> 
+						RA: 1701394</br> 
+						Curso: Curso Superior de Tecnologia em</br> 
+						Análise e Desenvolvimento de Sistemas
+					</div>
+				</div>
+
+				<div class="areamatricula">
+					<div class="cancelamento">
+						<form action="cancelamento" method="POST" enctype="application/x-www-form-urlencoded"></br>
+								
+							<div class="titulo">Digite os dados desejados</div>
+
+								<label for="nome">Aluno:</label></br>
+
+									<input type="name" class="campo" name="aluno" placeholder="Digite seu nome"></br></br>
+
+								<label for="nome">RA:</label></br>
+
+									<input type="name" class="campo" name="RA" placeholder="Digite seu RA"></br></br>
+
+								<label for="nome">Curso:</label></br>
+									<input type="name" class="campo" name="curso" placeholder="Digite o curso"><br/></br>
+
+								<label for="nome">Disciplina:</label></br>
+
+									<input type="name" class="campo" name="disciplina" placeholder="Digite a disciplina"><br/></br>
+
+								<label for="nome">Dia da semana ministrado:</label></br>
+
+									<input data="diasemana" type="date" /></br></br>
+
+								<button class="button" type="submit">Eviar</button>
+
+								<button class="button" type="reset">Limpar</button><br/></br>
+						</form>
+					</div>		
+				</div>
+				
+			</div>
+		</div>		
+
+{% endblock %}       

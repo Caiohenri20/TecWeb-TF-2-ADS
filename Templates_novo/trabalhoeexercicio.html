@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Trabalhos e Exercicios {% endblock %}
+{% block css %} href="{% static 'estilo.css' %}" {% endblock %}
+
+
+{% block main %}
+<div class="containner">
+      <nav>
+        <div class="item">
+          <input type="checkbox" id="check1">
+          <label for="check1">Secretaria Online</label>
+          <ul>
+            <li><a href="formulario_cadastro.html">Matrícula Online</a></li>
+            <li><a href="formulario_cancelamento.html">Cancelamento de matrícula</a></li>
+            <li><a href="contatoprofessores.html">Contato dos Professores</a></li>
+          </ul>
+        </div>
+        
+        <div class="item">
+          <input type="checkbox" id="check3">
+          <label for="check3">Acesse Também</label>
+          <ul>
+          
+        </div>
+
+                <div class="item">
+                    <input type="checkbox" id="check4">
+                    <label for="check4">Àrea do Professor</label>
+                    <ul>
+                        <li><a href="#">Fechamentos de entregas</a></li>
+                        <li><a href="resumodasentregasrecebidas.html">Resumo das entregas recebidas</a></li>
+                        <li><a href="trabalhoeexercicio.html">Trabalhos e Exércicios</a></li>
+                        <li><a href="cancelamentodematricula.html">Cancelamento de matrícula</a></li>
+                            
+                    </ul>
+                </div>
+
+	
+	
+    
+<div class="painel">
+    <div class="logado">
+        <div class="logadoesquerdo">
+            Olá, Caio</br> 
+            RA: 1701394</br> 
+            Curso: Curso Superior de Tecnologia em</br> 
+            Análise e Desenvolvimento de Sistemas
+        </div>
+    </div>
+
+    <div class="areamatricula">
+
+        <div class="formulario">	
+	
+    	   <legend>Adicionar exercicio ou trabalho</legend>
+    	   <center><br><h4 class="titulos">Digite os dados desejados</h4><br></center>
+    	   Disciplina:
+    	   <input type="name" class="campo" name="disciplia" placeholder="Digite a disciplina">
+    	   </br>
+    	   </br>
+    	   Titulo:
+    	   <input type="name" class="campo" name="titulo" placeholder="Digite o titulo">
+    	   </br>
+    	   </br>
+    	   Data limite de entrega:
+    	   <input data="diasemana" type="date" />
+    	   </br>
+    	   </br>
+            Tipo:
+    	   <select name="tipo">
+            <option value="ac">Exercicio</option> 
+            <option value="al">Trabalho</option></br> 
+    	   </td>
+    	   </select>
+    	   </br>
+    	   </br>
+    	
+    	   <button class="button" type="submit">Enviar</button>
+    	   <button class="button" type="reset">Limpar</button>
+    	
+    	   </br>
+    	   </br>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}   

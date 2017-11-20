@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Cursos {% endblock %}
+{% block css %} href="{% static 'estilo.css' %}" {% endblock %}
+
+
+{% block main %}
+		<div class="containner">
+			<nav>
+				<div class="item">
+					<input type="checkbox" id="check1">
+					<label for="check1">Secretaria Online</label>
+					<ul>
+						<li><a href="formulario_cadastro.html">Matrícula Online</a></li>
+						<li><a href="formulario_cancelamento.html">Cancelamento de matrícula</a></li>
+						<li><a href="contatoprofessores.html">Contato dos Professores</a></li>
+					</ul>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="check2">
+					<label for="check2">Àrea do Aluno</label>
+					<ul>
+						<li><a href="exerciciosetrabalhos_aluno.html">Trabalhos e Exercícios</a></li>
+						<li><a href="notas.html">Notas e faltas</a></li>
+						<li><a href="horario.html">Horários das Aulas</a></li>						
+					</ul>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="check3">
+					<label for="check3">Acesse Também</label>
+					<ul>
+						<li><a href="carreira.html">Núcleo de Carreiras</a></li>
+					</ul>
+				</div>					
+			</nav>
+			<div class="painel">
+				<div class="logado">
+					<div class="logadoesquerdo">
+						Olá, Caio</br> 
+						RA: 1701394</br> 
+						Curso: Curso Superior de Tecnologia em</br> 
+						Análise e Desenvolvimento de Sistemas
+					</div>
+				</div>
+<!--ALTERAÇÃO FEITA PARA CARREGAR OS DADOS DE CONTATO DO PROFESSOR-CARLOS-->
+				<div class="table">
+					<table>
+						<tr>
+							<th>Professor:</th>
+							<th>Disciplina:</th>
+							<th>Aviso:</th>
+						</tr>
+						{% for contato_professores in contato_professor %}
+							<tr>
+								<td>{{ contato_professores.professor }}</td>
+								<td>{{ contato_professores.disciplina }}</td>
+								<td>{{ contato_professores.aviso }}</td>
+								<th><label><input class="button" type="submit" value="Enviar Mensagem"/></label></th>
+							</tr>
+						{% endfor %}	
+					</table>		
+				</div>
+<!--ALTERAÇÃO FEITA PARA CARREGAR OS DADOS DE CONTATO DO PROFESSOR-CARLOS-->				
+			</div>
+		</div>		
+
+{% endblock %}       

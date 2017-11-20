@@ -1,0 +1,234 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Detalhes do Curso {% endblock %}
+{% block css %} href="{% static 'estilo.css' %}" {% endblock %}
+{% block main %}
+    <section class="principal">
+
+        <div class="ADS" id="ADS">
+            <h1>Analise e Desenvolvimento de Sistema</h1>
+            <br/>
+            <h2>Sobre o Curso</h2>
+            
+            <p>O curso forma profissionais conhecidos como Analista de Sistemas ou Desenvolvedor de Sistemas.
+            São esses profissionais que criam os sistemas com os quais você já teve contato: sistemas de comércio eletrônico, sistemas de redes sociais, web sites, apenas para citar alguns.
+            Você também aprenderá a trabalhar em equipe, analisando e desenvolvendo sistemas para internet, tablets, celulares e Internet das Coisas (IOT), utilizando ambientes DevOps, linguagens e tecnologias de alta-produtividade e de melhor custo-benefício.</p>
+            
+            <h3>Horário</h3>
+            <p>Noturno (das 19h00 às 22h30)</p>
+            <br/>
+
+            <input type="checkbox" id="bt_ads">
+            <h3>Disciplinas</h3>
+            <label for="bt_ads"><img src="/static/_img/sort-down.png"/></label>
+            <br/>
+            <div class="disciplinas">
+                <br/>
+                <ul>Primeiro Semestre
+                    <li><a href="/disciplina #Pri_Semestre">Comunicação e Expressão</a></li>
+                    <li><a href="/disciplina #Pri_Semestre">Fundamentos de Banco de Dados</a></li>
+                    <li><a href="/disciplina #Pri_Semestre">Introdução a Internet das Coisas - IOT</a></li>
+                    <li><a href="/disciplina #Pri_Semestre">Linguagem de Programação I</a></li>
+                    <li><a href="/disciplina #Pri_Semestre">Lógica de Programação</a></li>
+                    <li><a href="/disciplina #Pri_Semestre">Matemática Aplicada</a></li>
+                </ul>
+                <br/>
+                <ul>Segundo Semestre
+                    <li><a href="/disciplina #Seg_Semestre">Ambiente de Desenvolvimento e Operação - DevOps</a></li>
+                    <li><a href="/disciplina #Seg_Semestre">Engenharia de Software</a></li>
+                    <li><a href="/disciplina #Seg_Semestre">Gestão de Projetos</a></li>
+                    <li><a href="/disciplina #Seg_Semestre">Linguagem de Programação II</a></li>
+                    <li><a href="/disciplina #Seg_Semestre">Linguagem SQL</a></li>
+                    <li><a href="/disciplina #Seg_Semestre">Tecnologia Web</a></li>
+                </ul>
+                <br/>
+                <ul>Terceiro Semestre
+                    <li><a href="/disciplina #Ter_Semestre">Análise e Modelagem de Sistemas</a></li>
+                    <li><a href="/disciplina #Ter_Semestre">Desenvolvimento de Aplicações Distribuídas</a></li>
+                    <li><a href="/disciplina #Ter_Semestre">Estrutura de Dados</a></li>
+                    <li><a href="/disciplina #Ter_Semestre">Interface Homem-Computador</a></li>
+                    <li><a href="/disciplina #Ter_Semestre">Modelagem de Processos de Negócio</a></li>
+                    <li><a href="/disciplina #Ter_Semestre">Oficina de Projeto de Empresa 1 - OPE1</a></li>
+                </ul>
+                <br/>
+                <ul>Quarto Semestre
+                    <li><a href="/disciplina #Qua_Semestre">Arquitetura e Projeto de Sistemas</a></li>
+                    <li><a href="/disciplina #Qua_Semestre">Desenvolvimento para Dispositivos Móveis</a></li>
+                    <li><a href="/disciplina #Qua_Semestre">Desenvolvimento para Internet das Coisas - IoT</a></li>
+                    <li><a href="/disciplina #Qua_Semestre">Legislação e Ética</a></li>
+                    <li><a href="/disciplina #Qua_Semestre">Qualidade de Software</a></li>
+                    <li><a href="/disciplina #Qua_Semestre">Oficina de Projeto de Empresa 2 - OPE2</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="TI" id="TI">
+            <h1>Tecnologia da Informação</h1>
+            <br/>
+            <h2>Sobre o Curso</h2>
+            
+            <p>O bacharel em Tecnologia da Informação é um profissional capacitado e habilitado para administrar o fluxo das informações geradas e distribuídas por redes de computadores, podendo atuar também na criação de sistemas informatizados e gerenciais diferenciados pela criatividade e inovação.</p>
+            
+            <h3>Horário</h3>
+            <p>NOTURNO (das 19h00 às 22h30)</p>
+            <br/>
+            
+            <input type="checkbox" id="bt_ti">
+            <h3>Disciplinas</h3>
+            <label for="bt_ti"><img src="/static/_img/sort-down.png"/></label>
+            <br/>
+            <div class="disciplinas">
+                <br/>
+                <ul>Primeiro Semestre
+                    <li><a href="/disciplina #Pri_Semestre">Comunicação e Expressão</a></li>
+                    <li><a href="/disciplina #Pri_Semestre">Fundamentos de Banco de Dados</a></li>
+                    <li><a href="/disciplina #Pri_Semestre">Introdução a Internet das Coisas - IOT</a></li>
+                    <li><a href="/disciplina #Pri_Semestre">Linguagem de Programação I</a></li>
+                    <li><a href="/disciplina #Pri_Semestre">Lógica de Programação</a></li>
+                    <li><a href="/disciplina #Pri_Semestre">Matemática Aplicada</a></li>
+                </ul>
+                <br/>
+                <ul>Segundo Semestre
+                    <li><a href="/disciplina #Seg_Semestre">Ambiente de Desenvolvimento e Operação - DevOps</a></li>
+                    <li><a href="/disciplina #Seg_Semestre">Engenharia de Software</a></li>
+                    <li><a href="/disciplina #Seg_Semestre">Gestão de Projetos</a></li>
+                    <li><a href="/disciplina #Seg_Semestre">Linguagem de Programação II</a></li>
+                    <li><a href="/disciplina #Seg_Semestre">Linguagem SQL</a></li>
+                    <li><a href="/disciplina #Seg_Semestre">Tecnologia Web</a></li>
+                </ul>
+                <br/>
+                <ul>Terceiro Semestre
+                    <li><a href="/disciplina #Ter_Semestre">Análise e Modelagem de Sistemas</a></li>
+                    <li><a href="/disciplina #Ter_Semestre">Desenvolvimento de Aplicações Distribuídas</a></li>
+                    <li><a href="/disciplina #Ter_Semestre">Estrutura de Dados</a></li>
+                    <li><a href="/disciplina #Ter_Semestre">Interface Homem-Computador</a></li>
+                    <li><a href="/disciplina #Ter_Semestre">Modelagem de Processos de Negócio</a></li>
+                    <li><a href="/disciplina #Ter_Semestre">Oficina de Projeto de Empresa 1 - OPE1</a></li>
+                </ul>
+                <br/>
+                <ul>Quarto Semestre
+                    <li><a href="/disciplina #Qua_Semestre">Arquitetura e Projeto de Sistemas</a></li>
+                    <li><a href="/disciplina #Qua_Semestre">Desenvolvimento para Dispositivos Móveis</a></li>
+                    <li><a href="/disciplina #Qua_Semestre">Desenvolvimento para Internet das Coisas - IoT</a></li>
+                    <li><a href="/disciplina #Qua_Semestre">Legislação e Ética</a></li>
+                    <li><a href="/disciplina #Qua_Semestre">Qualidade de Software</a></li>
+                    <li><a href="/disciplina #Qua_Semestre">Oficina de Projeto de Empresa 2 - OPE2</a></li>
+                </ul>
+            </div>
+        </div>
+        <br/>
+        <div class="CC" id="CC">
+            <h1>Ciência da Computação</h1>
+            <br/>
+            <h2>Sobre o Curso</h2>
+            
+            <p>O bacharel em Ciências da Computação é um profissional capacitado para planejar, coordenar, gerenciar e até desenvolver sistemas computacionais para diversos setores do mercado de trabalho, sendo um cientista transformador do mercado e capaz de provocar mudanças por meio da agregação de novas tecnologias na solução de problemas e na criação de sistemas computacionais diferenciados pela interdisciplinaridade, multidisciplinaridade, criatividade e inovação.</p>
+            
+            <h3>Horário</h3>
+            <p>NOTURNO (das 19h00 às 22h30)</p>
+            <br/>
+            
+            <input type="checkbox" id="bt_cc">
+            <h3>Disciplinas</h3>
+            <label for="bt_cc"><img src="/static/_img/sort-down.png"/></label>
+            <br/>
+            <div class="disciplinas">
+                <br/>
+                <ul>Primeiro Semestre
+                    <li><a href="/disciplina #Pri_Semestre">Comunicação e Expressão</a></li>
+                    <li><a href="/disciplina #Pri_Semestre">Fundamentos de Banco de Dados</a></li>
+                    <li><a href="/disciplina #Pri_Semestre">Introdução a Internet das Coisas - IOT</a></li>
+                    <li><a href="/disciplina #Pri_Semestre">Linguagem de Programação I</a></li>
+                    <li><a href="/disciplina #Pri_Semestre">Lógica de Programação</a></li>
+                    <li><a href="/disciplina #Pri_Semestre">Matemática Aplicada</a></li>
+                </ul>
+                <br/>
+                <ul>Segundo Semestre
+                    <li><a href="/disciplina #Seg_Semestre">Ambiente de Desenvolvimento e Operação - DevOps</a></li>
+                    <li><a href="/disciplina #Seg_Semestre">Engenharia de Software</a></li>
+                    <li><a href="/disciplina #Seg_Semestre">Gestão de Projetos</a></li>
+                    <li><a href="/disciplina #Seg_Semestre">Linguagem de Programação II</a></li>
+                    <li><a href="/disciplina #Seg_Semestre">Linguagem SQL</a></li>
+                    <li><a href="/disciplina #Seg_Semestre">Tecnologia Web</a></li>
+                </ul>
+                <br/>
+                <ul>Terceiro Semestre
+                    <li><a href="/disciplina #Ter_Semestre">Análise e Modelagem de Sistemas</a></li>
+                    <li><a href="/disciplina #Ter_Semestre">Desenvolvimento de Aplicações Distribuídas</a></li>
+                    <li><a href="/disciplina #Ter_Semestre">Estrutura de Dados</a></li>
+                    <li><a href="/disciplina #Ter_Semestre">Interface Homem-Computador</a></li>
+                    <li><a href="/disciplina #Ter_Semestre">Modelagem de Processos de Negócio</a></li>
+                    <li><a href="/disciplina #Ter_Semestre">Oficina de Projeto de Empresa 1 - OPE1</a></li>
+                </ul>
+                <br/>
+                <ul>Quarto Semestre
+                    <li><a href="/disciplina #Qua_Semestre">Arquitetura e Projeto de Sistemas</a></li>
+                    <li><a href="/disciplina #Qua_Semestre">Desenvolvimento para Dispositivos Móveis</a></li>
+                    <li><a href="/disciplina #Qua_Semestre">Desenvolvimento para Internet das Coisas - IoT</a></li>
+                    <li><a href="/disciplina #Qua_Semestre">Legislação e Ética</a></li>
+                    <li><a href="/disciplina #Qua_Semestre">Qualidade de Software</a></li>
+                    <li><a href="/disciplina #Qua_Semestre">Oficina de Projeto de Empresa 2 - OPE2</a></li>
+                </ul>
+            </div>
+        </div>
+        <br/>
+        <div class="EC" id="EC">
+            <h1>Engenharia da Computação</h1>
+            <br/>
+            <h2>Sobre o Curso</h2>
+            
+            <p>Engenharia da Computação desenvolve projetos nas áreas de sistemas operacionais, arquitetura de computadores, redes, robótica e inteligência artificial.
+            A grade privilegia conhecimentos avançados na área de exatas (física e matemática) e aspectos de eletrônica, controle e automação, telecomunicações e TI.
+            Você aprende sobre o ciclo de fabricação (custos, prazos, riscos, qualidade), gerenciamento de equipe, desenvolvimento de aplicativos, linguagens de programação e empreendedorismo.</p>
+            
+            <h3>Horário</h3>
+            <p>NOTURNO (das 19h00 às 22h30)</p>
+            <br/>
+            
+            <input type="checkbox" id="bt_ec">
+            <h3>Disciplinas</h3>
+            <label for="bt_ec"><img src="/static/_img/sort-down.png"/></label>
+            <br/>
+            <div class="disciplinas">
+                <br/>
+                <ul>Primeiro Semestre
+                    <li><a href="/disciplina #Pri_Semestre">Comunicação e Expressão</a></li>
+                    <li><a href="/disciplina #Pri_Semestre">Fundamentos de Banco de Dados</a></li>
+                    <li><a href="/disciplina #Pri_Semestre">Introdução a Internet das Coisas - IOT</a></li>
+                    <li><a href="/disciplina #Pri_Semestre">Linguagem de Programação I</a></li>
+                    <li><a href="/disciplina #Pri_Semestre">Lógica de Programação</a></li>
+                    <li><a href="/disciplina #Pri_Semestre">Matemática Aplicada</a></li>
+                </ul>
+                <br/>
+                <ul>Segundo Semestre
+                    <li><a href="/disciplina #Seg_Semestre">Ambiente de Desenvolvimento e Operação - DevOps</a></li>
+                    <li><a href="/disciplina #Seg_Semestre">Engenharia de Software</a></li>
+                    <li><a href="/disciplina #Seg_Semestre">Gestão de Projetos</a></li>
+                    <li><a href="/disciplina #Seg_Semestre">Linguagem de Programação II</a></li>
+                    <li><a href="/disciplina #Seg_Semestre">Linguagem SQL</a></li>
+                    <li><a href="/disciplina #Seg_Semestre">Tecnologia Web</a></li>
+                </ul>
+                <br/>
+                <ul>Terceiro Semestre
+                    <li><a href="/disciplina #Ter_Semestre">Análise e Modelagem de Sistemas</a></li>
+                    <li><a href="/disciplina #Ter_Semestre">Desenvolvimento de Aplicações Distribuídas</a></li>
+                    <li><a href="/disciplina #Ter_Semestre">Estrutura de Dados</a></li>
+                    <li><a href="/disciplina #Ter_Semestre">Interface Homem-Computador</a></li>
+                    <li><a href="/disciplina #Ter_Semestre">Modelagem de Processos de Negócio</a></li>
+                    <li><a href="/disciplina #Ter_Semestre">Oficina de Projeto de Empresa 1 - OPE1</a></li>
+                </ul>
+                <br/>
+                <ul>Quarto Semestre
+                    <li><a href="/disciplina #Qua_Semestre">Arquitetura e Projeto de Sistemas</a></li>
+                    <li><a href="/disciplina #Qua_Semestre">Desenvolvimento para Dispositivos Móveis</a></li>
+                    <li><a href="/disciplina #Qua_Semestre">Desenvolvimento para Internet das Coisas - IoT</a></li>
+                    <li><a href="/disciplina #Qua_Semestre">Legislação e Ética</a></li>
+                    <li><a href="/disciplina #Qua_Semestre">Qualidade de Software</a></li>
+                    <li><a href="/disciplina #Qua_Semestre">Oficina de Projeto de Empresa 2 - OPE2</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+{% endblock %}

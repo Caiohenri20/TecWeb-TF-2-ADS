@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Login {% endblock %}
+{% block css %} href="{% static 'estilo.css' %}" {% endblock %}
+{% block main %}
+    <section class="principal">
+        <br/>
+        <div class="formulario">
+            <form action="login" method="POST" enctype="application/x-www-form-urlencoded">
+                <h1>PORTAL DO ALUNO</h1>
+                <br/>
+                <fieldset>
+                    <legend>Login</legend>
+                    <input type="number" name="login" id="ra" placeholder="Digite seu RA" smaxlength="7" required />
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua Senha" maxlength="8" required />
+                    <br/>
+                </fieldset>
+                <a href="formulario_esqueciasenha" target="_blank">Esqueceu a senha?</a>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <br/>
+    </section>
+{% endblock %}

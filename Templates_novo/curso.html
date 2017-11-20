@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Cursos {% endblock %}
+{% block css %} href="{% static 'estilo.css' %}" {% endblock %}
+{% block main %}
+    <section class="principal">
+        <figure class="bannercursos">
+            <img src="{% static '_img/banner_tecnologia.png' %}" alt="tecnologia"/>
+        </figure>
+        
+        <div class="cursos">
+            <div>
+                <figure>
+                    <a href="/detalhe #ADS" target="_blank">
+                        <img src="{% static '_img/ADS.jpg' %}" alt="curso ADS"/>
+                        <figcaption>Análise e Desenvolvimento de Sistema</figcaption>
+                    </a>
+                </figure>
+                <br/>
+                <figure>
+                    <a href="/detalhe #CC" target="_blank">
+                        <img src="{% static '_img/CC.jpg' %}" alt="curso CC"/>
+                        <figcaption>Ciência da Computação</figcaption>
+                    </a>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <a href="/detalhe #TI" target="_blank">
+                        <img src="{% static '_img/TI.jpeg' %}" alt="curso TI"/>
+                        <figcaption>Tecnologia da Informação</figcaption>
+                    </a>
+                </figure>
+                <br/>
+                <figure>
+                    <a href="/detalhe #EC" target="_blank">
+                        <img src="{% static '_img/EC.jpg' %}" alt="curso EC"/>
+                        <figcaption>Engenharia da Computação</figcaption>
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </section>
+{% endblock %}
